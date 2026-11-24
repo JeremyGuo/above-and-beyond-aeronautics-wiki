@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>精炼冶金 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="guides.css">
+  <script src="../quests.js" defer></script>
+</head>
+<body class="stage-guide">
+  <header class="site-header">
+    <a href="../index.html"><span class="book-mark" aria-hidden="true"><img src="../icons/ftbquests--book.png" alt="" draggable="false" data-game-item="ftbquests:book"></span>Above and Beyond Aeronautics</a>
+  </header>
+  <div class="detail-page">
+    <nav class="contents" aria-label="工业章节">
+      <a class="back-link" href="../index.html">任务书</a>
+      <a href="../worlds/index.html">世界图鉴</a>
+      <ol>
+        <li><a href="1.html"><span class="quest-emblem crest-1 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--andesite_control_chip.png" alt="" draggable="false" data-game-item="kubejs:andesite_control_chip"></span><span>安山工坊</span></a></li>
+        <li><a href="2.html"><span class="quest-emblem crest-2 emblem-nav" aria-hidden="true"><img src="../icons/create--brass_ingot.png" alt="" draggable="false" data-game-item="create:brass_ingot"></span><span>黄铜轻航</span></a></li>
+        <li><a href="3.html"><span class="quest-emblem crest-3 emblem-nav" aria-hidden="true"><img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine"></span><span>蒸汽工坊</span></a></li>
+        <li><a href="4.html" aria-current="page"><span class="quest-emblem crest-4 emblem-nav" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span><span>精炼冶金</span></a></li>
+        <li><a href="5.html"><span class="quest-emblem crest-5 emblem-nav" aria-hidden="true"><img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip"></span><span>深层矿业</span></a></li>
+        <li><a href="6.html"><span class="quest-emblem crest-6 emblem-nav" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span><span>高热动力</span></a></li>
+        <li><a href="7.html"><span class="quest-emblem crest-7 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core"></span><span>高压工业</span></a></li>
+      </ol>
+    </nav>
+    <main>
+      <div class="chapter-title">
+        <span class="quest-emblem crest-4" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span>
+        <div><h1>精炼冶金</h1><p>高炉、炼油与内燃机</p></div>
+      </div>
+      <p class="stage-lead">下界现场采矿，带回高炉炉料。暮色塔和天境银殿的战利品用于幽泪样本。</p>
+      <nav class="stage-jump" aria-label="本章目录">
+        <a href="#deep-seas">深海采样</a>
+        <a href="#current-lance">水下矢炮</a>
+        <a href="#graph-title">完整依赖图</a>
+        <a href="#stage-reference">任务与材料</a>
+      </nav>
+      <section class="stage-route" aria-labelledby="stage-route-title">
+        <h2 id="stage-route-title">本章主线</h2>
+        <ol class="stage-steps">
+          <li>
+            <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" width="36" height="36" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+            <h3>升级镍钢热风高炉</h3>
+            <p>用陀螺飞行芯片升级炉圈，带 III 级切削工具下界取钨和钴。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--infernal_mechanism.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:infernal_mechanism">
+            <h3>制冥火构件</h3>
+            <p>用镍钢、钨和钴加工冥火构件，开始制作镍钢耐压内衬。</p>
+          </li>
+          <li>
+            <img src="../icons/create--mechanical_pump.png" alt="" width="36" height="36" draggable="false" data-game-item="create:mechanical_pump">
+            <h3><a href="#deep-seas">造潜艇，采两种种子</a></h3>
+            <p>接通压载和供氧，从密闭舱采回灯藻种子和盐根种子。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--nether_flight_core.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:nether_flight_core">
+            <h3>制下界飞行核心</h3>
+            <p>备下界合金碎片和幽泪样本，用采回的种子校准，开启深层矿业。</p>
+          </li>
+        </ol>
+      </section>
+      <figure class="stage-figure stage-figure--furnace">
+        <a href="../media/furnace-chamber.png" aria-label="查看热风高炉炉腔原图">
+          <img src="../media/furnace-chamber.png" alt="机械动力 Ponder 用蓝线标出热风高炉中间层的四格空炉腔" width="1280" height="900">
+        </a>
+        <figcaption>
+          <strong>围炉圈时留出炉腔</strong>
+          <p>Ponder 的蓝线标出中间层要留空的四格。准备本章第一座镍钢高炉时，可按图核对框架与炉腔。</p>
+        </figcaption>
+      </figure>
+      <section class="stage-topic" aria-labelledby="deep-seas">
+        <h2 id="deep-seas">深海探索与远景</h2>
+        <dl class="stage-topic-facts">
+          <div><dt>启动采样</dt><dd>深度至少 20 格</dd></div>
+          <div><dt>接近野生植株</dt><dd>采样距离不超过 8 格</dd></div>
+          <div><dt>装配前带回</dt><dd>灯藻与盐根种子</dd></div>
+        </dl>
+        <figure class="stage-figure stage-figure--pressure">
+          <a href="../media/diver-pressure.png" aria-label="查看潜水压力界面原图">
+            <img src="../media/diver-pressure.png" alt="水下界面显示压力 80.3/280，读数位于原版氧气气泡上方" width="960" height="720" loading="lazy">
+          </a>
+          <figcaption>
+            <strong>查看装备耐压上限</strong>
+            <p>气泡上方为当前等效水深与装备上限。图中穿齐铜潜水套装，读数为 80.3 / 280 米。</p>
+          </figcaption>
+        </figure>
+        <details class="stage-foldout">
+          <summary>潜艇搭建、供氧与采样</summary>
+          <div class="stage-foldout-copy">
+            <p><strong>潜艇装备。</strong>完成冥火构件后，用镍钢耐压内衬制作本章主线所需的潜艇部件。用船壳围出封闭的乘员舱，将朝向海水的压载排口经水泵控制器接到潜艇压载水罐。用物理组装器组装潜艇，给水泵提供旋转动力，再在舰载计算机上设定深度。</p>
+            <p><strong>水下推进。</strong>在船尾两侧各装一只潜艇螺旋桨，并分别接入可调速的旋转动力。通过两侧的转速差转向。</p>
+            <p><strong>舱内供氧。</strong>给电解器供水和动力，用管道把氧气送入氧气扩散器。用红石信号开启扩散器，确认封闭舱内持续供氧后再下潜。</p>
+            <p><strong>海底采样。</strong>在新生成的深海海床寻找微微发光的野生灯藻和盐根，植株位于水面下约 28 至 60 格。把深海采样器装在潜艇的干燥密闭舱内，向压载水罐注水并保持供氧，下潜至海面以下至少 20 格。驶到采样器距野生植株不超过 8 格时，用空的主手右击采样器，从最近的植株取得一粒种子。</p>
+            <p><strong>校准与交接。</strong>拿到首次采样记录，并带回灯藻种子和盐根种子，完成「深海远征 · 舱内采样」。装配下界飞行核心时，用幽泪样本校准后，在压制前依次用两种种子校准。机械手保留种子，取回后留给<a href="5.html#offshore-farming">第五章的海上种植平台</a>。</p>
+          </div>
+        </details>
+        <details class="stage-foldout">
+          <summary>水下矢炮</summary>
+          <div class="stage-foldout-copy">
+            <p id="current-lance"><strong>水下矢炮。</strong>可用镍钢耐压内衬制作矢炮，在首次采样前装到潜艇上。炮座的基础承压深度为 300 米，整艇的安全深度仍以最薄弱的受压部位为准。用一块铁板和两根竹子制作 16 枚水压矢。将后轴接到至少 32 RPM 的机械动力，从侧面或后方装填一枚水压矢，待蓄力完成后仍从侧面或后方用空主手右击发射。潜行右击可退弹。操作员可留在干燥密闭舱内，让炮口至目标之间的水下射线保持通畅。<a href="../worlds/overworld.html#marine-life">查看各鱼类的栖地</a>。</p>
+          </div>
+        </details>
+        <details class="stage-foldout">
+          <summary>海沟、承压、照明与远景</summary>
+          <div class="stage-foldout-copy">
+            <p><strong>主世界海域。</strong>Next 使用 Open Seas 地形配置配合 Tectonic 和 Terralith，拉宽海域并加深部分深海海床。已有存档可前往尚未生成的区域寻找新海域，新旧区块交界处可能出现地形接缝。到达潜点后，按水面到海床的距离规划下潜。</p>
+            <p><strong>深海海沟。</strong>新生成的深海偶尔会出现水深可达 200 米的海沟。测试种子 579262 的 X 1634、Z −8192 处，海床位于 Y −138，Y −137 到 Y 62 连续 200 格均为海水水源。沿较浅的台地可寻找采样用的野生灯藻和盐根。</p>
+            <p><strong>船壳承压。</strong>默认 HYBRID 模式会按舱壁形状修正材料的承压基准，整艇的安全深度由最薄弱的受压部位决定。宽而平的单层舱壁较弱，缩窄舱板、加厚或加肋可提高承压。出航前在舰载计算机运行检测，查看安全深度和最薄弱方块。超过安全深度可能使舱壁开裂、舱室进水。</p>
+            <p><strong>材料参考。</strong>单块材料的基准水深为普通玻璃和海晶灯 28 米、橡木木板 44 米、石头 68 米、深板岩 80 米、铁块 101 米。铜制耐压玻璃和铁制耐压玻璃的基准均为 700 米，适合做舷窗。测试艇记录的整艇安全深度为 56 米，下潜时可用压力表查看本艇的深度和承压状态。</p>
+            <p><strong>潜水压力显示。</strong>在水下，原版氧气气泡旁显示当前等效水深和装备的耐压上限。基础耐压为 120 米。穿齐 Create 的铜潜水头盔和铜潜水靴，以及 Deep Seas 的潜水胸甲和潜水护腿后，耐压为 280 米。接近上限时出现警告，进入干燥密闭舱后隐藏读数。</p>
+            <p><strong>水下照明。</strong>天光随下潜减弱，水雾也会缩短视野。实测一处海沟的天光等级在水面上方为 15，在水面下 24 米处为 0。关闭 Iris 光影包时，Vortex 会渲染水下光柱，默认会给 Deep Seas 等自带的发光方块加上雾中辉光。海晶灯使用原版方块光，可装在耐压玻璃内侧照亮舱室，或附装在完整船壳外作标灯。</p>
+            <p><strong>远景。</strong>Distant Horizons 在客户端用低细节模型显示远方地形。多人游戏时，远景随客户端接收到的区块逐步补齐。默认远景半径为 64 区块，远距离后台生成已关闭。在「选项」中点击视野滑块旁的 Distant Horizons 按钮可调节远景半径或关闭远景。</p>
+          </div>
+        </details>
+      </section>
+      <details class="stage-foldout stage-dependency-foldout">
+        <summary>查看完整依赖图</summary>
+        <section class="unlock-graph" aria-labelledby="graph-title">
+          <div class="graph-heading">
+            <h2 id="graph-title">生产与远征门槛</h2>
+            <a class="metallurgy-link" href="../metallurgy.html#chapter-4">本章熔炼产线与产率</a>
+            <a class="metallurgy-link" href="#deep-seas">深海探索与远景</a>
+            <p><span class="legend live"></span>现服已核对 <span class="legend plan"></span>阶段规划</p>
+          </div>
+          <div class="graph-scroll quest-board" tabindex="0" role="region" aria-label="工业生产和远征依赖图">
+            <div class="diagram" data-diagram style="--graph-height:684;">
+              <svg class="dependency-lines" viewBox="0 0 1230 684" width="1230" height="684" aria-hidden="true">
+                <defs>
+                  <marker id="arrow-live" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#99c9b7"/>
+                  </marker>
+                  <marker id="arrow-plan" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#d8a574"/>
+                  </marker>
+                </defs>
+            <path class="dependency-edge edge-plan" data-from="previous" data-to="workshop-upgrade" d="M 86.91 92.64 L 112.88 69.36" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="workshop-upgrade" data-to="smelt" d="M 147.95 68.38 L 174.39 89.57" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="smelt" data-to="cut" d="M 220.39 108.00 L 302.00 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="cut" data-to="ore1" d="M 346.84 100.78 L 433.16 72.22" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="cut" data-to="ore2" d="M 346.84 115.22 L 433.16 143.78" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="advanced" data-to="next" d="M 973.00 108.00 L 1113.15 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="boiler" d="M 760.00 131.00 L 760.00 190.00 L 503.41 190.00 L 503.41 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="burner" d="M 760.00 131.00 L 760.00 190.00 L 788.86 190.00 L 788.86 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="mine" d="M 760.00 131.00 L 760.00 190.00 L 945.19 190.00 L 945.19 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-live" data-from="urghast" data-to="sample" d="M 223.31 388.00 L 223.31 352.00 L 636.55 352.00 L 636.55 388.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="knight" data-to="urghast" d="M 116.71 411.00 L 200.31 411.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="sample" data-to="advanced" d="M 659.55 411.00 L 1208.46 411.00 L 1208.46 162.00 L 950.00 162.00 L 950.00 131.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="ore1" data-to="scheelite-salt" d="M 478.00 65.00 L 527.00 65.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="ore2" data-to="wolframite-salt" d="M 478.00 151.00 L 527.00 151.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="wolframite-salt" data-to="tungsten-ingot" d="M 571.47 142.76 L 640.53 116.24" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-plan" data-from="tungsten-ingot" data-to="basic" d="M 685.00 108.00 L 737.00 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-live" data-from="advanced" data-to="steam" d="M 964.85 125.56 L 1032.00 205.00 L 1100.00 205.00 L 1100.00 279.00" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="mill-building" d="M 760.00 131.00 L 760.00 179.00 L 1170.00 179.00 L 1170.00 387.00 L 1117.00 387.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="advanced" d="M 783.00 108.00 L 927.00 108.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-live" data-from="valkyrie" data-to="sample" d="M 374.38 411.00 L 613.55 411.00" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-live" data-from="scheelite-salt" data-to="tungsten-ingot" d="M 571.47 73.24 L 640.53 99.76" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="oil-intake" d="M 759.79 131.00 L 759.00 219.00 L 135.00 219.00 L 135.00 497.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="oil-intake" data-to="crude-oil" d="M 158.00 520.00 L 257.00 520.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="crude-oil" data-to="oil-refinery" d="M 303.00 520.00 L 406.00 520.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="oil-refinery" data-to="diesel-fuel" d="M 452.00 520.00 L 557.00 520.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="diesel-fuel" data-to="combustion-engine" d="M 603.00 520.00 L 800.00 520.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="oil-refinery" data-to="plastic-plant" d="M 429.00 543.00 L 429.00 603.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="plastic-plant" data-to="plastic" d="M 452.00 626.00 L 558.00 626.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="plastic" data-to="uncased-pcb" d="M 604.00 626.00 L 709.00 626.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="uncased-pcb" data-to="finished-pcb" d="M 755.00 626.00 L 877.00 626.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-live" data-from="finished-pcb" data-to="oil-pumpjack" d="M 923.00 626.00 L 1049.00 626.00" marker-end="url(#arrow-live)"/>
+              </svg>
+            <button type="button" class="diagram-node node-chip" style="--x:5.673600%;--y:15.789474%"
+                    data-node="previous" aria-label="陀螺飞行芯片" aria-describedby="node-previous-hint">
+              <img src="../icons/kubejs--gyro_flight_chip.png" alt="" draggable="false" data-game-item="kubejs:gyro_flight_chip">
+              
+            </button>
+            <div class="quest-preview" id="node-previous-hint" role="tooltip" hidden>
+              <p class="preview-title">陀螺飞行芯片</p>
+              <dl>
+              <dt>规划解锁</dt><dd>镍钢高炉升级件</dd>
+              <dt>说明</dt><dd>完成「蒸汽工坊」带来本章的冶炼升级。</dd>
+              </dl>
+            </div>
+
+            <button type="button" class="diagram-node node-item" style="--x:10.569106%;--y:7.894737%"
+                    data-node="workshop-upgrade" aria-label="镍钢高炉升级件" aria-describedby="node-workshop-upgrade-hint">
+              <img src="../icons/kubejs--nickel_steel_ingot.png" alt="" draggable="false" data-game-item="kubejs:nickel_steel_ingot">
+              <span class="node-caption" aria-hidden="true">高炉升级件</span>
+            </button>
+            <div class="quest-preview" id="node-workshop-upgrade-hint" role="tooltip" hidden>
+              <p class="preview-title">镍钢高炉升级件</p>
+              <dl>
+                <dt>规划前置</dt><dd>陀螺飞行芯片、上一章镍钢、合格火源和可取得的炉体材料</dd>
+                <dt>规划解锁</dt><dd>精炼冶金冶炼能力</dd>
+                <dt>产率路线</dt><dd>二次粉碎＋洗矿液＋磁选 · 平均 52.65 铁粒当量</dd>
+                <dt>装配</dt><dd>制作时投入芯片，部件装进工位或组成炉圈。节点使用游戏中已有材料的图标。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:16.048182%;--y:15.789474%"
+                    data-node="smelt" aria-label="精炼冶金冶炼能力" aria-describedby="node-smelt-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              
+            </button>
+            <div class="quest-preview" id="node-smelt-hint" role="tooltip" hidden>
+              <p class="preview-title">精炼冶金冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>镍钢高炉升级件</dd>
+              <dt>规划解锁</dt><dd>本章镐与动力钻头</dd>
+              <dt>冶炼限制</dt><dd>陀螺飞行芯片和上一章镍钢开启热风高炉与镍钢外圈。白钨矿和黑钨矿用对应炉料。高炉按控制器额定档、整圈最弱材料档、当前热风允许档中的最低值运行，还须达到配方的最小炉腔。</dd>
+              <dt>说明</dt><dd>用蒸汽工坊的镍钢制先遣切削工具，再下界采白钨和黑钨。冶金提升开放最高收率。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:26.422764%;--y:15.789474%"
+                    data-node="cut" aria-label="本章镐与动力钻头" aria-describedby="node-cut-hint">
+              <img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip">
+              
+            </button>
+            <div class="quest-preview" id="node-cut-hint" role="tooltip" hidden>
+              <p class="preview-title">本章镐与动力钻头</p>
+              <dl>
+              <dt>规划前置</dt><dd>精炼冶金冶炼能力</dd>
+              <dt>规划解锁</dt><dd>白钨矿、黑钨矿</dd>
+              <dt>说明</dt><dd>先用上一章已有材料制造合格钻头部件。Create 动力钻头在合成时消耗这个部件，成品继承它的挖掘等级。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:61.788617%;--y:15.789474%"
+                    data-node="basic" aria-label="冥火构件" aria-describedby="node-basic-hint">
+              <img src="../icons/kubejs--infernal_mechanism.png" alt="" draggable="false" data-game-item="kubejs:infernal_mechanism">
+              
+            </button>
+            <div class="quest-preview" id="node-basic-hint" role="tooltip" hidden>
+              <p class="preview-title">冥火构件</p>
+              <dl>
+              <dt>辅矿</dt><dd>钴锭计划作为冥火构件的耐热辅料。</dd>
+              <dt>规划前置</dt><dd>钨锭</dd>
+              <dt>规划解锁</dt><dd>镍钢耐压内衬与潜艇装备、下界飞行核心、第 2 档锅炉、第 2 档烈焰人燃烧室、第 2 档矿场控制器、多方块磨坊、燃料化工与初级柴油内燃机</dd>
+              <dt>说明</dt><dd>冥火构件为本章初级门槛。以本章钨材与上章镍钢配合现有部件做首批耐热件，再扩建第二档矿场。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:77.235773%;--y:15.789474%"
+                    data-node="advanced" aria-label="下界飞行核心" aria-describedby="node-advanced-hint">
+              <img src="../icons/kubejs--nether_flight_core.png" alt="" draggable="false" data-game-item="kubejs:nether_flight_core">
+              
+            </button>
+            <div class="quest-preview" id="node-advanced-hint" role="tooltip" hidden>
+              <p class="preview-title">下界飞行核心</p>
+              <dl>
+              <dt>辅矿</dt><dd>下界合金碎片用于下界飞行核心。</dd>
+              <dt>现服下游</dt><dd>蒸汽喷口</dd>
+              <dt>现服前置</dt><dd>幽泪样本</dd>
+              <dt>规划前置</dt><dd>冥火构件</dd>
+              <dt>Next 任务前置</dt><dd>完成「深海远征 · 舱内采样」</dd>
+              <dt>装配</dt><dd>幽泪样本校准后，依次用灯藻种子和盐根种子校准，再压制。两种种子留在机械手中。</dd>
+              <dt>规划解锁</dt><dd>深层矿业冶炼能力</dd>
+              <dt>说明</dt><dd>下界飞行核心开启深层矿业。冥火构件解锁第二档锅炉、烈焰人燃烧室与矿场。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:9.502924%"
+                    data-node="ore1" aria-label="白钨矿" aria-describedby="node-ore1-hint">
+              <img src="../icons/kubejs--raw_scheelite.png" alt="" draggable="false" data-game-item="kubejs:raw_scheelite">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore1-hint" role="tooltip" hidden>
+              <p class="preview-title">白钨矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头</dd>
+              <dt>现服下游</dt><dd>白钨矿钨酸盐</dd>
+              <dt>说明</dt><dd>到下界白钨矿裂隙开采，富集后炼出钨，供热工件和下一章刀头。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:22.076023%"
+                    data-node="ore2" aria-label="黑钨矿" aria-describedby="node-ore2-hint">
+              <img src="../icons/kubejs--raw_wolframite.png" alt="" draggable="false" data-game-item="kubejs:raw_wolframite">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore2-hint" role="tooltip" hidden>
+              <p class="preview-title">黑钨矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头</dd>
+              <dt>现服下游</dt><dd>黑钨矿钨酸盐</dd>
+              <dt>说明</dt><dd>在下界白钨矿裂隙采集伴生黑钨矿，精炼回收钨和铁副产。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:92.370231%;--y:15.789474%"
+                    data-node="next" aria-label="深层矿业冶炼能力" aria-describedby="node-next-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              
+            </button>
+            <div class="quest-preview" id="node-next-hint" role="tooltip" hidden>
+              <p class="preview-title">深层矿业冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>下界飞行核心</dd>
+              <dt>说明</dt><dd>开启下一章可制的切削工具。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:40.927862%;--y:36.257310%"
+                    data-node="boiler" aria-label="第 2 档锅炉" aria-describedby="node-boiler-hint">
+              <img src="../icons/create--fluid_tank.png" alt="" draggable="false" data-game-item="create:fluid_tank">
+              
+            </button>
+            <div class="quest-preview" id="node-boiler-hint" role="tooltip" hidden>
+              <p class="preview-title">第 2 档锅炉</p>
+              <dl>
+              <dt>规划前置</dt><dd>冥火构件</dd>
+              <dt>说明</dt><dd>基础罐体图标表示本档锅炉。实际工作压力受炉衬供热、承压与给水限制。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:64.135021%;--y:36.257310%"
+                    data-node="burner" aria-label="第 2 档烈焰人燃烧室" aria-describedby="node-burner-hint">
+              <img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner">
+              
+            </button>
+            <div class="quest-preview" id="node-burner-hint" role="tooltip" hidden>
+              <p class="preview-title">第 2 档烈焰人燃烧室</p>
+              <dl>
+              <dt>规划前置</dt><dd>冥火构件</dd>
+              <dt>说明</dt><dd>炉体图标表示本档燃烧室。炉衬材料与供汽匹配。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:76.844705%;--y:36.257310%"
+                    data-node="mine" aria-label="第 2 档矿场控制器" aria-describedby="node-mine-hint">
+              <img src="../icons/createmine--controller.png" alt="" draggable="false" data-game-item="createmine:controller">
+              
+            </button>
+            <div class="quest-preview" id="node-mine-hint" role="tooltip" hidden>
+              <p class="preview-title">第 2 档矿场控制器</p>
+              <dl>
+              <dt>规划前置</dt><dd>冥火构件</dd>
+              <dt>说明</dt><dd>扩大矿场速率与耐久。本章的新矿仍需要合格刀头。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:7.618834%;--y:60.087719%"
+                    data-node="knight" aria-label="暮色森林 · 幻影骑士" aria-describedby="node-knight-hint">
+              <img src="../icons/twilightforest--phantom_helmet.png" alt="" draggable="false" data-game-item="twilightforest:phantom_helmet">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-knight-hint" role="tooltip" hidden>
+              <p class="preview-title">暮色森林 · 幻影骑士</p>
+              <dl>
+              <dt>现服下游</dt><dd>幽泪样本、暮色森林 · 暮初恶魂</dd>
+              <dt>说明</dt><dd>取得战利品箱里的幻影骑士奖杯。图标用幻影头盔。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:18.155519%;--y:60.087719%"
+                    data-node="urghast" aria-label="暮色森林 · 暮初恶魂" aria-describedby="node-urghast-hint">
+              <img src="../icons/twilightforest--ur_ghast_trophy.png" alt="" draggable="false" data-game-item="twilightforest:ur_ghast_trophy">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-urghast-hint" role="tooltip" hidden>
+              <p class="preview-title">暮色森林 · 暮初恶魂</p>
+              <dl>
+              <dt>现服前置</dt><dd>暮色森林 · 幻影骑士</dd>
+              <dt>现服下游</dt><dd>幽泪样本</dd>
+              <dt>说明</dt><dd>黑暗高塔取炽热之泪。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:28.567220%;--y:60.087719%"
+                    data-node="valkyrie" aria-label="天境 · 女武神女王" aria-describedby="node-valkyrie-hint">
+              <img src="../icons/aether--silver_dungeon_key.png" alt="" draggable="false" data-game-item="aether:silver_dungeon_key">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-valkyrie-hint" role="tooltip" hidden>
+              <p class="preview-title">天境 · 女武神女王</p>
+              <dl>
+              <dt>现服下游</dt><dd>幽泪样本</dd>
+              <dt>说明</dt><dd>在银殿击败女武神女王，带回白银钥匙。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:51.751838%;--y:60.087719%"
+                    data-node="sample" aria-label="幽泪样本" aria-describedby="node-sample-hint">
+              <img src="../icons/kubejs--expedition_sample_4.png" alt="" draggable="false" data-game-item="kubejs:expedition_sample_4">
+              
+            </button>
+            <div class="quest-preview" id="node-sample-hint" role="tooltip" hidden>
+              <p class="preview-title">幽泪样本</p>
+              <dl>
+              <dt>现服前置</dt><dd>暮色森林 · 幻影骑士、暮色森林 · 暮初恶魂、天境 · 女武神女王</dd>
+              <dt>现服下游</dt><dd>下界飞行核心</dd>
+              <dt>说明</dt><dd>收齐标出的战利品，研究一次母样，以后可复制。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:44.715447%;--y:9.502924%"
+                    data-node="scheelite-salt" aria-label="白钨矿钨酸盐" aria-describedby="node-scheelite-salt-hint">
+              <img src="../icons/kubejs--scheelite_tungstate.png" alt="" draggable="false" data-game-item="kubejs:scheelite_tungstate">
+              <span class="node-caption" aria-hidden="true">白钨矿钨酸盐</span>
+            </button>
+            <div class="quest-preview" id="node-scheelite-salt-hint" role="tooltip" hidden>
+              <p class="preview-title">白钨矿钨酸盐</p>
+              <dl>
+              <dt>现服前置</dt><dd>白钨矿</dd>
+              <dt>现服下游</dt><dd>钨锭</dd>
+              <dt>说明</dt><dd>白钨矿研磨、洗选后，用碱性熔剂浸取钨酸盐。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:44.715447%;--y:22.076023%"
+                    data-node="wolframite-salt" aria-label="黑钨矿钨酸盐" aria-describedby="node-wolframite-salt-hint">
+              <img src="../icons/kubejs--wolframite_tungstate.png" alt="" draggable="false" data-game-item="kubejs:wolframite_tungstate">
+              <span class="node-caption" aria-hidden="true">黑钨矿钨酸盐</span>
+            </button>
+            <div class="quest-preview" id="node-wolframite-salt-hint" role="tooltip" hidden>
+              <p class="preview-title">黑钨矿钨酸盐</p>
+              <dl>
+              <dt>现服前置</dt><dd>黑钨矿</dd>
+              <dt>现服下游</dt><dd>钨锭</dd>
+              <dt>说明</dt><dd>黑钨矿走高温富集，回收钨酸盐与含铁副产。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:53.821138%;--y:15.789474%"
+                    data-node="tungsten-ingot" aria-label="钨锭" aria-describedby="node-tungsten-ingot-hint">
+              <img src="../icons/kubejs--tungsten_ingot.png" alt="" draggable="false" data-game-item="kubejs:tungsten_ingot">
+              <span class="node-caption" aria-hidden="true">钨锭</span>
+            </button>
+            <div class="quest-preview" id="node-tungsten-ingot-hint" role="tooltip" hidden>
+              <p class="preview-title">钨锭</p>
+              <dl>
+              <dt>可选炉料</dt><dd>白钨矿钨酸盐或黑钨矿钨酸盐</dd>
+              <dt>规划解锁</dt><dd>冥火构件</dd>
+              <dt>说明</dt><dd>两种钨酸盐分别按炉料规格炼出钨，供耐热部件及下一章工具。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:89.430894%;--y:44.152047%"
+                    data-node="steam" aria-label="蒸汽喷口" aria-describedby="node-steam-hint">
+              <img src="../icons/aeronautics--steam_vent.png" alt="" draggable="false" data-game-item="aeronautics:steam_vent">
+              <span class="node-caption" aria-hidden="true">蒸汽喷口</span>
+            </button>
+            <div class="quest-preview" id="node-steam-hint" role="tooltip" hidden>
+              <p class="preview-title">蒸汽喷口</p>
+              <dl>
+                <dt>现服前置</dt><dd>下界飞行核心</dd>
+                <dt>解锁</dt><dd>在精炼冶金章制造。装到可持续供汽的锅炉，给气囊充汽，开启蒸汽飞行。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:88.943089%;--y:56.578947%"
+                    data-node="mill-building" aria-label="多方块磨坊" aria-describedby="node-mill-building-hint">
+              <img src="../icons/create--crushing_wheel.png" alt="" draggable="false" data-game-item="create:crushing_wheel">
+              <span class="node-caption" aria-hidden="true">多方块磨坊</span>
+            </button>
+            <div class="quest-preview" id="node-mill-building-hint" role="tooltip" hidden>
+              <p class="preview-title">多方块磨坊</p>
+              <dl>
+                <dt>规划前置</dt><dd>冥火构件</dd>
+                <dt>作用</dt><dd>用 5×5×3 双盘磨坊精磨碎矿。首批冥火构件仍可用粉碎轮路线取得。</dd>
+                <dt>准入</dt><dd>以两片砂轮中较低的材料档为准。图标借用游戏内粉碎轮。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:10.975610%;--y:76.023392%"
+                    data-node="oil-intake" aria-label="原油取料泵" aria-describedby="node-oil-intake-hint">
+              <img src="../icons/create--mechanical_pump.png" alt="" draggable="false" data-game-item="create:mechanical_pump">
+              <span class="node-caption" aria-hidden="true">原油取料泵</span>
+            </button>
+            <div class="quest-preview" id="node-oil-intake-hint" role="tooltip" hidden>
+              <p class="preview-title">原油取料泵</p>
+              <dl>
+                <dt>规划前置</dt><dd>冥火构件与蒸汽引擎</dd>
+                <dt>说明</dt><dd>先在天然油池用已有机械动力泵送原油。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:22.764228%;--y:76.023392%"
+                    data-node="crude-oil" aria-label="原油" aria-describedby="node-crude-oil-hint">
+              <img src="../icons/pneumaticcraft--oil.png" alt="" draggable="false" data-game-item="pneumaticcraft:oil">
+              <span class="node-caption" aria-hidden="true">原油</span>
+            </button>
+            <div class="quest-preview" id="node-crude-oil-hint" role="tooltip" hidden>
+              <p class="preview-title">原油</p>
+              <dl>
+                <dt>规划前置</dt><dd>天然油池供油</dd>
+                <dt>说明</dt><dd>把首批原油先存到储罐，等分馏塔接好再送油。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:34.878049%;--y:76.023392%"
+                    data-node="oil-refinery" aria-label="气动分馏塔" aria-describedby="node-oil-refinery-hint">
+              <img src="../icons/pneumaticcraft--refinery.png" alt="" draggable="false" data-game-item="pneumaticcraft:refinery">
+              <span class="node-caption" aria-hidden="true">气动分馏塔</span>
+            </button>
+            <div class="quest-preview" id="node-oil-refinery-hint" role="tooltip" hidden>
+              <p class="preview-title">气动分馏塔</p>
+              <dl>
+                <dt>规划前置</dt><dd>冥火构件、压缩铁制件和原油</dd>
+                <dt>说明</dt><dd>气动分馏基础工位可先用压缩铁件搭建。给塔供热，分出柴油和液化石油气。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:47.154472%;--y:76.023392%"
+                    data-node="diesel-fuel" aria-label="柴油" aria-describedby="node-diesel-fuel-hint">
+              <img src="../icons/createdieselgenerators--diesel_bucket.png" alt="" draggable="false" data-game-item="createdieselgenerators:diesel_bucket">
+              <span class="node-caption" aria-hidden="true">柴油</span>
+            </button>
+            <div class="quest-preview" id="node-diesel-fuel-hint" role="tooltip" hidden>
+              <p class="preview-title">柴油</p>
+              <dl>
+                <dt>规划前置</dt><dd>原油分馏</dd>
+                <dt>说明</dt><dd>分罐储存。先做出并稳定泵送第一批柴油，再启用内燃机。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:34.878049%;--y:91.520468%"
+                    data-node="plastic-plant" aria-label="热气动加工厂" aria-describedby="node-plastic-plant-hint">
+              <img src="../icons/pneumaticcraft--thermopneumatic_processing_plant.png" alt="" draggable="false" data-game-item="pneumaticcraft:thermopneumatic_processing_plant">
+              <span class="node-caption" aria-hidden="true">热气动加工厂</span>
+            </button>
+            <div class="quest-preview" id="node-plastic-plant-hint" role="tooltip" hidden>
+              <p class="preview-title">热气动加工厂</p>
+              <dl>
+                <dt>规划前置</dt><dd>分馏得到的液化石油气</dd>
+                <dt>说明</dt><dd>通入液化气并提供工艺需要的热和气压，把液化气转成液体塑料。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:47.235772%;--y:91.520468%"
+                    data-node="plastic" aria-label="成品塑料" aria-describedby="node-plastic-hint">
+              <img src="../icons/pneumaticcraft--plastic.png" alt="" draggable="false" data-game-item="pneumaticcraft:plastic">
+              <span class="node-caption" aria-hidden="true">成品塑料</span>
+            </button>
+            <div class="quest-preview" id="node-plastic-hint" role="tooltip" hidden>
+              <p class="preview-title">成品塑料</p>
+              <dl>
+                <dt>规划前置</dt><dd>液体塑料冷却</dd>
+                <dt>说明</dt><dd>把加工出来的液态塑料冷却。成品供气动电路板。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:59.512195%;--y:91.520468%"
+                    data-node="uncased-pcb" aria-label="未组装电路板" aria-describedby="node-uncased-pcb-hint">
+              <img src="../icons/pneumaticcraft--unassembled_pcb.png" alt="" draggable="false" data-game-item="pneumaticcraft:unassembled_pcb">
+              <span class="node-caption" aria-hidden="true">未组装电路板</span>
+            </button>
+            <div class="quest-preview" id="node-uncased-pcb-hint" role="tooltip" hidden>
+              <p class="preview-title">未组装电路板</p>
+              <dl>
+                <dt>规划前置</dt><dd>塑料和基础电气料</dd>
+                <dt>说明</dt><dd>先做空白板，经过紫外曝光和蚀刻，拿到未组装电路板。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:73.170732%;--y:91.520468%"
+                    data-node="finished-pcb" aria-label="成品电路板" aria-describedby="node-finished-pcb-hint">
+              <img src="../icons/pneumaticcraft--printed_circuit_board.png" alt="" draggable="false" data-game-item="pneumaticcraft:printed_circuit_board">
+              <span class="node-caption" aria-hidden="true">成品电路板</span>
+            </button>
+            <div class="quest-preview" id="node-finished-pcb-hint" role="tooltip" hidden>
+              <p class="preview-title">成品电路板</p>
+              <dl>
+                <dt>规划前置</dt><dd>未组装电路板与电子元件</dd>
+                <dt>说明</dt><dd>完成装配后，供正式抽油井和后续化工设备使用。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:87.154472%;--y:91.520468%"
+                    data-node="oil-pumpjack" aria-label="正式抽油井" aria-describedby="node-oil-pumpjack-hint">
+              <img src="../icons/createdieselgenerators--pumpjack_hole.png" alt="" draggable="false" data-game-item="createdieselgenerators:pumpjack_hole">
+              <span class="node-caption" aria-hidden="true">正式抽油井</span>
+            </button>
+            <div class="quest-preview" id="node-oil-pumpjack-hint" role="tooltip" hidden>
+              <p class="preview-title">正式抽油井</p>
+              <dl>
+                <dt>规划前置</dt><dd>成品电路板</dd>
+                <dt>说明</dt><dd>有成品板后才能扩建抽油井。首批柴油和塑料可以先由天然油池供给。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:66.910569%;--y:76.023392%"
+                    data-node="combustion-engine" aria-label="初级柴油内燃机" aria-describedby="node-combustion-engine-hint">
+              <img src="../icons/createdieselgenerators--diesel_engine.png" alt="" draggable="false" data-game-item="createdieselgenerators:diesel_engine">
+              <span class="node-caption" aria-hidden="true">初级柴油内燃机</span>
+            </button>
+            <div class="quest-preview" id="node-combustion-engine-hint" role="tooltip" hidden>
+              <p class="preview-title">初级柴油内燃机</p>
+              <dl>
+                <dt>规划前置</dt><dd>冥火构件和柴油</dd>
+                <dt>同期应力目标</dt><dd>&lt;1×（第 2 档锅炉=1×）</dd>
+                <dt>说明</dt><dd>加工出柴油并接好油路后启动。应力先低于同章锅炉，炼油与供料由已能建造的蒸汽设备先带起来。</dd>
+              </dl>
+            </div>
+            </div>
+          </div>
+          <p class="graph-note">连线包含独立的制作条件和可选加工路线。每个节点的完整说明可悬停查看。</p>
+          <p class="graph-note"><strong>Next 深海主线。</strong>冥火构件 → 镍钢耐压内衬 → 潜艇压载、密封供氧与水下推进 → <a href="#deep-seas">深海远征 · 舱内采样</a> → 下界飞行核心。</p>
+          <div class="aux-strip" aria-label="本章辅助矿物">
+            <a class="aux-ore" href="../metallurgy.html#ore-cobalt"><img src="../icons/modernfoundry--raw_cobalt.png" data-game-item="modernfoundry:raw_cobalt" alt=""><span><strong>钴矿 → 钴锭</strong><small>下界 · 钴矿断裂带。钴锭计划作为冥火构件的耐热辅料。</small></span></a>
+            <a class="aux-ore" href="../metallurgy.html#ore-ancient_debris"><img src="../icons/minecraft--netherite_scrap.png" data-game-item="minecraft:netherite_scrap" alt=""><span><strong>远古残骸 → 下界合金碎片</strong><small>下界 · 远古残骸矿带。下界合金碎片用于下界飞行核心。</small></span></a>
+          </div>
+        </section>
+      </details>
+      <details class="stage-foldout stage-reference-foldout">
+        <summary>查询任务、材料与数值</summary>
+        <div class="stage-reference-body" id="stage-reference">
+          <div class="stage-table-wrap quest-board" tabindex="0" role="region" aria-label="精炼冶金生产与制约">
+            <table class="stage-table">
+              <caption class="sr-only">精炼冶金生产与制约</caption>
+              <thead><tr><th scope="col">任务节点</th><th scope="col">要生产</th><th scope="col">制约条件</th></tr></thead>
+              <tbody>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-1-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span>
+                  <span>冶炼与切削</span>
+                </button>
+                <div class="quest-preview" id="milestone-1-preview" role="tooltip" hidden>
+                  <p class="preview-title">冶炼与切削</p>
+                  <dl><dt>要生产</dt><dd>本章新冶炼能力、切削工具</dd><dt>制约</dt><dd>陀螺飞行芯片 → 镍钢高炉升级件</dd><dt>说明</dt><dd>用蒸汽工坊的镍钢制先遣切削工具，再下界采白钨和黑钨。冶金提升开放最高收率。</dd></dl>
+                </div>
+              </th>
+              <td>本章新冶炼能力、切削工具</td>
+              <td>陀螺飞行芯片 → 镍钢高炉升级件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-2-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--raw_scheelite.png" alt="" draggable="false" data-game-item="kubejs:raw_scheelite"></span>
+                  <span>新矿物</span>
+                </button>
+                <div class="quest-preview" id="milestone-2-preview" role="tooltip" hidden>
+                  <p class="preview-title">新矿物</p>
+                  <dl><dt>要生产</dt><dd>白钨矿、黑钨矿</dd><dt>制约</dt><dd>达到本章挖掘等级的镐或钻头</dd><dt>说明</dt><dd>到下界白钨矿裂隙开采，富集后炼出钨，供热工件和下一章刀头。 在下界白钨矿裂隙采集伴生黑钨矿，精炼回收钨和铁副产。</dd></dl>
+                </div>
+              </th>
+              <td>白钨矿、黑钨矿</td>
+              <td>达到本章挖掘等级的镐或钻头</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-3-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--infernal_mechanism.png" alt="" draggable="false" data-game-item="kubejs:infernal_mechanism"></span>
+                  <span>初级产物</span>
+                </button>
+                <div class="quest-preview" id="milestone-3-preview" role="tooltip" hidden>
+                  <p class="preview-title">初级产物</p>
+                  <dl><dt>要生产</dt><dd>冥火构件</dd><dt>制约</dt><dd>本章冶炼、已有部件</dd><dt>说明</dt><dd>冥火构件为本章初级门槛。以本章钨材与上章镍钢配合现有部件做首批耐热件，再扩建第二档矿场。</dd></dl>
+                </div>
+              </th>
+              <td>冥火构件</td>
+              <td>本章冶炼、已有部件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-4-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span>
+                  <span>动力升级</span>
+                </button>
+                <div class="quest-preview" id="milestone-4-preview" role="tooltip" hidden>
+                  <p class="preview-title">动力升级</p>
+                  <dl><dt>要生产</dt><dd>第 2 档锅炉与烈焰人燃烧室、第 2 档多方块矿场</dd><dt>制约</dt><dd>冥火构件</dd><dt>说明</dt><dd>锅炉和烈焰人燃烧室各升一档。矿物回收保持精炼冶金解锁的最高收率。</dd></dl>
+                </div>
+              </th>
+              <td>第 2 档锅炉与烈焰人燃烧室、第 2 档多方块矿场</td>
+              <td>冥火构件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-5-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/twilightforest--phantom_helmet.png" alt="" draggable="false" data-game-item="twilightforest:phantom_helmet"></span>
+                  <span>远征门槛</span>
+                </button>
+                <div class="quest-preview" id="milestone-5-preview" role="tooltip" hidden>
+                  <p class="preview-title">远征门槛</p>
+                  <dl><dt>要生产</dt><dd>幽泪样本</dd><dt>制约</dt><dd>幻影骑士、暮初恶魂、女武神女王</dd><dt>说明</dt><dd>收齐战利品制母样，量产可复制。</dd></dl>
+                </div>
+              </th>
+              <td>幽泪样本</td>
+              <td>幻影骑士、暮初恶魂、女武神女王</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#deep-seas">深海远征 · 舱内采样</a></th>
+              <td>灯藻种子、盐根种子与首次采样记录</td>
+              <td>冥火构件、镍钢耐压内衬。完成潜艇的压载、供氧与推进，从干燥密闭舱内采样。</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-6-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--nether_flight_core.png" alt="" draggable="false" data-game-item="kubejs:nether_flight_core"></span>
+                  <span>高级芯片</span>
+                </button>
+                <div class="quest-preview" id="milestone-6-preview" role="tooltip" hidden>
+                  <p class="preview-title">高级芯片</p>
+                  <dl><dt>要生产</dt><dd>下界飞行核心</dd><dt>制约</dt><dd>冥火构件、幽泪样本、下界热工材料，完成「深海远征 · 舱内采样」</dd><dt>说明</dt><dd>用两种种子校准后压制。机械手保留种子，下界飞行核心开启深层矿业。</dd></dl>
+                </div>
+              </th>
+              <td>下界飞行核心</td>
+              <td>冥火构件、幽泪样本、下界热工材料。完成舱内采样，用灯藻种子和盐根种子校准。</td>
+            </tr>
+            <tr>
+              <th scope="row">蒸汽升力</th>
+              <td>蒸汽喷口</td>
+              <td>下界飞行核心</td>
+            </tr>
+            <tr>
+              <th scope="row">精磨设备</th>
+              <td>多方块磨坊（规划）</td>
+              <td>冥火构件。接已经粗碎的矿。两片砂轮取最低等级。</td>
+            </tr>
+            <tr>
+              <th scope="row">内燃机</th>
+              <td>初级柴油内燃机 · 应力 &lt;1× 同档锅炉</td>
+              <td>冥火构件、柴油。加工出柴油并接好油路后启动。应力先低于同章锅炉，炼油与供料由已能建造的蒸汽设备先带起来。</td>
+            </tr>
+            <tr>
+              <th scope="row">燃料化工</th>
+              <td>原油分馏、柴油、成品塑料与成品电路板</td>
+              <td>冥火构件开启工位。先用蒸汽动力取天然原油，再分馏制柴油。电路板完成后扩建正式抽油井。</td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        <section class="chapter-note process-rules" aria-label="采掘与冶炼设计">
+          <p><strong>挖掘等级。</strong>规划中，Create 动力钻头的合成消耗对应等级的钻头部件，成品保留该部件的挖掘等级。镐、动力钻头与 CreateMine 共用矿物挖掘门槛。动力和转速影响效率。</p>
+          <p><strong>本章冶炼设计。</strong>陀螺飞行芯片和上一章镍钢开启热风高炉与镍钢外圈。白钨矿和黑钨矿用对应炉料。高炉按控制器额定档、整圈最弱材料档、当前热风允许档中的最低值运行，还须达到配方的最小炉腔。</p>
+        </section>
+        <p class="chapter-note power-benchmark">应力按一套成型动力组在相同转速、稳定供料时可持续对外提供的 SU 比较。表中为设计目标。</p>
+        </div>
+      </details>
+    </main>
+  </div>
+</body>
+</html>

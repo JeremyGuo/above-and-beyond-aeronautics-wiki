@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>幽邃深渊 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="world-atlas">
+  <a class="world-skip" href="#world-content">跳到正文</a>
+  <div class="world-shell">
+    <aside class="world-rail">
+      <div class="world-rail-inner">
+        <a class="world-brand" href="../index.html"><img src="../icons/ftbquests--book.png" alt="" width="24" height="24" data-game-item="ftbquests:book"><span>Above and Beyond Aeronautics</span></a>
+        <nav class="world-primary" aria-label="任务书导航">
+          <a href="../index.html">任务书</a>
+          <a href="index.html">世界图鉴</a>
+          <a href="../metallurgy.html">矿物处理与熔炼</a>
+        </nav>
+        <nav class="world-toc" aria-label="本页目录">
+          <a href="#access">到达方式</a>
+          <a href="#minerals">矿物分布</a>
+          <a href="#bosses">首领</a>
+          <a href="#story">故事与远征</a>
+          <a href="#sources">资料来源</a>
+        </nav>
+      </div>
+    </aside>
+    <main class="world-content" id="world-content" tabindex="-1">
+      <header class="world-hero">
+        <div class="world-hero-copy">
+          <div class="world-title">
+            <span class="world-icon" data-world="undergarden" aria-hidden="true"><img src="../icons/undergarden--utherium_crystal.png" data-game-item="undergarden:utherium_crystal" alt="" width="48" height="48"></span>
+            <div><p class="world-kind">探索世界</p><h1>幽邃深渊</h1></div>
+          </div>
+          <p class="world-intro">幽邃深渊是由渊邃石洞穴、地下海、寒地和废弃设施组成的地下维度。黄铜轻航阶段要到这里取回遗忘守卫遗芯和扼塞锭，两项材料都用于二级遗芯样本。</p>
+        </div>
+        <aside class="world-facts" aria-label="维度速览">
+          <dl>
+            <div><dt>维度 ID</dt><dd><code>undergarden:undergarden</code></dd></div>
+            <div><dt>矿床</dt><dd><a href="#minerals">12 条记录</a></dd></div>
+            <div><dt>首领</dt><dd><a href="#bosses">1 项</a></dd></div>
+          </dl>
+        </aside>
+      </header>
+      <section class="world-section" aria-labelledby="access">
+        <h2 id="access">到达方式</h2>
+        <ul class="world-text-list">
+          <li>在主世界用石砖或深板岩砖搭成下界门形框架。</li>
+          <li>用四铜锭、四块石头类材料和一颗末影珍珠制作深园催化石，拿它右击门框内侧底面。</li>
+          <li>进门后记录深渊侧门的位置，返回时穿过激活的门回到主世界。</li>
+        </ul>
+        <nav class="world-chapters" aria-label="相关工业章节">
+          <span>相关章节</span>
+          <a href="../stages/2.html">黄铜轻航</a>
+        </nav>
+      </section>
+      <section class="world-section" aria-labelledby="minerals">
+        <h2 id="minerals">矿物分布</h2>
+        <ul class="world-text-list">
+          <li>扼塞矿承担主线取样。废矿井宝箱可补充部分粗矿，寒冷岩层还有霜钢。任务里用于石裔交易的王金晶在物品栏显示为贵豪水晶。</li>
+          <li>锡石是整合包加入本地矿线的原料。按矿脉勘测仪提供的坐标前往新地形，回炉获得锡，再和铜在加热的工作盆里搅拌成青铜。</li>
+        </ul>
+        <details class="world-ore-fold">
+          <summary>矿床分布表 <span>12 条记录</span></summary>
+          <div class="world-ore-scroll" tabindex="0" role="region" aria-label="矿床分布表">
+            <table class="world-ore-table">
+              <caption class="sr-only">幽邃深渊的矿床分布</caption>
+              <thead><tr><th scope="col">矿床</th><th scope="col">分布区域</th><th scope="col">矿层高度</th><th scope="col">矿物与产出</th></tr></thead>
+              <tbody>
+              <tr><th scope="row">扼塞矿脉</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 90%。</td><td>固定矿芯基准 Y 24。</td><td>地形裁切前共 1,517 块矿石。扼塞 898 块（约 59.2%）、铁 223 块（约 14.7%）、煤 329 块（约 21.7%）、锡石 67 块（约 4.4%）。矿机登记产物为粗扼塞、铁粒、煤炭、粗锡石。</td></tr>
+              <tr><th scope="row">贵豪矿脉</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 65.7%。</td><td>固定矿芯基准 Y 26。</td><td>地形裁切前共 995 块矿石。贵豪 592 块（约 59.5%）、扼塞 140 块（约 14.1%）、铁 215 块（约 21.6%）、御腐 48 块（约 4.8%）。矿机登记产物为贵豪水晶、粗扼塞、铁粒、御腐（utheric_cluster）。</td></tr>
+              <tr><th scope="row">御腐矿脉</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 62.1%。</td><td>固定矿芯基准 Y −33。</td><td>地形裁切前共 1,057 块矿石。御腐 662 块（约 62.6%）、扼塞 106 块（约 10%）、贵豪 246 块（约 23.3%）、钻石 43 块（约 4.1%）。矿机登记产物为御腐（utheric_cluster）、粗扼塞、贵豪水晶、钻石。</td></tr>
+              <tr><th scope="row">霜钢矿脉</th><td>实矿结构，霜冻烟梗森林、寒霜之地、霜冻之海。每 48 × 48 区块网格有一个候选，频率判定 63%。</td><td>固定矿芯基准 Y 2。</td><td>地形裁切前共 1,232 块矿石。霜钢 130 块（约 10.6%）、铁 769 块（约 62.4%）、扼塞 252 块（约 20.5%）、贵豪 44 块（约 3.6%）、御腐 37 块（约 3%）。矿机登记产物为粗霜钢、铁粒、粗扼塞、贵豪水晶、御腐（utheric_cluster）。</td></tr>
+              <tr><th scope="row">罗格多晶矿脉</th><td>实矿结构，罗格多晶林、受感染的深处、深处、泡芙蘑菇森林。每 52 × 52 区块网格有一个候选，频率判定 36%。</td><td>固定矿芯基准 Y −35。</td><td>地形裁切前共 634 块矿石。罗格多晶 75 块（约 11.8%）、御腐 559 块（约 88.2%）。矿机登记产物为罗格多晶、御腐（utheric_cluster）。</td></tr>
+              <tr><th scope="row">幽邃深渊煤矿脉</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 72.9%。</td><td>固定矿芯基准 Y 30。</td><td>地形裁切前共 1,227 块矿石。煤 826 块（约 67.3%）、扼塞 139 块（约 11.3%）、铁 262 块（约 21.4%）。矿机登记产物为煤炭、粗扼塞、铁粒。</td></tr>
+              <tr><th scope="row">幽邃深渊铁矿脉</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 72%。</td><td>固定矿芯基准 Y 20。</td><td>地形裁切前共 1,287 块矿石。铁 780 块（约 60.6%）、扼塞 173 块（约 13.4%）、煤 271 块（约 21.1%）、锡石 63 块（约 4.9%）。矿机登记产物为铁粒、粗扼塞、煤炭、粗锡石。</td></tr>
+              <tr><th scope="row">幽邃深渊金矿脉</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 49.5%。</td><td>固定矿芯基准 Y −6。</td><td>地形裁切前共 1,008 块矿石。金 599 块（约 59.4%）、铁 143 块（约 14.2%）、贵豪 221 块（约 21.9%）、扼塞 45 块（约 4.5%）。矿机登记产物为金粒、铁粒、贵豪水晶、粗扼塞。</td></tr>
+              <tr><th scope="row">幽邃深渊钻石矿体</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 34.2%。</td><td>固定矿芯基准 Y −21。</td><td>地形裁切前共 556 块矿石。钻石 100 块（约 18%）、煤 302 块（约 54.3%）、御腐 131 块（约 23.6%）、贵豪 23 块（约 4.1%）。矿机登记产物为钻石、煤炭、御腐（utheric_cluster）、贵豪水晶。</td></tr>
+              <tr><th scope="row">幽邃深渊锡石矿脉</th><td>实矿结构，幽邃深渊群系标签。每 67 × 67 区块网格有一个候选，频率判定 61.2%。</td><td>固定矿芯基准 Y 17。</td><td>地形裁切前共 1,060 块矿石。锡石 613 块（约 57.8%）、扼塞 159 块（约 15%）、铁 231 块（约 21.8%）、金 57 块（约 5.4%）。矿机登记产物为粗锡石、粗扼塞、铁粒、金粒。</td></tr>
+              <tr><th scope="row">起步零星矿包</th><td>小型实矿块，适用幽邃深渊群系标签。括号内是每区块的放置尝试率。</td><td>扼塞 Y −19 至 59（1/3）、煤 Y −10 至 66（1/3）、金 Y −32 至 34（1/6）、铁 Y −24 至 53（1/3）。所列数值为尝试的绝对 Y。</td><td>可采出粗扼塞、煤炭、金粒、铁粒。</td></tr>
+              <tr><th scope="row">专有零星矿与洞穴结晶</th><td>幽邃深渊原生小矿点与御腐洞穴生长体。霜钢与罗格多晶需匹配各自群系和围岩。</td><td>贵豪 Y 0 至 12、御腐矿 Y −64 至 32、罗格多晶 Y −64 至 0，霜钢放置上限为 Y 64。御腐生长体随洞穴地面或顶面。</td><td>贵豪水晶、御腐矿与结晶、粗霜钢、罗格多晶。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p class="world-resource-link"><a href="../metallurgy.html">矿物处理与熔炼</a></p>
+      </section>
+      <section class="world-section" aria-labelledby="bosses">
+        <h2 id="bosses">首领</h2>
+        <dl class="world-boss-list">
+          <div class="world-entry">
+            <dt>遗忆守卫</dt>
+            <dd>
+              <p>在地下墓穴交战。</p>
+              <p>守卫会击退近身目标，也能抵挡弹射物。</p>
+              <p>选有侧移空间的通道用近战输出。</p>
+              <p class="world-reward">由玩家完成击杀才会掉落遗忘守卫遗芯，同时取得整合包任务要求的原生击杀进度。</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="world-section" aria-labelledby="story">
+        <h2 id="story">故事与远征</h2>
+        <ol class="world-story">
+          <li><p>开启传送门后，按远征任务记录门的坐标和返回路线。</p><p>带照明和盾牌进洞，先找地下墓穴的入口。</p></li>
+          <li><p>标记墓穴岔路，清理通道里的普通遗忘者。</p><p>亲自击败遗忆守卫，取得相应的击杀进度和遗忘守卫遗芯。</p></li>
+          <li><p>在渊邃石中采集扼塞粗矿并熔成扼塞锭。</p><p>回工坊后，带上从暮色森林带回的米诺菇战利品，用遗芯、扼塞锭、黄铜板和电子管制取二级遗芯样本。</p><p>留一份母样复制并用于黄铜航空芯片。</p></li>
+          <li><p>货线支路可在废矿井的补给箱和寒冷岩层收集霜钢，用王金晶与石裔交易，也可制备扼塞桶。</p><p>要补充铜锡合金时，在新探索区用矿脉勘测仪寻找锡石矿脉。</p></li>
+        </ol>
+      </section>
+      <section class="world-section" aria-labelledby="sources">
+        <h2 id="sources">资料来源</h2>
+        <ul class="world-text-list">
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/the-undergarden">The Undergarden 官方入口说明</a></li>
+          <li><a href="https://modrinth.com/mod/the-undergarden/version/sY4KZ9q3">The Undergarden 0.9.6（Minecraft 1.21.1）</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

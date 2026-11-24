@@ -1,0 +1,327 @@
+.wiki-home {
+  --home-ink: var(--text, #202c37);
+  --home-muted: var(--muted, #4e5c63);
+  --home-paper: var(--background, #f4f2eb);
+  --home-panel: var(--surface, #fffdfa);
+  --home-border: var(--line, #d9d0c3);
+  --home-rail: var(--rail, #18262d);
+  --home-copper: var(--rail-accent, #f3c185);
+  color-scheme: light;
+  display: grid;
+  grid-template-columns: 13.5rem minmax(0, 1fr);
+  min-height: 100vh;
+  background: var(--home-paper);
+  color: var(--home-ink);
+}
+
+.wiki-home a:focus-visible,
+.wiki-home summary:focus-visible {
+  outline: 2px solid #8b472b;
+  outline-offset: 3px;
+}
+
+.wiki-home .home-rail a:focus-visible,
+.wiki-home .home-hero a:focus-visible {
+  outline-color: var(--home-copper);
+}
+
+.home-skip {
+  position: fixed;
+  z-index: 10;
+  top: .5rem;
+  left: .5rem;
+  transform: translateY(-180%);
+  padding: .5rem .9rem;
+  border-radius: .25rem;
+  background: var(--home-panel);
+}
+
+.home-skip:focus { transform: translateY(0); }
+
+.home-rail {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 1.8rem 1rem;
+  background: var(--home-rail);
+  color: #f8f1e4;
+}
+
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  margin-bottom: 1.35rem;
+  padding: .25rem .35rem 1.25rem;
+  border-bottom: 1px solid #51616a;
+  color: #f8f1e4;
+  font-weight: 750;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.home-brand small {
+  color: var(--home-copper);
+  font-size: .79em;
+}
+
+.home-brand-mark {
+  display: grid;
+  flex: 0 0 2.45rem;
+  width: 2.45rem;
+  height: 2.45rem;
+  place-items: center;
+  border: 1px solid #aa8258;
+  border-radius: .55rem;
+  background: #273640;
+}
+
+.home-brand-mark img,
+.home-nav img,
+.home-chapter-icon img,
+.home-feature img {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.home-nav { display: grid; gap: .3rem; }
+
+.home-nav a {
+  display: flex;
+  min-height: 2.7rem;
+  align-items: center;
+  gap: .65rem;
+  padding: .5rem .65rem;
+  border-radius: .35rem;
+  color: #e8e8df;
+  font-size: .92rem;
+  text-decoration: none;
+}
+
+.home-nav a:hover,
+.home-nav a:focus-visible {
+  background: #2a3b46;
+  color: #fff7e7;
+}
+
+.home-main {
+  width: min(100%, 88rem);
+  min-width: 0;
+  margin-inline: auto;
+  padding: clamp(1.25rem, 2.7vw, 2.65rem);
+}
+
+.home-main:focus { outline: none; }
+
+.home-hero {
+  display: flex;
+  min-height: clamp(19.5rem, 28vw, 24rem);
+  align-items: flex-end;
+  overflow: hidden;
+  border: 1px solid #273640;
+  border-radius: .9rem;
+  background-color: #243742;
+  background-image:
+    linear-gradient(94deg, #101c25f7 0%, #14212be8 21%, #1a2933a3 53%, #13212b14 82%),
+    linear-gradient(0deg, #0e1a26b3 0%, #0e1a2600 48%),
+    url("media/frontier.webp"),
+    radial-gradient(ellipse at 72% 36%, #947359, #416273 44%, #213345 85%);
+  background-position: center, center, center 48%, center;
+  background-size: cover;
+  box-shadow: 0 .35rem 1.2rem #26344522;
+  color: #fff7e9;
+}
+
+.home-hero-content {
+  width: min(100%, 37rem);
+  padding: clamp(1.5rem, 4.4vw, 4rem);
+}
+
+.home-hero h1 {
+  font-size: clamp(2.55rem, 4.3vw, 4.85rem);
+  font-weight: 830;
+  letter-spacing: -.038em;
+  line-height: 1.06;
+  text-shadow: 0 2px 14px #0f182c52;
+}
+
+.home-hero h1 span {
+  color: #f4c88f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 660;
+  letter-spacing: -.03em;
+  white-space: nowrap;
+}
+
+.home-hero p {
+  margin-top: .75rem;
+  color: #f0e7d7;
+  font-size: clamp(.92rem, 1.25vw, 1.1rem);
+}
+
+.home-primary {
+  display: inline-flex;
+  min-height: 2.7rem;
+  align-items: center;
+  margin-top: 1.35rem;
+  padding: .58rem .95rem;
+  border: 1px solid #ffe3b8;
+  border-radius: .32rem;
+  background: var(--home-copper);
+  color: #17252d;
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.home-primary:hover { background: #ffdaaa; }
+
+.home-section {
+  margin-top: clamp(1.35rem, 2.8vw, 2.3rem);
+  scroll-margin-top: 1rem;
+}
+
+.home-section h2 {
+  margin: 0 0 .75rem;
+  color: var(--home-ink);
+  font-size: clamp(1.28rem, 2vw, 1.6rem);
+  font-weight: 770;
+}
+
+.home-chapters,
+.home-features {
+  display: grid;
+  gap: .62rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-chapters { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.home-chapters li, .home-features li { min-width: 0; }
+
+.home-chapter,
+.home-feature {
+  display: flex;
+  height: 100%;
+  min-height: 5.1rem;
+  align-items: center;
+  gap: .64rem;
+  padding: .65rem;
+  overflow: hidden;
+  border: 1px solid var(--home-border);
+  border-radius: .46rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-chapter { background: var(--home-panel); }
+
+.home-chapter-icon {
+  display: grid;
+  flex: 0 0 clamp(2.55rem, 4.5vw, 3.5rem);
+  width: clamp(2.55rem, 4.5vw, 3.5rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--chapter-border, #c5c5af);
+  border-radius: .42rem;
+  background: var(--chapter-fill, #e5e6de);
+}
+
+.home-chapter-icon img {
+  width: 74%;
+  height: 74%;
+  filter: drop-shadow(0 2px 1px #19263138);
+}
+
+.home-chapter-andesite { --chapter-fill: #e3e9df; --chapter-border: #c0cdbb; }
+.home-chapter-brass { --chapter-fill: #f4e5ca; --chapter-border: #d8b984; }
+.home-chapter-steam { --chapter-fill: #dcebe9; --chapter-border: #bad0ca; }
+.home-chapter-metallurgy { --chapter-fill: #f3e3d8; --chapter-border: #dab8a2; }
+.home-chapter-mining { --chapter-fill: #e6ead9; --chapter-border: #c8cdb2; }
+.home-chapter-starlight { --chapter-fill: #ece3f2; --chapter-border: #ccbdd9; }
+.home-chapter-flagship { --chapter-fill: #dce6f0; --chapter-border: #b9c9da; }
+
+.home-chapter > span:nth-child(2), .home-feature span { flex: 1; min-width: 0; }
+.home-chapter strong, .home-feature strong { display: block; font-size: .95rem; line-height: 1.35; }
+.home-chapter small, .home-feature small { display: block; margin-top: .2rem; color: var(--home-muted); font-size: .875rem; line-height: 1.35; }
+
+.home-chapter:hover,
+.home-feature:hover {
+  border-color: #a68b73;
+  box-shadow: 0 3px 8px #412b2014;
+}
+
+.home-route-map { margin-top: .55rem; }
+
+.home-route-map summary {
+  width: fit-content;
+  padding: .42rem .18rem;
+  border-radius: .22rem;
+  color: #6e422e;
+  cursor: pointer;
+  font-size: .86rem;
+  font-weight: 650;
+}
+
+.home-route-map summary:hover { text-decoration: underline; }
+.home-route-map .quest-board { margin-top: .3rem; }
+.home-explore { margin-top: clamp(1.1rem, 2vw, 1.7rem); }
+.home-features { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.home-feature {
+  min-height: 5.5rem;
+  padding: .65rem .85rem;
+  background: linear-gradient(104deg, var(--feature-fill, #ede8dd), var(--home-panel) 80%);
+}
+
+.home-feature img {
+  width: clamp(2.55rem, 4.5vw, 3.6rem);
+  height: auto;
+  filter: drop-shadow(0 3px 2px #19263140);
+}
+
+.home-feature-worlds { --feature-fill: #e7e3f2; }
+.home-feature-ores { --feature-fill: #efe4d0; }
+.home-feature-seas { --feature-fill: #dae9ed; }
+
+@media (max-width: 70rem) {
+  .wiki-home { grid-template-columns: 11.75rem minmax(0, 1fr); }
+  .home-chapters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 53rem) {
+  .wiki-home { grid-template-columns: minmax(0, 1fr); }
+  .home-rail { position: relative; height: auto; padding: .65rem max(1rem, 4vw) .4rem; }
+  .home-brand { width: fit-content; margin-bottom: .3rem; padding: .15rem 0; border: 0; }
+  .home-brand-mark { width: 2rem; height: 2rem; flex-basis: 2rem; }
+  .home-brand-mark img { width: 1.32rem; height: 1.32rem; }
+  .home-nav { grid-template-columns: repeat(4, minmax(0, max-content)); gap: .2rem .45rem; }
+  .home-nav a { min-height: 2.45rem; padding-inline: .35rem; font-size: .83rem; }
+  .home-nav img { width: 1.05rem; height: 1.05rem; }
+  .home-hero { min-height: 19rem; }
+  .home-hero h1 { font-size: clamp(2.35rem, 6.9vw, 3.75rem); }
+}
+
+@media (max-width: 38rem) {
+  .home-main { padding: .9rem; }
+  .home-nav { column-gap: .18rem; }
+  .home-nav a { gap: .25rem; white-space: nowrap; }
+  .home-nav img { width: .93rem; height: .93rem; }
+  .home-chapters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-features { grid-template-columns: minmax(0, 1fr); }
+  .home-feature { min-height: 4.1rem; }
+  .home-hero {
+    background-image:
+      linear-gradient(0deg, #0e1a25fc 0%, #14212be5 31%, #18293740 86%),
+      url("media/frontier.webp"),
+      radial-gradient(ellipse at 72% 30%, #947359, #416273 49%, #213345 85%);
+    background-position: center, 58% center, center;
+  }
+}
+
+@media (max-width: 22rem) {
+  .home-chapter { gap: .38rem; padding-inline: .45rem; }
+  .home-nav img { display: none; }
+}

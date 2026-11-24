@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>主世界 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="world-atlas">
+  <a class="world-skip" href="#world-content">跳到正文</a>
+  <div class="world-shell">
+    <aside class="world-rail">
+      <div class="world-rail-inner">
+        <a class="world-brand" href="../index.html"><img src="../icons/ftbquests--book.png" alt="" width="24" height="24" data-game-item="ftbquests:book"><span>Above and Beyond Aeronautics</span></a>
+        <nav class="world-primary" aria-label="任务书导航">
+          <a href="../index.html">任务书</a>
+          <a href="index.html">世界图鉴</a>
+          <a href="../metallurgy.html">矿物处理与熔炼</a>
+        </nav>
+        <nav class="world-toc" aria-label="本页目录">
+          <a href="#access">到达方式</a>
+          <a href="#minerals">矿物分布</a>
+          <a href="#marine-life">海洋生物与水下装备</a>
+          <a href="#bosses">首领</a>
+          <a href="#story">故事与远征</a>
+          <a href="#sources">资料来源</a>
+        </nav>
+      </div>
+    </aside>
+    <main class="world-content" id="world-content" tabindex="-1">
+      <header class="world-hero">
+        <div class="world-hero-copy">
+          <div class="world-title">
+            <span class="world-icon" data-world="overworld" aria-hidden="true"><img src="../icons/create--water_wheel.png" data-game-item="create:water_wheel" alt="" width="48" height="48"></span>
+            <div><p class="world-kind">探索世界</p><h1>主世界</h1></div>
+          </div>
+          <p class="world-intro">风暴过后的大陆是船队的起点。地面工坊沿矿区向港口扩建，主世界同时承担早期金属、燃料、深海农业和跨维度补给。</p>
+        </div>
+        <aside class="world-facts" aria-label="维度速览">
+          <dl>
+            <div><dt>维度 ID</dt><dd><code>minecraft:overworld</code></dd></div>
+            <div><dt>矿床</dt><dd><a href="#minerals">21 条记录</a></dd></div>
+            <div><dt>首领</dt><dd><a href="#bosses">10 项</a></dd></div>
+          </dl>
+        </aside>
+      </header>
+      <section class="world-section" aria-labelledby="access">
+        <h2 id="access">到达方式</h2>
+        <ul class="world-text-list">
+          <li>从世界出生点开始。</li>
+          <li>主世界的地面港口可作为补给基地。</li>
+          <li>末影之眼定位原版要塞，第六章的寻门之眼在主世界定位永恒星光的原生门址。</li>
+        </ul>
+        <nav class="world-chapters" aria-label="相关工业章节">
+          <span>相关章节</span>
+          <a href="../stages/1.html">安山工坊</a>
+          <a href="../stages/2.html">黄铜轻航</a>
+          <a href="../stages/3.html">蒸汽工坊</a>
+          <a href="../stages/4.html">精炼冶金</a>
+          <a href="../stages/5.html">深层矿业</a>
+          <a href="../stages/6.html">高热动力</a>
+          <a href="../stages/7.html">高压工业</a>
+        </nav>
+      </section>
+      <section class="world-section" aria-labelledby="minerals">
+        <h2 id="minerals">矿物分布</h2>
+        <div class="world-mineral-summary">
+        <ul class="world-text-list">
+          <li>赤铁矿和孔雀石支撑初代铁、铜。闪锌矿和锡石分别供应黄铜和青铜。镍黄铁矿与铝土矿可以早采，蒸汽工坊开放其正式选冶产线。</li>
+          <li>主世界可从朱砂取得红石，并开采煤、金与多种宝石。天然油池可为第四章分馏线供原油，炼出柴油等产物。铂料到第七章进入深银热风高炉。</li>
+          <li>新生成的深海偶尔可见水柱达 200 格的海沟。沿较浅的海床台地寻找野生灯藻和盐根。</li>
+        </ul>
+          <figure class="world-reference">
+            <img src="../media/vein-surveyor.png" width="712" height="360" loading="lazy" alt="左侧是背包物品图标，右侧是三维手持模型">
+            <figcaption>矿脉勘测仪</figcaption>
+          </figure>
+        </div>
+        <details class="world-ore-fold">
+          <summary>矿床分布表 <span>21 条记录</span></summary>
+          <div class="world-ore-scroll" tabindex="0" role="region" aria-label="矿床分布表">
+            <table class="world-ore-table">
+              <caption class="sr-only">主世界的矿床分布</caption>
+              <thead><tr><th scope="col">矿床</th><th scope="col">分布区域</th><th scope="col">矿层高度</th><th scope="col">矿物与产出</th></tr></thead>
+              <tbody>
+              <tr><th scope="row">磁铁矿脉</th><td>实矿结构，山地群系标签、风袭丘陵、风袭沙砾丘陵、林荫高地、彩绘山地、裸岩尖峰、多岩山地、西伯利亚雪林。每 104 × 104 区块网格有一个候选，频率判定 100%。</td><td>矿芯约在生成时地表面下 33 格，为相对深度。</td><td>地形裁切前共 5,397 至 5,641 块矿石。磁铁矿 5,397 至 5,641 块（约 100%）。矿机登记产物为粗磁铁矿。</td></tr>
+              <tr><th scope="row">铜矿脉</th><td>实矿结构，恶地群系标签、热带草原群系标签、沙漠、沙漠峡谷、沙漠尖峰、灌丛地、砂岩峡谷、远古沙地、干旱高地、奇异恶地。每 100 × 100 区块网格有一个候选，频率判定 100%。</td><td>矿芯约在生成时地表面下 20 格，为相对深度。</td><td>地形裁切前共 4,954 至 5,256 块矿石。孔雀石 3,061 至 3,217 块（约 61.2% 至 61.8%）、辉铜矿 741 至 816 块（约 15% 至 15.5%）、黄铜矿 1,152 至 1,223 块（约 23.3%）。矿机登记产物为粗孔雀石、粗辉铜矿、粗黄铜矿。</td></tr>
+              <tr><th scope="row">石灰岩锌矿脉</th><td>实矿结构，桦木森林、原始桦木森林、繁花森林、风袭森林、石岸、白色峭壁、白色平顶山、约塞米蒂峭壁、温带高地、薰衣草森林、薰衣草峡谷、地盾、地盾空地。每 100 × 100 区块网格有一个候选，频率判定 100%。</td><td>矿芯约在生成时地表面下 25 格，为相对深度。</td><td>地形裁切前共 5,507 至 6,229 块矿石。菱锌矿 3,355 至 3,805 块（约 60.9% 至 61.1%）、闪锌矿 2,152 至 2,424 块（约 38.9% 至 39.1%）。矿机登记产物为粗菱锌矿、粗闪锌矿。</td></tr>
+              <tr><th scope="row">深层红石矿脉</th><td>实矿结构，针叶林群系标签、沼泽、红树林沼泽、兰花沼泽、冰沼、冬雪低地、白桦针叶林、西伯利亚针叶林、寒冷灌木带。每 108 × 108 区块网格有一个候选，频率判定 100%。</td><td>矿芯约在生成时地表面下 36 格，为相对深度。</td><td>地形裁切前共 5,507 至 5,823 块矿石。含朱砂红石 5,507 至 5,823 块（约 100%）。矿机登记产物为粗朱砂。</td></tr>
+              <tr><th scope="row">煤系矿脉</th><td>实矿结构，主世界群系标签。每 48 × 48 区块网格有一个候选，频率判定 88%。</td><td>矿芯约在生成时地形面（陆地表面或水底）下 22 格，为相对深度。</td><td>地形裁切前共 2,231 块矿石。煤 1,384 块（约 62%）、赤铁矿 324 块（约 14.5%）、孔雀石 523 块（约 23.4%）。矿机登记产物为煤炭、粗赤铁矿、粗孔雀石。</td></tr>
+              <tr><th scope="row">铁质矿脉</th><td>实矿结构，主世界群系标签。每 72 × 72 区块网格有一个候选，频率判定 79.2%。</td><td>矿芯约在生成时地形面（陆地表面或水底）下 38 格，为相对深度。</td><td>地形裁切前共 2,136 块矿石。赤铁矿 1,259 块（约 58.9%）、磁铁矿 314 块（约 14.7%）、黄铜矿 466 块（约 21.8%）、煤 97 块（约 4.5%）。矿机登记产物为粗赤铁矿、粗磁铁矿、粗黄铜矿、煤炭。</td></tr>
+              <tr><th scope="row">黄铜矿带</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 72.16%。</td><td>矿芯约在生成时地形面（陆地表面或水底）下 31 格，为相对深度。</td><td>地形裁切前共 1,963 块矿石。黄铜矿 1,143 块（约 58.2%）、辉铜矿 147 块（约 7.5%）、闪锌矿 151 块（约 7.7%）、孔雀石 213 块（约 10.9%）、赤铁矿 215 块（约 11%）、锡石 94 块（约 4.8%）。矿机登记产物为粗黄铜矿、粗辉铜矿、粗闪锌矿、粗孔雀石、粗赤铁矿、粗锡石。</td></tr>
+              <tr><th scope="row">闪锌矿脉</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 51.04%。</td><td>矿芯约在生成时地形面（陆地表面或水底）下 29 格，为相对深度。</td><td>地形裁切前共 1,470 块矿石。闪锌矿 926 块（约 63%）、菱锌矿 70 块（约 4.8%）、辉铜矿 80 块（约 5.4%）、赤铁矿 331 块（约 22.5%）、铝土矿 63 块（约 4.3%）。矿机登记产物为粗闪锌矿、粗菱锌矿、粗辉铜矿、粗赤铁矿、粗铝土矿。</td></tr>
+              <tr><th scope="row">青金石与红石矿脉</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 56.32%。</td><td>固定矿芯基准 Y −19。</td><td>地形裁切前共 1,309 块矿石。青金石 837 块（约 63.9%）、含朱砂红石 194 块（约 14.8%）、铁 278 块（约 21.2%）。矿机登记产物为青金石、粗朱砂、粗铁。</td></tr>
+              <tr><th scope="row">红石剪切矿脉</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 60.72%。</td><td>固定矿芯基准 Y −38。</td><td>地形裁切前共 1,892 块矿石。含朱砂红石 1,222 块（约 64.6%）、铁 238 块（约 12.6%）、青金石 432 块（约 22.8%）。矿机登记产物为粗朱砂、粗铁、青金石。</td></tr>
+              <tr><th scope="row">金矿断裂带</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 58.08%。</td><td>固定矿芯基准 Y −8。</td><td>地形裁切前共 1,362 块矿石。金 872 块（约 64%）、铁 139 块（约 10.2%）、黄铜矿 278 块（约 20.4%）、铂 73 块（约 5.4%）。矿机登记产物为粗金、粗铁、粗黄铜矿、粗铂。</td></tr>
+              <tr><th scope="row">钻石岩管</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 36.96%。</td><td>固定矿芯基准 Y −46。</td><td>地形裁切前共 590 块矿石。钻石 100 块（约 16.9%）、煤 356 块（约 60.3%）、含朱砂红石 119 块（约 20.2%）、青金石 15 块（约 2.5%）。矿机登记产物为钻石、煤炭、粗朱砂、青金石。</td></tr>
+              <tr><th scope="row">绿宝石伟晶岩矿脉</th><td>实矿结构，山地群系标签、风袭丘陵、风袭沙砾丘陵、绿宝石山峰、多岩山地、林荫高地。每 70 × 70 区块网格有一个候选，频率判定 34.32%。</td><td>矿芯约在生成时地形面（陆地表面或水底）下 29 格，为相对深度。</td><td>地形裁切前共 656 块矿石。绿宝石 85 块（约 13%）、铁 410 块（约 62.5%）、煤 133 块（约 20.3%）、铂 28 块（约 4.3%）。矿机登记产物为绿宝石、粗铁、煤炭、粗铂。</td></tr>
+              <tr><th scope="row">含铂矿脉</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 33.44%。</td><td>固定矿芯基准 Y −28。</td><td>地形裁切前共 1,013 块矿石。铂 100 块（约 9.9%）、镍黄铁矿 647 块（约 63.9%）、铁 214 块（约 21.1%）、金 52 块（约 5.1%）。矿机登记产物为粗铂、粗镍黄铁矿、粗铁、粗金。</td></tr>
+              <tr><th scope="row">锡石网脉</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 56.32%。</td><td>矿芯约在生成时地形面（陆地表面或水底）下 30 格，为相对深度。</td><td>地形裁切前共 1,521 块矿石。锡石 925 块（约 60.8%）、黄铜矿 170 块（约 11.2%）、闪锌矿 350 块（约 23%）、铁 76 块（约 5%）。矿机登记产物为粗锡石、粗黄铜矿、粗闪锌矿、粗铁。</td></tr>
+              <tr><th scope="row">镍黄铁矿脉</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 47.52%。</td><td>固定矿芯基准 Y −20。</td><td>地形裁切前共 1,139 块矿石。镍黄铁矿 735 块（约 64.5%）、铁 125 块（约 11%）、黄铜矿 232 块（约 20.4%）、铂 47 块（约 4.1%）。矿机登记产物为粗镍黄铁矿、粗铁、粗黄铜矿、粗铂。</td></tr>
+              <tr><th scope="row">铝土矿透镜体</th><td>实矿结构，主世界群系标签。每 94 × 94 区块网格有一个候选，频率判定 50.16%。</td><td>矿芯约在生成时地形面（陆地表面或水底）下 13 格，为相对深度。</td><td>地形裁切前共 1,279 块矿石。铝土矿 814 块（约 63.6%）、铁 148 块（约 11.6%）、锡石 262 块（约 20.5%）、菱锌矿 55 块（约 4.3%）。矿机登记产物为粗铝土矿、粗铁、粗锡石、粗菱锌矿。</td></tr>
+              <tr><th scope="row">菱铁矿脉</th><td>实矿结构，平原、向日葵平原、河流、沼泽。每 76 × 76 区块网格有一个候选，频率判定 61.6%。</td><td>固定矿芯基准 Y 8。模板含矿范围 Y 3 至 12。</td><td>地形裁切前共 2,091 块矿石。菱铁矿 1,671 块（约 79.9%）、赤铁矿 420 块（约 20.1%）。矿机登记产物为粗菱铁矿、粗赤铁矿。</td></tr>
+              <tr><th scope="row">起步零星矿包</th><td>小型实矿块，适用主世界群系标签。括号内是每区块的放置尝试率。</td><td>孔雀石 Y 28 至 82（1/4）、含朱砂红石 Y −56 至 −26（1/4）、菱锌矿 Y −8 至 50（1/4）、赤铁矿 Y 0 至 54（1/3）、煤 Y 0 至 160（1/3）、钻石 Y −55 至 −22（1/11）、金 Y −48 至 34（1/6）、青金石 Y −53 至 22（1/6）、铂 Y −50 至 18（1/11）。所列数值为尝试的绝对 Y。</td><td>可采出粗孔雀石、粗朱砂、粗菱锌矿、粗赤铁矿、煤炭、钻石、粗金、青金石、粗铂。</td></tr>
+              <tr><th scope="row">山地绿宝石矿包</th><td>小型实矿块，适用山地群系标签、风袭丘陵、风袭沙砾丘陵、绿宝石山峰、多岩山地、林荫高地。括号内是每区块的放置尝试率。</td><td>绿宝石 Y 25 至 178（1/10）。所列数值为尝试的绝对 Y。</td><td>可采出绿宝石。</td></tr>
+              <tr><th scope="row">深层噪声铁矿脉</th><td>主世界石体中的噪声实矿脉，凝灰岩可作为线索。当前路由在 Y −60（含）到 Y 0（不含）之间启用噪声矿脉。</td><td>铁矿类型的生成范围 Y −60 至 −8。</td><td>深层铁矿石，偶有粗铁块。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p class="world-resource-link"><a href="../metallurgy.html">矿物处理与熔炼</a></p>
+      </section>
+      <section class="world-section" aria-labelledby="marine-life">
+        <h2 id="marine-life">海洋生物与水下装备</h2>
+        <dl class="world-boss-list">
+          <div class="world-entry">
+            <dt>梭子鱼｜浅海</dt>
+            <dd>
+              <p>近岸的掠食鱼。</p>
+              <p>自然生成点距水面 4–24 格，所在水柱的海床深 8–36 格。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>大白鲨｜深海台地</dt>
+            <dd>
+              <p>在开阔深海巡游和捕猎。</p>
+              <p>自然生成点距水面 16–57 格，海床深 28–60 格。</p>
+              <p>击败后可取得鱼排。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>鮟鱇鱼｜深海海沟</dt>
+            <dd>
+              <p>在深而开阔的海沟里寻找，距水面 128–186 格，海床深 157–200 格。</p>
+              <p>鮟鱇鱼可作为食材。</p>
+              <p>到这个深度下水前，可在氧气气泡旁核对潜水耐压。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>水下矢炮｜潜艇装备</dt>
+            <dd>
+              <p>第四章用镍钢耐压内衬制作。</p>
+              <p>侧面或后方装填水压矢，后轴接至少 32 RPM 的机械动力，蓄力后用空主手右击发射。</p>
+              <p>炮口和目标之间须有连续海水与通畅射线，操作员可留在干燥舱内。</p>
+              <p>第五章可用钛板和巨蟹座巨钳加工强化水压矢，巨钳会保留。</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="world-section" aria-labelledby="bosses">
+        <h2 id="bosses">首领</h2>
+        <dl class="world-boss-list">
+          <div class="world-entry">
+            <dt>利维坦｜沉没之城</dt>
+            <dd>
+              <p>第七章主线。</p>
+              <p>沉没之城在深海类海域，用深渊祭品在深渊祭坛召出利维坦，并在水下交战。</p>
+              <p>原生潮汐利爪用于校准热泉石锭，机械手保留利爪，认证样件用于装配旗舰核心。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>巨蟹座｜海洋远征</dt>
+            <dd>
+              <p>第五章选做。</p>
+              <p>在海上平台采收灯藻叶和盐根鳞茎后，与钛板和倒刺钩一起制成不详钓钩。</p>
+              <p>在开阔水域副手持钩，主手用钓竿抛线，等鱼咬钩后收线召出巨蟹座。</p>
+              <p class="world-reward">击败后可获巨蟹座巨钳与生螃蟹。</p>
+              <p>巨钳用于反复加工强化水压矢。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>甲壳巨兽｜深海海沟</dt>
+            <dd>
+              <p>第六章选做。</p>
+              <p>携带星光调度芯片，在海床深至少 157 格的开阔海沟下潜至少 110 格，吹响不祥海螺。</p>
+              <p>持同一枚海螺在水下游离起吹点几格，并在 16 格内等待 7 秒，甲壳巨兽会带 6 只喙兽（Beakling）现身。</p>
+              <p class="world-reward">击败后可获巨型鹦鹉螺壳和生触须。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>远古守卫者｜海底神殿</dt>
+            <dd>
+              <p>战役选做。</p>
+              <p>海图断点任务要求在神殿核实入口、海面停泊点与撤退路线。</p>
+              <p class="world-reward">守卫者施加挖掘疲劳，击败后可取得湿海绵等水下材料。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>监守者｜远古城市</dt>
+            <dd>
+              <p>战役选做。</p>
+              <p>按勘察卡绕开尖啸体，在进入深暗之域前规划安静路线和退避点。</p>
+              <p class="world-reward">原生掉落为幽匿催发体。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>凋灵｜露天采场</dt>
+            <dd>
+              <p>召唤战，战役选做。</p>
+              <p>战斗卡把现场设在远离基地的露天采场。</p>
+              <p class="world-reward">击败后取得下界之星，可用于唤醒先驱者、启动炼狱祭坛或制作信标。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>远古遗魂｜诅咒金字塔</dt>
+            <dd>
+              <p>战役选做，战斗卡称为远古遗骸。</p>
+              <p>在沙漠找到金字塔。</p>
+              <p class="world-reward">原生战利品包括远古金属块、遗魂头骨和瓶中沙暴。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>先驱者｜古代工厂</dt>
+            <dd>
+              <p>战役选做。</p>
+              <p>工厂在主世界地下，给停机的先驱者下界之星可唤醒它。</p>
+              <p class="world-reward">凋灵合金块是原生掉落。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>咒翼灵骸｜冰封监牢</dt>
+            <dd>
+              <p>战役选做，战斗卡称为诅咒君王。</p>
+              <p class="world-reward">在雪原寻找监牢，原生战利品包括咒魂锭。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>斯库拉｜卫城</dt>
+            <dd>
+              <p>战役选做。</p>
+              <p>卫城在暖水海洋，勘察先记录桥头、掩体和返船路线。</p>
+              <p class="world-reward">原生战利品包括风暴精华和泪宝石。</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="world-section" aria-labelledby="story">
+        <h2 id="story">故事与远征</h2>
+        <ol class="world-story">
+          <li><p>登舰须知记载，旧世界的传送网络随风暴熄灭。</p><p>第一至三章从安山工坊起步，先用水车建立地面传动，再制黄铜精密构件和轻艇，随后用镍、铝和蒸汽设备制陀螺飞行芯片。</p></li>
+          <li><p>第四章用冥火构件和镍钢耐压内衬造潜艇。</p><p>把压载、推进和供氧装到同一艘船上，在水面以下至少 20 格、野生灯藻与盐根附近从密闭舱内空手使用采样器。</p><p>带回两种种子，机械手校准下界飞行核心时保留种子。</p></li>
+          <li><p>第五章用末地带回的钛料制作潮汐种植床。</p><p>在深海海面造固定的 3×3 甲板，用连续金属梁接到至少 50 格深的干燥种植舱，把作物亮度维持在 9 或以上。</p><p>空手验证种植床，再亲自采收两种成熟作物，给悬浮导航核心各留一份。</p></li>
+          <li><p>第六章以悬浮导航核心制寻门之眼。</p><p>持有末影龙击杀进度的玩家向星光门卫取得预言之球，激活原生门。</p><p>第七章回到深海的沉没之城，击败利维坦，用潮汐利爪校准热泉石样件，给旗舰控制核心备料。</p></li>
+          <li><p>独立战役从港口台账的失联航线开始。</p><p>先勘察海底神殿和远古城市，再追查各地的灾变遗址。</p><p>最终战报把深海、雪原、暖海和末地主岛的勘验结果交回港口。</p></li>
+        </ol>
+      </section>
+      <section class="world-section" aria-labelledby="sources">
+        <h2 id="sources">资料来源</h2>
+        <ul class="world-text-list">
+          <li><a href="../stages/4.html#deep-seas">第四章 · 深海潜艇与采样</a></li>
+          <li><a href="../stages/4.html#current-lance">第四章 · 水下矢炮</a></li>
+          <li><a href="../stages/5.html#offshore-farming">第五章 · 深海种植平台</a></li>
+          <li><a href="../stages/5.html#karkinos">第五章 · 巨蟹座远征</a></li>
+          <li><a href="../stages/6.html#shell-beast">第六章 · 甲壳巨兽远征</a></li>
+          <li><a href="../stages/7.html">第七章 · 高压工业</a></li>
+          <li><a href="https://modrinth.com/mod/create-deep-seas/version/3.4.8">Create Deep Seas 3.4.8 · 作者发行页</a></li>
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/lendercataclysm/files/8931182">灾变 3.33 · 作者发行页</a></li>
+          <li><a href="https://www.minecraft.net/en-us/article/temples-beneath-sea">Minecraft 官方 · 海底神殿</a></li>
+          <li><a href="https://github.com/hybridlabs/hybrid-aquatic/wiki/Karkinos">Hybrid Aquatic · 巨蟹座</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

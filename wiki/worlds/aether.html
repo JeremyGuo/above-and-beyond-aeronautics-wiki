@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>天境 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="world-atlas">
+  <a class="world-skip" href="#world-content">跳到正文</a>
+  <div class="world-shell">
+    <aside class="world-rail">
+      <div class="world-rail-inner">
+        <a class="world-brand" href="../index.html"><img src="../icons/ftbquests--book.png" alt="" width="24" height="24" data-game-item="ftbquests:book"><span>Above and Beyond Aeronautics</span></a>
+        <nav class="world-primary" aria-label="任务书导航">
+          <a href="../index.html">任务书</a>
+          <a href="index.html">世界图鉴</a>
+          <a href="../metallurgy.html">矿物处理与熔炼</a>
+        </nav>
+        <nav class="world-toc" aria-label="本页目录">
+          <a href="#access">到达方式</a>
+          <a href="#minerals">矿物分布</a>
+          <a href="#bosses">首领</a>
+          <a href="#story">故事与远征</a>
+          <a href="#sources">资料来源</a>
+        </nav>
+      </div>
+    </aside>
+    <main class="world-content" id="world-content" tabindex="-1">
+      <header class="world-hero">
+        <div class="world-hero-copy">
+          <div class="world-title">
+            <span class="world-icon" data-world="aether" aria-hidden="true"><img src="../icons/aether--ambrosium_shard.png" data-game-item="aether:ambrosium_shard" alt="" width="48" height="48"></span>
+            <div><p class="world-kind">探索世界</p><h1>天境</h1></div>
+          </div>
+          <p class="world-intro">圣石浮岛之间横着大片空域。岛腹藏着青铜地牢，岛面耸立白银神殿，长着金橡树的圆岛则藏着黄金地牢。Next 的远征队从蒸汽工坊起登岛，沿三处地牢分章取得炽晶、幽泪和极光样本的研究凭证。</p>
+        </div>
+        <aside class="world-facts" aria-label="维度速览">
+          <dl>
+            <div><dt>维度 ID</dt><dd><code>aether:the_aether</code></dd></div>
+            <div><dt>矿床</dt><dd><a href="#minerals">6 条记录</a></dd></div>
+            <div><dt>首领</dt><dd><a href="#bosses">3 项</a></dd></div>
+          </dl>
+        </aside>
+      </header>
+      <section class="world-section" aria-labelledby="access">
+        <h2 id="access">到达方式</h2>
+        <ul class="world-text-list">
+          <li>在主世界用荧石搭一座外框至少宽 4 格、高 5 格的竖门，可省去角块。</li>
+          <li>把水倒进门框内激活，步行穿过。</li>
+          <li>第三章可先用浇筑的下界传送门取荧石。</li>
+          <li>记下天境出口坐标，随身带降落伞和搭桥材料。</li>
+        </ul>
+        <nav class="world-chapters" aria-label="相关工业章节">
+          <span>相关章节</span>
+          <a href="../stages/3.html">蒸汽工坊</a>
+          <a href="../stages/4.html">精炼冶金</a>
+          <a href="../stages/5.html">深层矿业</a>
+        </nav>
+      </section>
+      <section class="world-section" aria-labelledby="minerals">
+        <h2 id="minerals">矿物分布</h2>
+        <ul class="world-text-list">
+          <li>神能晶、紫晶与重力晶嵌在浮岛圣石中。神能晶片可做火把，也可给神能炉供能。紫晶石可做配饰和装备，第三章至少留一份给炽晶样本。</li>
+          <li>裸露的重力晶矿会向上浮，先围住矿块。Next 保留原生重力晶矿点，也添加可测绘的重力晶矿体。用 IV 级工具收集整块原矿，在神能炉加工为神炼重力晶矿，供第五章研究。</li>
+          <li>区域铝土矿体也出现在圣石浮岛。先从实心岛壁向内开采，在蒸汽工坊把粗铝土矿磨碎、风洗并湿选为氧化铝。首批铝可用于蒸汽引擎和陀螺飞行芯片。</li>
+        </ul>
+        <details class="world-ore-fold">
+          <summary>矿床分布表 <span>6 条记录</span></summary>
+          <div class="world-ore-scroll" tabindex="0" role="region" aria-label="矿床分布表">
+            <table class="world-ore-table">
+              <caption class="sr-only">天境的矿床分布</caption>
+              <thead><tr><th scope="col">矿床</th><th scope="col">分布区域</th><th scope="col">矿层高度</th><th scope="col">矿物与产出</th></tr></thead>
+              <tbody>
+              <tr><th scope="row">神能晶矿脉</th><td>实矿结构，天境群系标签。每 47 × 47 区块网格有一个候选，频率判定 67%。</td><td>矿芯约在生成时岛面下 8 格，为相对深度。</td><td>地形裁切前共 1,045 块矿石。神能晶 671 块（约 64.2%）、紫晶 132 块（约 12.6%）、铝土矿 242 块（约 23.2%）。矿机登记产物为神能晶片、紫晶石、粗铝土矿。</td></tr>
+              <tr><th scope="row">紫晶矿脉</th><td>实矿结构，天境群系标签。每 47 × 47 区块网格有一个候选，频率判定 51.59%。</td><td>矿芯约在生成时岛面下 13 格，为相对深度。</td><td>地形裁切前共 719 块矿石。紫晶 483 块（约 67.2%）、神能晶 50 块（约 7%）、铝土矿 167 块（约 23.2%）、重力晶 19 块（约 2.6%）。矿机登记产物为紫晶石、神能晶片、粗铝土矿、重力晶矿。</td></tr>
+              <tr><th scope="row">重力晶矿体</th><td>实矿结构，天境群系标签。每 47 × 47 区块网格有一个候选，频率判定 27.47%。</td><td>矿芯约在生成时岛面下 18 格，为相对深度。</td><td>地形裁切前共 512 块矿石。重力晶 90 块（约 17.6%）、紫晶 295 块（约 57.6%）、神能晶 112 块（约 21.9%）、铝土矿 15 块（约 2.9%）。矿机登记产物为重力晶矿、紫晶石、神能晶片、粗铝土矿。</td></tr>
+              <tr><th scope="row">天境铝土矿体</th><td>实矿结构，天境群系标签。每 47 × 47 区块网格有一个候选，频率判定 30.15%。</td><td>矿芯约在生成时岛面下 9 格，为相对深度。</td><td>地形裁切前共 626 块矿石。铝土矿 369 块（约 58.9%）、神能晶 99 块（约 15.8%）、紫晶 158 块（约 25.2%）。矿机登记产物为粗铝土矿、神能晶片、紫晶石。</td></tr>
+              <tr><th scope="row">起步零星矿包</th><td>小型实矿块，适用天境群系标签。括号内是每区块的放置尝试率。</td><td>神能晶 Y 22 至 104（1/2）、紫晶 Y 18 至 80（1/3）。所列数值为尝试的绝对 Y。</td><td>可采出神能晶片、紫晶石。</td></tr>
+              <tr><th scope="row">零星重力晶矿</th><td>天境原生实矿，普通和埋藏放置每区块分别尝试 7 次、5 次，取决于实际圣石和群系。</td><td>生成顶界为距维度底 74 格，即 Y 74。埋藏放置在 Y 0 至 74 均匀取点。</td><td>重力晶矿。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p class="world-resource-link"><a href="../metallurgy.html">矿物处理与熔炼</a></p>
+      </section>
+      <section class="world-section" aria-labelledby="bosses">
+        <h2 id="bosses">首领</h2>
+        <dl class="world-boss-list">
+          <div class="world-entry">
+            <dt>滑行魔石 · 青铜地牢</dt>
+            <dd>
+              <p>用镐敲醒沉睡的魔石，沿它冲撞方向的侧面闪开。</p>
+              <p>低血量时红眼加速，留出转身空间。</p>
+              <p>Next 的战斗路线用铁镐或更高等级的镐。</p>
+              <p class="world-reward">胜利后掉落青铜钥匙和雕纹石，钥匙对应的宝箱可能开出武神长枪或创世者飞锤。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>女武神女王 · 白银地牢</dt>
+            <dd>
+              <p>在白银神殿击败普通女武神取得胜利奖牌，也就是远征任务里的胜利勋章。</p>
+              <p>让一位玩家携带至少十枚与女王交谈，开战时会扣除十枚。</p>
+              <p>留意女王瞬移。</p>
+              <p>战斗奖励是白银钥匙，藏宝箱可能开出再生之石或隐形斗篷。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>太阳之灵 · 黄金地牢</dt>
+            <dd>
+              <p>进入狱炎石地牢后继续与太阳之灵交谈，直到开战。</p>
+              <p>避开火迹和火晶，反打冰晶使它冻结，再抓住近战窗口。</p>
+              <p class="world-reward">胜利后掉落黄金钥匙和日轮祭坛，宝箱可能含有凤凰装备或生命补片。</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="world-section" aria-labelledby="story">
+        <h2 id="story">故事与远征</h2>
+        <ol class="world-story">
+          <li><p>第三章「蒸汽工坊」先找浮岛侧面的圣石入口，在青铜地牢击败滑行魔石，再采一份紫晶石。</p><p>炽晶样本还需要暮色森林九头蛇的炽血、磁铁精矿和精密构件，母样用于校准陀螺飞行芯片。</p></li>
+          <li><p>第四章「精炼冶金」沿浮岛高处寻找白银神殿。</p><p>收齐十枚胜利奖牌挑战女武神女王，带回白银钥匙或战斗记录。</p><p>幽泪样本另需暮色幻影骑士奖杯、炽热之泪、冥火构件和黑曜石。</p></li>
+          <li><p>第五章「深层矿业」在金橡树林覆盖的圆形浮岛寻找黄金地牢。</p><p>带回黄金钥匙或战斗记录，并在神能炉加工一份神炼重力晶矿。</p><p>极光样本还需要雪怪首领毛皮、冰雪女王奖杯、末影构件和珠光悬浮石。</p></li>
+          <li><p>三把钥匙各自对应同等级藏宝箱，开箱会用掉钥匙。</p><p>样本研究会归还提交的钥匙或战斗记录。</p><p>先开过箱的玩家可以凭对应的原生击败成就补领记录。</p></li>
+        </ol>
+      </section>
+      <section class="world-section" aria-labelledby="sources">
+        <h2 id="sources">资料来源</h2>
+        <ul class="world-text-list">
+          <li><a href="https://modrinth.com/mod/aether/version/K5X5qMwG">The Aether 1.5.10 · Minecraft 1.21.1 NeoForge 发布页</a></li>
+          <li><a href="https://github.com/The-Aether-Team/The-Aether/tree/1.21.1-1.5.10-neoforge">The Aether 1.5.10 NeoForge 源码</a></li>
+          <li><a href="https://aether.wiki.gg/wiki/The_Aether/The_Aether">天境官方 Wiki · 维度与传送门</a></li>
+          <li><a href="https://aether.wiki.gg/wiki/The_Aether/Slider">天境官方 Wiki · 滑行魔石</a></li>
+          <li><a href="https://aether.wiki.gg/wiki/The_Aether/Valkyrie_Queen">天境官方 Wiki · 女武神女王</a></li>
+          <li><a href="https://aether.wiki.gg/wiki/The_Aether/Sun_Spirit">天境官方 Wiki · 太阳之灵</a></li>
+          <li><a href="https://aether.wiki.gg/wiki/The_Aether/Key">天境官方 Wiki · 钥匙</a></li>
+          <li><a href="https://aether.wiki.gg/wiki/The_Aether/Altar">天境官方 Wiki · 神能炉</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ME 空间存储 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="world-atlas">
+  <a class="world-skip" href="#world-content">跳到正文</a>
+  <div class="world-shell">
+    <aside class="world-rail">
+      <div class="world-rail-inner">
+        <a class="world-brand" href="../index.html"><img src="../icons/ftbquests--book.png" alt="" width="24" height="24" data-game-item="ftbquests:book"><span>Above and Beyond Aeronautics</span></a>
+        <nav class="world-primary" aria-label="任务书导航">
+          <a href="../index.html">任务书</a>
+          <a href="index.html">世界图鉴</a>
+          <a href="../metallurgy.html">矿物处理与熔炼</a>
+        </nav>
+        <nav class="world-toc" aria-label="本页目录">
+          <a href="#access">到达方式</a>
+          <a href="#minerals">矿物分布</a>
+          <a href="#bosses">首领</a>
+          <a href="#story">故事与远征</a>
+          <a href="#sources">资料来源</a>
+        </nav>
+      </div>
+    </aside>
+    <main class="world-content" id="world-content" tabindex="-1">
+      <header class="world-hero">
+        <div class="world-hero-copy">
+          <div class="world-title">
+            <span class="world-icon" data-world="spatial-storage" aria-hidden="true"><img src="../icons/ae2--quantum_entangled_singularity.png" data-game-item="ae2:quantum_entangled_singularity" alt="" width="48" height="48"></span>
+            <div><p class="world-kind">功能维度</p><h1>ME 空间存储</h1></div>
+          </div>
+          <p class="world-intro">ME 空间存储是 Applied Energistics 2 用来保存实体空间的维度。空间输入输出操作会交换阵列内的长方体和存储元件对应的存储区，包括其中的方块与实体。</p>
+        </div>
+        <aside class="world-facts" aria-label="维度速览">
+          <dl>
+            <div><dt>维度 ID</dt><dd><code>ae2:spatial_storage</code></dd></div>
+          </dl>
+        </aside>
+      </header>
+      <section class="world-section" aria-labelledby="access">
+        <h2 id="access">到达方式</h2>
+        <ul class="world-text-list">
+          <li>把空间塔和空间输入输出端口接到同一条供电的 ME 网络。</li>
+          <li>用空间塔围定长方体，在端口输入槽放入规格合适的空间存储元件，再给端口一次红石脉冲。</li>
+          <li>范围内的玩家和其他实体也会一起转移。</li>
+          <li>要把原存储区取回，将同一枚元件放回尺寸匹配的阵列端口输入槽，再触发一次。</li>
+        </ul>
+        <nav class="world-chapters" aria-label="相关工业章节">
+          <span>相关章节</span>
+          <a href="../stages/7.html">高压工业</a>
+        </nav>
+      </section>
+      <section class="world-section" aria-labelledby="minerals">
+        <h2 id="minerals">矿物分布</h2>
+        <ul class="world-text-list">
+          <li>这个维度由矩阵框架和分配给存储元件的区块组成，自然矿床表为空。里面的矿石和机器来自交换进去的物资。</li>
+        </ul>
+        <p class="world-resource-link"><a href="../metallurgy.html">矿物处理与熔炼</a></p>
+      </section>
+      <section class="world-section" aria-labelledby="bosses">
+        <h2 id="bosses">首领</h2>
+        <p>本维度没有首领战。</p>
+      </section>
+      <section class="world-section" aria-labelledby="story">
+        <h2 id="story">故事与远征</h2>
+        <ol class="world-story">
+          <li><p>第七章高压工业的物流支线会推进到空间输入输出端口。</p><p>它的任务要求制作设备，实际搬运体积前还要接好阵列并备足电。</p></li>
+          <li><p>先用小储存区试搬。</p><p>空间塔必须位于目标区域的外壳上，每段至少两格。</p><p>最小的 3 × 3 × 3 外壳围出一格内部空间。</p><p>端口界面会显示内部尺寸、阵列效率和本次所需的能量。</p></li>
+          <li><p>首次使用后，元件会绑定一组固定的长、宽、高。</p><p>保留原元件和阵列布置。</p><p>有人随方块进入时，留一名队员在外侧回装元件并触发回程。</p></li>
+        </ol>
+      </section>
+      <section class="world-section" aria-labelledby="sources">
+        <h2 id="sources">资料来源</h2>
+        <ul class="world-text-list">
+          <li><a href="https://guide.appliedenergistics.org/1.21.1/ae2-mechanics/spatial-io/">AE2 官方指南 · 空间输入输出（1.21.1）</a></li>
+          <li><a href="https://guide.appliedenergistics.org/1.21.1/items-blocks-machines/spatial_cells/">AE2 官方指南 · 空间存储元件（1.21.1）</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
