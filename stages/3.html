@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>蒸汽工坊 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="guides.css">
+  <script src="../quests.js" defer></script>
+</head>
+<body class="stage-guide">
+  <header class="site-header">
+    <a href="../index.html"><span class="book-mark" aria-hidden="true"><img src="../icons/ftbquests--book.png" alt="" draggable="false" data-game-item="ftbquests:book"></span>Above and Beyond Aeronautics</a>
+  </header>
+  <div class="detail-page">
+    <nav class="contents" aria-label="工业章节">
+      <a class="back-link" href="../index.html">任务书</a>
+      <a href="../worlds/index.html">世界图鉴</a>
+      <ol>
+        <li><a href="1.html"><span class="quest-emblem crest-1 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--andesite_control_chip.png" alt="" draggable="false" data-game-item="kubejs:andesite_control_chip"></span><span>安山工坊</span></a></li>
+        <li><a href="2.html"><span class="quest-emblem crest-2 emblem-nav" aria-hidden="true"><img src="../icons/create--brass_ingot.png" alt="" draggable="false" data-game-item="create:brass_ingot"></span><span>黄铜轻航</span></a></li>
+        <li><a href="3.html" aria-current="page"><span class="quest-emblem crest-3 emblem-nav" aria-hidden="true"><img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine"></span><span>蒸汽工坊</span></a></li>
+        <li><a href="4.html"><span class="quest-emblem crest-4 emblem-nav" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span><span>精炼冶金</span></a></li>
+        <li><a href="5.html"><span class="quest-emblem crest-5 emblem-nav" aria-hidden="true"><img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip"></span><span>深层矿业</span></a></li>
+        <li><a href="6.html"><span class="quest-emblem crest-6 emblem-nav" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span><span>高热动力</span></a></li>
+        <li><a href="7.html"><span class="quest-emblem crest-7 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core"></span><span>高压工业</span></a></li>
+      </ol>
+    </nav>
+    <main>
+      <div class="chapter-title">
+        <span class="quest-emblem crest-3" aria-hidden="true"><img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine"></span>
+        <div><h1>蒸汽工坊</h1><p>锅炉与蒸汽动力</p></div>
+      </div>
+      <p class="stage-lead">把镍、铝接入锅炉与湿选设备。还需到暮色森林和天境取得首份炽晶样本。</p>
+      <nav class="stage-jump" aria-label="本章目录">
+        <a href="#graph-title">完整依赖图</a>
+        <a href="#stage-reference">任务与材料</a>
+      </nav>
+      <section class="stage-route" aria-labelledby="stage-route-title">
+        <h2 id="stage-route-title">本章主线</h2>
+        <ol class="stage-steps">
+          <li>
+            <img src="../icons/create--encased_fan.png" alt="" width="36" height="36" draggable="false" data-game-item="create:encased_fan">
+            <h3>搭磨洗和湿选工位</h3>
+            <p>用黄铜航空芯片做湿选组件，接上粉碎与注水风洗。</p>
+          </li>
+          <li>
+            <img src="../icons/create--steam_engine.png" alt="" width="36" height="36" draggable="false" data-game-item="create:steam_engine">
+            <h3>炼铝和镍，接通蒸汽</h3>
+            <p>铝锭压板供蒸汽引擎，镍用于炼制镍钢。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--expedition_sample_3.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:expedition_sample_3">
+            <h3>取炽晶样本</h3>
+            <p>备好九头蛇炽血、天境青铜地牢证据和紫晶石。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--gyro_flight_chip.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:gyro_flight_chip">
+            <h3>制陀螺飞行芯片</h3>
+            <p>在铝板上装陀螺仪机构和磁铁精矿，用炽晶样本校准。</p>
+          </li>
+        </ol>
+      </section>
+      <details class="stage-foldout stage-dependency-foldout">
+        <summary>查看完整依赖图</summary>
+        <section class="unlock-graph" aria-labelledby="graph-title">
+          <div class="graph-heading">
+            <h2 id="graph-title">生产与远征门槛</h2>
+            <a class="metallurgy-link" href="../metallurgy.html#chapter-3">本章熔炼产线与产率</a>
+            <p><span class="legend live"></span>现服已核对 <span class="legend plan"></span>阶段规划</p>
+          </div>
+          <div class="graph-scroll quest-board" tabindex="0" role="region" aria-label="工业生产和远征依赖图">
+            <div class="diagram" data-diagram style="--graph-height:466;">
+              <svg class="dependency-lines" viewBox="0 0 1230 466" width="1230" height="466" aria-hidden="true">
+                <defs>
+                  <marker id="arrow-live" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#99c9b7"/>
+                  </marker>
+                  <marker id="arrow-plan" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#d8a574"/>
+                  </marker>
+                </defs>
+            <path class="dependency-edge edge-plan" data-from="previous" data-to="workshop-upgrade" d="M 86.91 92.64 L 112.88 69.36" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="workshop-upgrade" data-to="smelt" d="M 147.95 68.38 L 174.39 89.57" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="smelt" data-to="cut" d="M 220.39 108.00 L 302.00 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="cut" data-to="ore1" d="M 346.84 100.78 L 433.16 72.22" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="cut" data-to="ore2" d="M 346.84 115.22 L 433.16 143.78" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="advanced" data-to="next" d="M 973.00 108.00 L 1113.15 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="boiler" d="M 760.00 131.00 L 760.00 190.00 L 373.99 190.00 L 373.99 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="burner" d="M 760.00 131.00 L 760.00 190.00 L 576.03 190.00 L 576.03 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="engine" d="M 760.00 131.00 L 760.00 190.00 L 832.15 190.00 L 832.15 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-live" data-from="hydra" data-to="sample" d="M 93.71 388.00 L 93.71 352.00 L 636.55 352.00 L 636.55 388.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="sample" data-to="advanced" d="M 659.55 411.00 L 1208.46 411.00 L 1208.46 162.00 L 950.00 162.00 L 950.00 131.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="ore1" data-to="nickel-matte" d="M 478.00 65.00 L 517.00 65.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="nickel-matte" data-to="nickel-ingot" d="M 563.00 65.00 L 595.00 65.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="nickel-ingot" data-to="nickel-steel" d="M 641.00 65.00 L 674.00 65.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="ore2" data-to="alumina" d="M 478.00 151.00 L 527.00 151.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="alumina" data-to="aluminum-ingot" d="M 573.00 151.00 L 625.00 151.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-plan" data-from="aluminum-ingot" data-to="basic" d="M 669.47 142.76 L 738.53 116.24" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-live" data-from="advanced" data-to="gyro-bearing" d="M 950.00 131.00 L 950.00 152.00 L 1170.00 152.00 L 1170.00 374.00 L 816.00 374.00 L 816.00 338.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="advanced" data-to="winch" d="M 950.00 131.00 L 950.00 152.00 L 1170.00 152.00 L 1170.00 374.00 L 956.00 374.00 L 956.00 338.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="advanced" data-to="gimbal" d="M 950.00 131.00 L 950.00 152.00 L 1170.00 152.00 L 1170.00 374.00 L 1090.00 374.00 L 1090.00 338.00" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="advanced" d="M 783.00 108.00 L 927.00 108.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-live" data-from="slider" data-to="sample" d="M 223.31 388.00 L 223.31 374.00 L 636.55 374.00 L 636.55 388.00" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-live" data-from="zanite" data-to="sample" d="M 374.38 411.00 L 613.55 411.00" marker-end="url(#arrow-live)"/>
+              </svg>
+            <button type="button" class="diagram-node node-chip" style="--x:5.673600%;--y:23.175966%"
+                    data-node="previous" aria-label="黄铜航空芯片" aria-describedby="node-previous-hint">
+              <img src="../icons/kubejs--brass_avionics_chip.png" alt="" draggable="false" data-game-item="kubejs:brass_avionics_chip">
+              
+            </button>
+            <div class="quest-preview" id="node-previous-hint" role="tooltip" hidden>
+              <p class="preview-title">黄铜航空芯片</p>
+              <dl>
+              <dt>规划解锁</dt><dd>湿选组件</dd>
+              <dt>说明</dt><dd>完成「黄铜轻航」带来本章的冶炼升级。</dd>
+              </dl>
+            </div>
+
+            <button type="button" class="diagram-node node-item" style="--x:10.569106%;--y:11.587983%"
+                    data-node="workshop-upgrade" aria-label="湿选组件" aria-describedby="node-workshop-upgrade-hint">
+              <img src="../icons/kubejs--inductive_mechanism.png" alt="" draggable="false" data-game-item="kubejs:inductive_mechanism">
+              <span class="node-caption" aria-hidden="true">选矿组件</span>
+            </button>
+            <div class="quest-preview" id="node-workshop-upgrade-hint" role="tooltip" hidden>
+              <p class="preview-title">湿选组件</p>
+              <dl>
+                <dt>规划前置</dt><dd>黄铜航空芯片、上一章精密构件、感应构件与铜管</dd>
+                <dt>规划解锁</dt><dd>蒸汽工坊冶炼能力</dd>
+                <dt>产率路线</dt><dd>粉碎轮＋注水洗＋匠魂 · 10.4 铁粒当量</dd>
+                <dt>装配</dt><dd>制作时投入芯片，部件装进工位或组成炉圈。节点使用游戏中已有材料的图标。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:16.048182%;--y:23.175966%"
+                    data-node="smelt" aria-label="蒸汽工坊冶炼能力" aria-describedby="node-smelt-hint">
+              <img src="../icons/create--mechanical_press.png" alt="" draggable="false" data-game-item="create:mechanical_press">
+              
+            </button>
+            <div class="quest-preview" id="node-smelt-hint" role="tooltip" hidden>
+              <p class="preview-title">蒸汽工坊冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>湿选组件</dd>
+              <dt>规划解锁</dt><dd>本章镐与动力钻头</dd>
+              <dt>冶炼限制</dt><dd>黄铜航空芯片开启控温工作盆和湿选工位。镍黄铁矿先富集成镍锍，铝土矿先富集再精炼。首件升级材料由本章可达的工艺供给。</dd>
+              <dt>说明</dt><dd>用锡青铜与已有精密构件升级刀头。用现有风车或水轮磨洗矿料，先生产一批铝板和锅炉零件。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:26.422764%;--y:23.175966%"
+                    data-node="cut" aria-label="本章镐与动力钻头" aria-describedby="node-cut-hint">
+              <img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip">
+              
+            </button>
+            <div class="quest-preview" id="node-cut-hint" role="tooltip" hidden>
+              <p class="preview-title">本章镐与动力钻头</p>
+              <dl>
+              <dt>规划前置</dt><dd>蒸汽工坊冶炼能力</dd>
+              <dt>规划解锁</dt><dd>镍黄铁矿、铝土矿</dd>
+              <dt>说明</dt><dd>先用上一章已有材料制造合格钻头部件。Create 动力钻头在合成时消耗这个部件，成品继承它的挖掘等级。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:61.788617%;--y:23.175966%"
+                    data-node="basic" aria-label="铝板" aria-describedby="node-basic-hint">
+              <img src="../icons/kubejs--aluminum_sheet.png" alt="" draggable="false" data-game-item="kubejs:aluminum_sheet">
+              
+            </button>
+            <div class="quest-preview" id="node-basic-hint" role="tooltip" hidden>
+              <p class="preview-title">铝板</p>
+              <dl>
+              <dt>规划前置</dt><dd>铝锭</dd>
+              <dt>规划解锁</dt><dd>陀螺飞行芯片、基础锅炉、基础烈焰人燃烧室、蒸汽引擎</dd>
+              <dt>说明</dt><dd>用前章的风车或水轮磨洗铝土矿。熔出的铝锭压成铝板，给基础锅炉和本章动力件用。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:77.235773%;--y:23.175966%"
+                    data-node="advanced" aria-label="陀螺飞行芯片" aria-describedby="node-advanced-hint">
+              <img src="../icons/kubejs--gyro_flight_chip.png" alt="" draggable="false" data-game-item="kubejs:gyro_flight_chip">
+              
+            </button>
+            <div class="quest-preview" id="node-advanced-hint" role="tooltip" hidden>
+              <p class="preview-title">陀螺飞行芯片</p>
+              <dl>
+              <dt>现服前置</dt><dd>炽晶样本</dd>
+              <dt>规划前置</dt><dd>铝板</dd>
+              <dt>现服下游</dt><dd>陀螺螺旋桨轴承、绳索绞盘、万向传感器</dd>
+              <dt>规划解锁</dt><dd>精炼冶金冶炼能力</dd>
+              <dt>说明</dt><dd>陀螺飞行芯片开启精炼冶金。基础锅炉带动蒸汽引擎提供主要应力。飞艇在本章继续使用热空气。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:13.948498%"
+                    data-node="ore1" aria-label="镍黄铁矿" aria-describedby="node-ore1-hint">
+              <img src="../icons/kubejs--raw_pentlandite.png" alt="" draggable="false" data-game-item="kubejs:raw_pentlandite">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore1-hint" role="tooltip" hidden>
+              <p class="preview-title">镍黄铁矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头</dd>
+              <dt>现服下游</dt><dd>镍锍</dd>
+              <dt>说明</dt><dd>主世界或暮色森林的镍黄铁矿脉。化学富集后回收镍和副产铁。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:32.403433%"
+                    data-node="ore2" aria-label="铝土矿" aria-describedby="node-ore2-hint">
+              <img src="../icons/kubejs--raw_bauxite.png" alt="" draggable="false" data-game-item="kubejs:raw_bauxite">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore2-hint" role="tooltip" hidden>
+              <p class="preview-title">铝土矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头</dd>
+              <dt>现服下游</dt><dd>氧化铝</dd>
+              <dt>说明</dt><dd>主世界铝土矿透镜体或天境矿床。用于气动工序的铝材。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:92.370231%;--y:23.175966%"
+                    data-node="next" aria-label="精炼冶金冶炼能力" aria-describedby="node-next-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              
+            </button>
+            <div class="quest-preview" id="node-next-hint" role="tooltip" hidden>
+              <p class="preview-title">精炼冶金冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>陀螺飞行芯片</dd>
+              <dt>说明</dt><dd>开启下一章可制的切削工具。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:30.405326%;--y:53.218884%"
+                    data-node="boiler" aria-label="基础锅炉" aria-describedby="node-boiler-hint">
+              <img src="../icons/create--fluid_tank.png" alt="" draggable="false" data-game-item="create:fluid_tank">
+              
+            </button>
+            <div class="quest-preview" id="node-boiler-hint" role="tooltip" hidden>
+              <p class="preview-title">基础锅炉</p>
+              <dl>
+              <dt>规划前置</dt><dd>铝板</dd>
+              <dt>说明</dt><dd>开放第一档锅炉，先用于蒸汽引擎与机械传动。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:46.831849%;--y:53.218884%"
+                    data-node="burner" aria-label="基础烈焰人燃烧室" aria-describedby="node-burner-hint">
+              <img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner">
+              
+            </button>
+            <div class="quest-preview" id="node-burner-hint" role="tooltip" hidden>
+              <p class="preview-title">基础烈焰人燃烧室</p>
+              <dl>
+              <dt>规划前置</dt><dd>铝板</dd>
+              <dt>说明</dt><dd>给基础锅炉供热。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:67.654626%;--y:53.218884%"
+                    data-node="engine" aria-label="蒸汽引擎" aria-describedby="node-engine-hint">
+              <img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine">
+              
+            </button>
+            <div class="quest-preview" id="node-engine-hint" role="tooltip" hidden>
+              <p class="preview-title">蒸汽引擎</p>
+              <dl>
+              <dt>规划前置</dt><dd>铝板</dd>
+              <dt>说明</dt><dd>锅炉蒸汽带动主要应力。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:7.618834%;--y:88.197425%"
+                    data-node="hydra" aria-label="暮色森林 · 九头蛇" aria-describedby="node-hydra-hint">
+              <img src="../icons/twilightforest--hydra_trophy.png" alt="" draggable="false" data-game-item="twilightforest:hydra_trophy">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-hydra-hint" role="tooltip" hidden>
+              <p class="preview-title">暮色森林 · 九头蛇</p>
+              <dl>
+              <dt>现服下游</dt><dd>炽晶样本</dd>
+              <dt>说明</dt><dd>火焰沼泽带回炽血。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:18.155519%;--y:88.197425%"
+                    data-node="slider" aria-label="天境 · 滑行魔石" aria-describedby="node-slider-hint">
+              <img src="../icons/aether--bronze_dungeon_key.png" alt="" draggable="false" data-game-item="aether:bronze_dungeon_key">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-slider-hint" role="tooltip" hidden>
+              <p class="preview-title">天境 · 滑行魔石</p>
+              <dl>
+              <dt>现服下游</dt><dd>炽晶样本</dd>
+              <dt>说明</dt><dd>从青铜地牢取回青铜钥匙，登记母样后可用于开箱。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:28.567220%;--y:88.197425%"
+                    data-node="zanite" aria-label="天境 · 开采紫晶矿" aria-describedby="node-zanite-hint">
+              <img src="../icons/aether--zanite_gemstone.png" alt="" draggable="false" data-game-item="aether:zanite_gemstone">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-zanite-hint" role="tooltip" hidden>
+              <p class="preview-title">天境 · 开采紫晶矿</p>
+              <dl>
+              <dt>现服下游</dt><dd>炽晶样本</dd>
+              <dt>说明</dt><dd>带回紫晶石，与磁铁精矿一同送往炽晶样本研究。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:51.751838%;--y:88.197425%"
+                    data-node="sample" aria-label="炽晶样本" aria-describedby="node-sample-hint">
+              <img src="../icons/kubejs--expedition_sample_3.png" alt="" draggable="false" data-game-item="kubejs:expedition_sample_3">
+              
+            </button>
+            <div class="quest-preview" id="node-sample-hint" role="tooltip" hidden>
+              <p class="preview-title">炽晶样本</p>
+              <dl>
+              <dt>辅矿</dt><dd>紫晶石是炽晶样本的现场材料。</dd>
+              <dt>现服前置</dt><dd>暮色森林 · 九头蛇、天境 · 滑行魔石、天境 · 开采紫晶矿</dd>
+              <dt>现服下游</dt><dd>陀螺飞行芯片</dd>
+              <dt>说明</dt><dd>收齐标出的战利品，研究一次母样，以后可复制。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:43.902439%;--y:13.948498%"
+                    data-node="nickel-matte" aria-label="镍锍" aria-describedby="node-nickel-matte-hint">
+              <img src="../icons/kubejs--nickel_matte.png" alt="" draggable="false" data-game-item="kubejs:nickel_matte">
+              <span class="node-caption" aria-hidden="true">镍锍</span>
+            </button>
+            <div class="quest-preview" id="node-nickel-matte-hint" role="tooltip" hidden>
+              <p class="preview-title">镍锍</p>
+              <dl>
+              <dt>现服前置</dt><dd>镍黄铁矿</dd>
+              <dt>现服下游</dt><dd>镍锭</dd>
+              <dt>说明</dt><dd>镍黄铁矿先研磨、水洗，再加捕收剂富集。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:50.243902%;--y:13.948498%"
+                    data-node="nickel-ingot" aria-label="镍锭" aria-describedby="node-nickel-ingot-hint">
+              <img src="../icons/kubejs--nickel_ingot.png" alt="" draggable="false" data-game-item="kubejs:nickel_ingot">
+              <span class="node-caption" aria-hidden="true">镍锭</span>
+            </button>
+            <div class="quest-preview" id="node-nickel-ingot-hint" role="tooltip" hidden>
+              <p class="preview-title">镍锭</p>
+              <dl>
+              <dt>现服前置</dt><dd>镍锍</dd>
+              <dt>现服下游</dt><dd>镍钢</dd>
+              <dt>说明</dt><dd>用镍锍低收率试炼首批镍。进阶路线可提高回收。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:56.666667%;--y:13.948498%"
+                    data-node="nickel-steel" aria-label="镍钢" aria-describedby="node-nickel-steel-hint">
+              <img src="../icons/kubejs--nickel_steel_ingot.png" alt="" draggable="false" data-game-item="kubejs:nickel_steel_ingot">
+              <span class="node-caption" aria-hidden="true">镍钢</span>
+            </button>
+            <div class="quest-preview" id="node-nickel-steel-hint" role="tooltip" hidden>
+              <p class="preview-title">镍钢</p>
+              <dl>
+              <dt>现服前置</dt><dd>镍锭</dd>
+              <dt>说明</dt><dd>将镍和钢制成镍钢，留给精炼冶金的高炉外圈与首件切削工具。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:44.715447%;--y:32.403433%"
+                    data-node="alumina" aria-label="氧化铝" aria-describedby="node-alumina-hint">
+              <img src="../icons/kubejs--alumina.png" alt="" draggable="false" data-game-item="kubejs:alumina">
+              <span class="node-caption" aria-hidden="true">氧化铝</span>
+            </button>
+            <div class="quest-preview" id="node-alumina-hint" role="tooltip" hidden>
+              <p class="preview-title">氧化铝</p>
+              <dl>
+              <dt>现服前置</dt><dd>铝土矿</dd>
+              <dt>现服下游</dt><dd>铝锭</dd>
+              <dt>说明</dt><dd>铝土矿磨洗后用试剂富集为氧化铝。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:52.682927%;--y:32.403433%"
+                    data-node="aluminum-ingot" aria-label="铝锭" aria-describedby="node-aluminum-ingot-hint">
+              <img src="../icons/kubejs--aluminum_ingot.png" alt="" draggable="false" data-game-item="kubejs:aluminum_ingot">
+              <span class="node-caption" aria-hidden="true">铝锭</span>
+            </button>
+            <div class="quest-preview" id="node-aluminum-ingot-hint" role="tooltip" hidden>
+              <p class="preview-title">铝锭</p>
+              <dl>
+              <dt>现服前置</dt><dd>氧化铝</dd>
+              <dt>规划解锁</dt><dd>铝板</dd>
+              <dt>说明</dt><dd>铝锭用动力冲压机压成铝板。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:66.341463%;--y:67.596567%"
+                    data-node="gyro-bearing" aria-label="陀螺螺旋桨轴承" aria-describedby="node-gyro-bearing-hint">
+              <img src="../icons/aeronautics--gyroscopic_propeller_bearing.png" alt="" draggable="false" data-game-item="aeronautics:gyroscopic_propeller_bearing">
+              <span class="node-caption" aria-hidden="true">陀螺螺旋桨轴承</span>
+            </button>
+            <div class="quest-preview" id="node-gyro-bearing-hint" role="tooltip" hidden>
+              <p class="preview-title">陀螺螺旋桨轴承</p>
+              <dl>
+              <dt>现服前置</dt><dd>陀螺飞行芯片</dd>
+              <dt>说明</dt><dd>飞行姿态控制支线。现服配方使用陀螺飞行芯片和陀螺仪机构。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:77.723577%;--y:67.596567%"
+                    data-node="winch" aria-label="绳索绞盘" aria-describedby="node-winch-hint">
+              <img src="../icons/simulated--rope_winch.png" alt="" draggable="false" data-game-item="simulated:rope_winch">
+              <span class="node-caption" aria-hidden="true">绳索绞盘</span>
+            </button>
+            <div class="quest-preview" id="node-winch-hint" role="tooltip" hidden>
+              <p class="preview-title">绳索绞盘</p>
+              <dl>
+              <dt>现服前置</dt><dd>陀螺飞行芯片</dd>
+              <dt>说明</dt><dd>用于从飞艇上吊运设备。现服配方使用陀螺飞行芯片。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:88.617886%;--y:67.596567%"
+                    data-node="gimbal" aria-label="万向传感器" aria-describedby="node-gimbal-hint">
+              <img src="../icons/simulated--gimbal_sensor.png" alt="" draggable="false" data-game-item="simulated:gimbal_sensor">
+              <span class="node-caption" aria-hidden="true">万向传感器</span>
+            </button>
+            <div class="quest-preview" id="node-gimbal-hint" role="tooltip" hidden>
+              <p class="preview-title">万向传感器</p>
+              <dl>
+              <dt>现服前置</dt><dd>陀螺飞行芯片</dd>
+              <dt>说明</dt><dd>用于姿态检测。现服配方使用陀螺飞行芯片。</dd>
+              </dl>
+            </div>
+            </div>
+          </div>
+          <p class="graph-note">连线包含独立的制作条件和可选加工路线。每个节点的完整说明可悬停查看。</p>
+          <div class="aux-strip" aria-label="本章辅助矿物">
+            <a class="aux-ore" href="../metallurgy.html#ore-zanite"><img src="../icons/aether--zanite_ore.png" data-game-item="aether:zanite_ore" alt=""><span><strong>紫晶矿 → 紫晶石</strong><small>天境 · 紫晶矿脉。紫晶石是炽晶样本的现场材料。</small></span></a>
+          </div>
+        </section>
+      </details>
+      <details class="stage-foldout stage-reference-foldout">
+        <summary>查询任务、材料与数值</summary>
+        <div class="stage-reference-body" id="stage-reference">
+          <div class="stage-table-wrap quest-board" tabindex="0" role="region" aria-label="蒸汽工坊生产与制约">
+            <table class="stage-table">
+              <caption class="sr-only">蒸汽工坊生产与制约</caption>
+              <thead><tr><th scope="col">任务节点</th><th scope="col">要生产</th><th scope="col">制约条件</th></tr></thead>
+              <tbody>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-1-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/create--mechanical_press.png" alt="" draggable="false" data-game-item="create:mechanical_press"></span>
+                  <span>冶炼与切削</span>
+                </button>
+                <div class="quest-preview" id="milestone-1-preview" role="tooltip" hidden>
+                  <p class="preview-title">冶炼与切削</p>
+                  <dl><dt>要生产</dt><dd>本章新冶炼能力、切削工具</dd><dt>制约</dt><dd>黄铜航空芯片 → 湿选组件</dd><dt>说明</dt><dd>用锡青铜与已有精密构件升级刀头。用现有风车或水轮磨洗矿料，先生产一批铝板和锅炉零件。</dd></dl>
+                </div>
+              </th>
+              <td>本章新冶炼能力、切削工具</td>
+              <td>黄铜航空芯片 → 湿选组件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-2-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--raw_pentlandite.png" alt="" draggable="false" data-game-item="kubejs:raw_pentlandite"></span>
+                  <span>新矿物</span>
+                </button>
+                <div class="quest-preview" id="milestone-2-preview" role="tooltip" hidden>
+                  <p class="preview-title">新矿物</p>
+                  <dl><dt>要生产</dt><dd>镍黄铁矿、铝土矿</dd><dt>制约</dt><dd>达到本章挖掘等级的镐或钻头</dd><dt>说明</dt><dd>主世界或暮色森林的镍黄铁矿脉。化学富集后回收镍和副产铁。 主世界铝土矿透镜体或天境矿床。用于气动工序的铝材。</dd></dl>
+                </div>
+              </th>
+              <td>镍黄铁矿、铝土矿</td>
+              <td>达到本章挖掘等级的镐或钻头</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-3-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--aluminum_sheet.png" alt="" draggable="false" data-game-item="kubejs:aluminum_sheet"></span>
+                  <span>初级产物</span>
+                </button>
+                <div class="quest-preview" id="milestone-3-preview" role="tooltip" hidden>
+                  <p class="preview-title">初级产物</p>
+                  <dl><dt>要生产</dt><dd>铝板</dd><dt>制约</dt><dd>本章冶炼、已有部件</dd><dt>说明</dt><dd>用前章的风车或水轮磨洗铝土矿。熔出的铝锭压成铝板，给基础锅炉和本章动力件用。</dd></dl>
+                </div>
+              </th>
+              <td>铝板</td>
+              <td>本章冶炼、已有部件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-4-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine"></span>
+                  <span>蒸汽工厂</span>
+                </button>
+                <div class="quest-preview" id="milestone-4-preview" role="tooltip" hidden>
+                  <p class="preview-title">蒸汽工厂</p>
+                  <dl><dt>要生产</dt><dd>第一档锅炉与烈焰人燃烧室、蒸汽引擎</dd><dt>制约</dt><dd>铝板</dd><dt>说明</dt><dd>先测锅炉供水、燃料和带动机械时的应力输出。</dd></dl>
+                </div>
+              </th>
+              <td>第一档锅炉与烈焰人燃烧室、蒸汽引擎</td>
+              <td>铝板</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-5-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/twilightforest--hydra_trophy.png" alt="" draggable="false" data-game-item="twilightforest:hydra_trophy"></span>
+                  <span>远征门槛</span>
+                </button>
+                <div class="quest-preview" id="milestone-5-preview" role="tooltip" hidden>
+                  <p class="preview-title">远征门槛</p>
+                  <dl><dt>要生产</dt><dd>炽晶样本</dd><dt>制约</dt><dd>九头蛇、滑行魔石、天境紫晶</dd><dt>说明</dt><dd>收齐战利品制母样，量产可复制。</dd></dl>
+                </div>
+              </th>
+              <td>炽晶样本</td>
+              <td>九头蛇、滑行魔石、天境紫晶</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-6-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--gyro_flight_chip.png" alt="" draggable="false" data-game-item="kubejs:gyro_flight_chip"></span>
+                  <span>高级芯片</span>
+                </button>
+                <div class="quest-preview" id="milestone-6-preview" role="tooltip" hidden>
+                  <p class="preview-title">高级芯片</p>
+                  <dl><dt>要生产</dt><dd>陀螺飞行芯片</dd><dt>制约</dt><dd>铝板、磁铁精矿与炽晶样本</dd><dt>说明</dt><dd>陀螺飞行芯片开启精炼冶金。基础锅炉带动蒸汽引擎提供主要应力。飞艇在本章继续使用热空气。</dd></dl>
+                </div>
+              </th>
+              <td>陀螺飞行芯片</td>
+              <td>铝板、磁铁精矿与炽晶样本</td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        <section class="chapter-note process-rules" aria-label="采掘与冶炼设计">
+          <p><strong>挖掘等级。</strong>规划中，Create 动力钻头的合成消耗对应等级的钻头部件，成品保留该部件的挖掘等级。镐、动力钻头与 CreateMine 共用矿物挖掘门槛。动力和转速影响效率。</p>
+          <p><strong>本章冶炼设计。</strong>黄铜航空芯片开启控温工作盆和湿选工位。镍黄铁矿先富集成镍锍，铝土矿先富集再精炼。首件升级材料由本章可达的工艺供给。</p>
+        </section>
+        </div>
+      </details>
+    </main>
+  </div>
+</body>
+</html>

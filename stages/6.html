@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高热动力 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="guides.css">
+  <script src="../quests.js" defer></script>
+</head>
+<body class="stage-guide">
+  <header class="site-header">
+    <a href="../index.html"><span class="book-mark" aria-hidden="true"><img src="../icons/ftbquests--book.png" alt="" draggable="false" data-game-item="ftbquests:book"></span>Above and Beyond Aeronautics</a>
+  </header>
+  <div class="detail-page">
+    <nav class="contents" aria-label="工业章节">
+      <a class="back-link" href="../index.html">任务书</a>
+      <a href="../worlds/index.html">世界图鉴</a>
+      <ol>
+        <li><a href="1.html"><span class="quest-emblem crest-1 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--andesite_control_chip.png" alt="" draggable="false" data-game-item="kubejs:andesite_control_chip"></span><span>安山工坊</span></a></li>
+        <li><a href="2.html"><span class="quest-emblem crest-2 emblem-nav" aria-hidden="true"><img src="../icons/create--brass_ingot.png" alt="" draggable="false" data-game-item="create:brass_ingot"></span><span>黄铜轻航</span></a></li>
+        <li><a href="3.html"><span class="quest-emblem crest-3 emblem-nav" aria-hidden="true"><img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine"></span><span>蒸汽工坊</span></a></li>
+        <li><a href="4.html"><span class="quest-emblem crest-4 emblem-nav" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span><span>精炼冶金</span></a></li>
+        <li><a href="5.html"><span class="quest-emblem crest-5 emblem-nav" aria-hidden="true"><img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip"></span><span>深层矿业</span></a></li>
+        <li><a href="6.html" aria-current="page"><span class="quest-emblem crest-6 emblem-nav" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span><span>高热动力</span></a></li>
+        <li><a href="7.html"><span class="quest-emblem crest-7 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core"></span><span>高压工业</span></a></li>
+      </ol>
+    </nav>
+    <main>
+      <div class="chapter-title">
+        <span class="quest-emblem crest-6" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span>
+        <div><h1>高热动力</h1><p>第四档锅炉与燃烧室</p></div>
+      </div>
+      <p class="stage-lead">星光门遗迹勘探和异界采矿是主线。星光傀儡可作支线挑战，深银和星核来自天然矿脉。</p>
+      <nav class="stage-jump" aria-label="本章目录">
+        <a href="#shell-beast">甲壳巨兽</a>
+        <a href="#graph-title">完整依赖图</a>
+        <a href="#stage-reference">任务与材料</a>
+      </nav>
+      <section class="stage-route" aria-labelledby="stage-route-title">
+        <h2 id="stage-route-title">本章主线</h2>
+        <ol class="stage-steps">
+          <li>
+            <img src="../icons/eternal_starlight--seeking_eye.png" alt="" width="36" height="36" draggable="false" data-game-item="eternal_starlight:seeking_eye">
+            <h3>找到并激活星光门</h3>
+            <p>用寻门之眼定位门址，向门卫取得预言之球。</p>
+          </li>
+          <li>
+            <img src="../icons/eternal_starlight--deepsilver_ingot.png" alt="" width="36" height="36" draggable="false" data-game-item="eternal_starlight:deepsilver_ingot">
+            <h3>炼深银，筛星核</h3>
+            <p>升级钛合金炉圈，洗筛并压制深银炉料。星核另走筛分。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--calculation_mechanism.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:calculation_mechanism">
+            <h3>制运算构件</h3>
+            <p>以深银、钛板等装配运算构件，给增压动力和调度线供料。</p>
+          </li>
+          <li>
+            <img src="../icons/eternal_starlight--starcore.png" alt="" width="36" height="36" draggable="false" data-game-item="eternal_starlight:starcore">
+            <h3>制星光调度芯片</h3>
+            <p>将运算构件、深银触片、星核和瘴紫石组装，开启高压工业。</p>
+          </li>
+        </ol>
+      </section>
+      <section class="stage-topic" aria-labelledby="trench-topic">
+        <h2 id="trench-topic">海沟远征（选做）</h2>
+        <dl class="stage-topic-facts">
+          <div><dt>使用海螺</dt><dd>水面下至少 110 格</dd></div>
+          <div><dt>选择海沟</dt><dd>海床深至少 157 格</dd></div>
+          <div><dt>出发前备好</dt><dd>星光调度芯片</dd></div>
+        </dl>
+        <details class="stage-foldout">
+          <summary>查看召唤条件与战利品</summary>
+          <div class="stage-foldout-copy">
+            <p class="chapter-note" id="shell-beast"><strong>甲壳巨兽远征。</strong>第六章选做。用机械手给鹦鹉螺壳装上深银锭，再用<a href="5.html#karkinos">巨蟹座巨钳</a>加工并压制成不祥海螺。机械手保留巨钳。生存模式下携带星光调度芯片，在海床深至少 157 格的开阔海沟潜到水面下 110 格或更深，再吹响海螺。持同一枚海螺游开约 8 格，在距起吹点 16 格以内保持潜水满 7 秒。甲壳巨兽会带 6 只喙兽（Beakling）出现。芯片和用过的海螺均会保留，每枚海螺可召唤一次。击败后可获巨型鹦鹉螺壳和生触须。<a href="../worlds/overworld.html#bosses">查看主世界首领</a>。</p>
+          </div>
+        </details>
+      </section>
+      <details class="stage-foldout stage-dependency-foldout">
+        <summary>查看完整依赖图</summary>
+        <section class="unlock-graph" aria-labelledby="graph-title">
+          <div class="graph-heading">
+            <h2 id="graph-title">生产与远征门槛</h2>
+            <a class="metallurgy-link" href="../metallurgy.html#chapter-6">本章熔炼产线与产率</a>
+            <p><span class="legend live"></span>现服已核对 <span class="legend plan"></span>阶段规划</p>
+          </div>
+          <div class="graph-scroll quest-board" tabindex="0" role="region" aria-label="工业生产和远征依赖图">
+            <div class="diagram" data-diagram style="--graph-height:304;">
+              <svg class="dependency-lines" viewBox="0 0 1230 304" width="1230" height="304" aria-hidden="true">
+                <defs>
+                  <marker id="arrow-live" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#99c9b7"/>
+                  </marker>
+                  <marker id="arrow-plan" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#d8a574"/>
+                  </marker>
+                </defs>
+            <path class="dependency-edge edge-plan" data-from="previous" data-to="workshop-upgrade" d="M 86.91 92.64 L 112.88 69.36" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="workshop-upgrade" data-to="smelt" d="M 147.95 68.38 L 174.39 89.57" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="smelt" data-to="cut" d="M 220.39 108.00 L 302.00 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="advanced" data-to="next" d="M 973.00 108.00 L 1113.15 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="boiler" d="M 760.00 131.00 L 760.00 190.00 L 503.41 190.00 L 503.41 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="burner" d="M 760.00 131.00 L 760.00 190.00 L 788.86 190.00 L 788.86 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="portal" data-to="ore1" d="M 93.71 225.00 L 93.71 192.00 L 25.92 192.00 L 25.92 27.00 L 455.00 27.00 L 455.00 42.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="portal" data-to="ore2" d="M 93.71 225.00 L 93.71 198.00 L 455.00 198.00 L 455.00 174.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="ore1" data-to="deepsilver-furnace" d="M 478.00 65.00 L 527.00 65.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="deepsilver-furnace" data-to="deepsilver-ingot" d="M 573.00 65.00 L 624.00 65.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="ore2" data-to="advanced" d="M 455.00 174.00 L 455.00 185.00 L 950.00 185.00 L 950.00 131.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="smelt" data-to="basic" d="M 197.27 85.00 L 197.00 32.00 L 760.00 32.00 L 760.00 85.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="cut" data-to="ore1" d="M 346.84 100.78 L 433.16 72.22" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="cut" data-to="ore2" d="M 346.84 115.22 L 433.16 143.78" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="advanced" d="M 783.00 108.00 L 927.00 108.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="deepsilver-ingot" data-to="advanced" d="M 670.00 65.00 L 792.00 65.00 L 792.00 108.00 L 927.00 108.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="combustion-engine" d="M 778.04 122.27 L 914.00 229.81" marker-end="url(#arrow-plan)"/>
+              </svg>
+            <button type="button" class="diagram-node node-chip" style="--x:5.673600%;--y:35.526316%"
+                    data-node="previous" aria-label="悬浮导航核心" aria-describedby="node-previous-hint">
+              <img src="../icons/kubejs--levitite_nav_core.png" alt="" draggable="false" data-game-item="kubejs:levitite_nav_core">
+              
+            </button>
+            <div class="quest-preview" id="node-previous-hint" role="tooltip" hidden>
+              <p class="preview-title">悬浮导航核心</p>
+              <dl>
+              <dt>规划解锁</dt><dd>钛合金炉圈与星光选别件</dd>
+              <dt>说明</dt><dd>完成「深层矿业」带来本章的冶炼升级。</dd>
+              </dl>
+            </div>
+
+            <button type="button" class="diagram-node node-item" style="--x:10.569106%;--y:17.763158%"
+                    data-node="workshop-upgrade" aria-label="钛合金炉圈与星光选别件" aria-describedby="node-workshop-upgrade-hint">
+              <img src="../icons/kubejs--titanium_sheet.png" alt="" draggable="false" data-game-item="kubejs:titanium_sheet">
+              <span class="node-caption" aria-hidden="true">升级炉圈</span>
+            </button>
+            <div class="quest-preview" id="node-workshop-upgrade-hint" role="tooltip" hidden>
+              <p class="preview-title">钛合金炉圈与星光选别件</p>
+              <dl>
+                <dt>规划前置</dt><dd>悬浮导航核心、上一章钛板和已有加工部件</dd>
+                <dt>规划解锁</dt><dd>高热动力冶炼能力</dd>
+                <dt>产率路线</dt><dd>星光精炼 · 深银、星核分流</dd>
+                <dt>装配</dt><dd>制作时投入芯片，部件装进工位或组成炉圈。节点使用游戏中已有材料的图标。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:16.048182%;--y:35.526316%"
+                    data-node="smelt" aria-label="高热动力冶炼能力" aria-describedby="node-smelt-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              
+            </button>
+            <div class="quest-preview" id="node-smelt-hint" role="tooltip" hidden>
+              <p class="preview-title">高热动力冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>钛合金炉圈与星光选别件</dd>
+              <dt>规划解锁</dt><dd>本章镐与动力钻头、运算构件</dd>
+              <dt>冶炼限制</dt><dd>悬浮导航核心和上一章钛板开启钛合金炉圈。深银矿料洗筛后压团，送进换好钛合金炉圈的热风高炉。星核走专用筛分。炉档继续提高可处理的矿种，保留已开放的最高收率。</dd>
+              <dt>说明</dt><dd>用深层矿业的钛和碳化钨做切削头。先找到主世界星光门遗迹，再制作寻觅之眼开启通道。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:26.422764%;--y:35.526316%"
+                    data-node="cut" aria-label="本章镐与动力钻头" aria-describedby="node-cut-hint">
+              <img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip">
+              
+            </button>
+            <div class="quest-preview" id="node-cut-hint" role="tooltip" hidden>
+              <p class="preview-title">本章镐与动力钻头</p>
+              <dl>
+              <dt>规划前置</dt><dd>高热动力冶炼能力</dd>
+              <dt>规划解锁</dt><dd>深银矿、星核矿</dd>
+              <dt>说明</dt><dd>先用上一章已有材料制造合格钻头部件。Create 动力钻头在合成时消耗这个部件，成品继承它的挖掘等级。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:61.788617%;--y:35.526316%"
+                    data-node="basic" aria-label="运算构件" aria-describedby="node-basic-hint">
+              <img src="../icons/kubejs--calculation_mechanism.png" alt="" draggable="false" data-game-item="kubejs:calculation_mechanism">
+              
+            </button>
+            <div class="quest-preview" id="node-basic-hint" role="tooltip" hidden>
+              <p class="preview-title">运算构件</p>
+              <dl>
+              <dt>规划前置</dt><dd>高热动力冶炼能力</dd>
+              <dt>规划解锁</dt><dd>星光调度芯片、第 4 档锅炉、第 4 档烈焰人燃烧室、增压柴油内燃机</dd>
+              <dt>说明</dt><dd>运算构件先用于第四档动力，后续再加入深银和星核完成星光调度芯片。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:77.235773%;--y:35.526316%"
+                    data-node="advanced" aria-label="星光调度芯片" aria-describedby="node-advanced-hint">
+              <img src="../icons/kubejs--me_network_board.png" alt="" draggable="false" data-game-item="kubejs:me_network_board">
+              
+            </button>
+            <div class="quest-preview" id="node-advanced-hint" role="tooltip" hidden>
+              <p class="preview-title">星光调度芯片</p>
+              <dl>
+              <dt>辅矿</dt><dd>瘴紫石计划作为星光调度芯片的辅料。</dd>
+              <dt>规划前置</dt><dd>运算构件、深银锭、星核矿</dd>
+              <dt>规划解锁</dt><dd>高压工业冶炼能力</dd>
+              <dt>说明</dt><dd>星光调度芯片开启高压工业。使用深层矿业已建的航线和码头回运星光矿。图标取自现版 ME 网络电路板。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:21.381579%"
+                    data-node="ore1" aria-label="深银矿" aria-describedby="node-ore1-hint">
+              <img src="../icons/eternal_starlight--raw_deepsilver.png" alt="" draggable="false" data-game-item="eternal_starlight:raw_deepsilver">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore1-hint" role="tooltip" hidden>
+              <p class="preview-title">深银矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头、探索星光门遗迹</dd>
+              <dt>规划解锁</dt><dd>深银炉料进入热风高炉</dd>
+              <dt>说明</dt><dd>在永恒星光的深银矿脉采粗深银，精炼出深银锭，用于稳定导电件。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:49.671053%"
+                    data-node="ore2" aria-label="星核矿" aria-describedby="node-ore2-hint">
+              <img src="../icons/eternal_starlight--starcore.png" alt="" draggable="false" data-game-item="eternal_starlight:starcore">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore2-hint" role="tooltip" hidden>
+              <p class="preview-title">星核矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头、探索星光门遗迹</dd>
+              <dt>规划解锁</dt><dd>星光调度芯片</dd>
+              <dt>说明</dt><dd>在永恒星光开采星核，给调度芯片供首批晶体。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:92.370231%;--y:35.526316%"
+                    data-node="next" aria-label="高压工业冶炼能力" aria-describedby="node-next-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              
+            </button>
+            <div class="quest-preview" id="node-next-hint" role="tooltip" hidden>
+              <p class="preview-title">高压工业冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>星光调度芯片</dd>
+              <dt>说明</dt><dd>开启下一章可制的切削工具。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:40.927862%;--y:81.578947%"
+                    data-node="boiler" aria-label="第 4 档锅炉" aria-describedby="node-boiler-hint">
+              <img src="../icons/create--fluid_tank.png" alt="" draggable="false" data-game-item="create:fluid_tank">
+              
+            </button>
+            <div class="quest-preview" id="node-boiler-hint" role="tooltip" hidden>
+              <p class="preview-title">第 4 档锅炉</p>
+              <dl>
+              <dt>规划前置</dt><dd>运算构件</dd>
+              <dt>说明</dt><dd>基础罐体图标表示本档锅炉。实际工作压力受炉衬供热、承压与给水限制。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:64.135021%;--y:81.578947%"
+                    data-node="burner" aria-label="第 4 档烈焰人燃烧室" aria-describedby="node-burner-hint">
+              <img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner">
+              
+            </button>
+            <div class="quest-preview" id="node-burner-hint" role="tooltip" hidden>
+              <p class="preview-title">第 4 档烈焰人燃烧室</p>
+              <dl>
+              <dt>规划前置</dt><dd>运算构件</dd>
+              <dt>说明</dt><dd>炉体图标表示本档燃烧室。炉衬材料与供汽匹配。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-explore" style="--x:7.618834%;--y:81.578947%"
+                    data-node="portal" aria-label="探索星光门遗迹" aria-describedby="node-portal-hint">
+              <img src="../icons/eternal_starlight--seeking_eye.png" alt="" draggable="false" data-game-item="eternal_starlight:seeking_eye">
+              <span class="gate-tag" aria-hidden="true">探索</span>
+            </button>
+            <div class="quest-preview" id="node-portal-hint" role="tooltip" hidden>
+              <p class="preview-title">探索星光门遗迹</p>
+              <dl>
+              <dt>规划解锁</dt><dd>深银矿、星核矿</dd>
+              <dt>说明</dt><dd>在主世界找门址，用寻觅之眼开启永恒星光。入口探索和采矿即可推进主线。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:52.601626%;--y:21.381579%"
+                    data-node="deepsilver-ingot" aria-label="深银锭" aria-describedby="node-deepsilver-ingot-hint">
+              <img src="../icons/eternal_starlight--deepsilver_ingot.png" alt="" draggable="false" data-game-item="eternal_starlight:deepsilver_ingot">
+              <span class="node-caption" aria-hidden="true">深银锭</span>
+            </button>
+            <div class="quest-preview" id="node-deepsilver-ingot-hint" role="tooltip" hidden>
+              <p class="preview-title">深银锭</p>
+              <dl>
+              <dt>规划前置</dt><dd>装有钛合金炉圈的高热动力档热风高炉</dd>
+              <dt>规划解锁</dt><dd>星光调度芯片</dd>
+              <dt>说明</dt><dd>永恒星光粗深银经精炼供导电件，与星核一同进入调度芯片。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:44.715447%;--y:21.381579%"
+                    data-node="deepsilver-furnace" aria-label="高热动力档高炉" aria-describedby="node-deepsilver-furnace-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              <span class="node-caption" aria-hidden="true">高热动力档高炉</span>
+            </button>
+            <div class="quest-preview" id="node-deepsilver-furnace-hint" role="tooltip" hidden>
+              <p class="preview-title">高热动力档高炉</p>
+              <dl>
+                <dt>规划前置</dt><dd>深银矿团、悬浮导航核心解锁的钛合金炉圈</dd>
+                <dt>说明</dt><dd>洗筛后压成深银矿团。炉圈、热风和炉腔都达标即可批量炼出深银锭。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:76.178862%;--y:81.578947%"
+                    data-node="combustion-engine" aria-label="增压柴油内燃机" aria-describedby="node-combustion-engine-hint">
+              <img src="../icons/createdieselgenerators--large_diesel_engine.png" alt="" draggable="false" data-game-item="createdieselgenerators:large_diesel_engine">
+              <span class="node-caption" aria-hidden="true">增压柴油内燃机</span>
+            </button>
+            <div class="quest-preview" id="node-combustion-engine-hint" role="tooltip" hidden>
+              <p class="preview-title">增压柴油内燃机</p>
+              <dl>
+                <dt>规划前置</dt><dd>运算构件和已有柴油线</dd>
+                <dt>同期应力目标</dt><dd>&gt;1×（第 4 档锅炉=1×）</dd>
+                <dt>说明</dt><dd>运算构件开启供油和增压升级。按同档锅炉的持续应力做对照。图标使用游戏的大型柴油机。</dd>
+              </dl>
+            </div>
+            </div>
+          </div>
+          <p class="graph-note">连线包含独立的制作条件和可选加工路线。每个节点的完整说明可悬停查看。</p>
+          <div class="aux-strip" aria-label="本章辅助矿物">
+            <a class="aux-ore" href="../metallurgy.html#ore-malarite"><img src="../icons/eternal_starlight--grimstone_malarite_ore.png" data-game-item="eternal_starlight:grimstone_malarite_ore" alt=""><span><strong>瘴紫石矿 → 瘴紫石</strong><small>永恒星光 · 沼泽矿脉。瘴紫石计划作为星光调度芯片的辅料。</small></span></a>
+          </div>
+        </section>
+      </details>
+      <details class="stage-foldout stage-reference-foldout">
+        <summary>查询任务、材料与数值</summary>
+        <div class="stage-reference-body" id="stage-reference">
+          <div class="stage-table-wrap quest-board" tabindex="0" role="region" aria-label="高热动力生产与制约">
+            <table class="stage-table">
+              <caption class="sr-only">高热动力生产与制约</caption>
+              <thead><tr><th scope="col">任务节点</th><th scope="col">要生产</th><th scope="col">制约条件</th></tr></thead>
+              <tbody>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-1-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span>
+                  <span>冶炼与切削</span>
+                </button>
+                <div class="quest-preview" id="milestone-1-preview" role="tooltip" hidden>
+                  <p class="preview-title">冶炼与切削</p>
+                  <dl><dt>要生产</dt><dd>本章新冶炼能力、切削工具</dd><dt>制约</dt><dd>悬浮导航核心 → 钛合金炉圈与星光选别件</dd><dt>说明</dt><dd>用深层矿业的钛和碳化钨做切削头。先找到主世界星光门遗迹，再制作寻觅之眼开启通道。</dd></dl>
+                </div>
+              </th>
+              <td>本章新冶炼能力、切削工具</td>
+              <td>悬浮导航核心 → 钛合金炉圈与星光选别件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-2-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/eternal_starlight--raw_deepsilver.png" alt="" draggable="false" data-game-item="eternal_starlight:raw_deepsilver"></span>
+                  <span>新矿物</span>
+                </button>
+                <div class="quest-preview" id="milestone-2-preview" role="tooltip" hidden>
+                  <p class="preview-title">新矿物</p>
+                  <dl><dt>要生产</dt><dd>深银矿、星核矿</dd><dt>制约</dt><dd>达到本章挖掘等级的镐或钻头</dd><dt>说明</dt><dd>在永恒星光的深银矿脉采粗深银，精炼出深银锭，用于稳定导电件。 在永恒星光开采星核，给调度芯片供首批晶体。</dd></dl>
+                </div>
+              </th>
+              <td>深银矿、星核矿</td>
+              <td>达到本章挖掘等级的镐或钻头</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-3-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--calculation_mechanism.png" alt="" draggable="false" data-game-item="kubejs:calculation_mechanism"></span>
+                  <span>初级产物</span>
+                </button>
+                <div class="quest-preview" id="milestone-3-preview" role="tooltip" hidden>
+                  <p class="preview-title">初级产物</p>
+                  <dl><dt>要生产</dt><dd>运算构件</dd><dt>制约</dt><dd>本章冶炼、已有部件</dd><dt>说明</dt><dd>运算构件先用于第四档动力，后续再加入深银和星核完成星光调度芯片。</dd></dl>
+                </div>
+              </th>
+              <td>运算构件</td>
+              <td>本章冶炼、已有部件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-4-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span>
+                  <span>动力升级</span>
+                </button>
+                <div class="quest-preview" id="milestone-4-preview" role="tooltip" hidden>
+                  <p class="preview-title">动力升级</p>
+                  <dl><dt>要生产</dt><dd>第 4 档锅炉与烈焰人燃烧室</dd><dt>制约</dt><dd>运算构件</dd><dt>说明</dt><dd>锅炉和烈焰人燃烧室各升一档。矿物回收保持精炼冶金解锁的最高收率。</dd></dl>
+                </div>
+              </th>
+              <td>第 4 档锅炉与烈焰人燃烧室</td>
+              <td>运算构件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-5-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/eternal_starlight--seeking_eye.png" alt="" draggable="false" data-game-item="eternal_starlight:seeking_eye"></span>
+                  <span>远征门槛</span>
+                </button>
+                <div class="quest-preview" id="milestone-5-preview" role="tooltip" hidden>
+                  <p class="preview-title">远征门槛</p>
+                  <dl><dt>要生产</dt><dd>深银锭、星核</dd><dt>制约</dt><dd>发现星光门遗迹，开启永恒星光</dd><dt>说明</dt><dd>首批矿料从实际矿床开采。星光傀儡可作为战斗支线。</dd></dl>
+                </div>
+              </th>
+              <td>深银锭、星核</td>
+              <td>发现星光门遗迹，开启永恒星光</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-6-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--me_network_board.png" alt="" draggable="false" data-game-item="kubejs:me_network_board"></span>
+                  <span>高级芯片</span>
+                </button>
+                <div class="quest-preview" id="milestone-6-preview" role="tooltip" hidden>
+                  <p class="preview-title">高级芯片</p>
+                  <dl><dt>要生产</dt><dd>星光调度芯片</dd><dt>制约</dt><dd>运算构件、深银锭与星核</dd><dt>说明</dt><dd>星光调度芯片开启高压工业。使用深层矿业已建的航线和码头回运星光矿。</dd></dl>
+                </div>
+              </th>
+              <td>星光调度芯片</td>
+              <td>运算构件、深银锭与星核</td>
+            </tr>
+            <tr>
+              <th scope="row">内燃机</th>
+              <td>增压柴油内燃机 · 应力 &gt;1× 同档锅炉</td>
+              <td>运算构件、柴油。运算构件开启供油和增压升级。按同档锅炉的持续应力做对照。图标使用游戏的大型柴油机。</td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        <section class="chapter-note process-rules" aria-label="采掘与冶炼设计">
+          <p><strong>挖掘等级。</strong>规划中，Create 动力钻头的合成消耗对应等级的钻头部件，成品保留该部件的挖掘等级。镐、动力钻头与 CreateMine 共用矿物挖掘门槛。动力和转速影响效率。</p>
+          <p><strong>本章冶炼设计。</strong>悬浮导航核心和上一章钛板开启钛合金炉圈。深银矿料洗筛后压团，送进换好钛合金炉圈的热风高炉。星核走专用筛分。炉档继续提高可处理的矿种，保留已开放的最高收率。</p>
+        </section>
+        <p class="chapter-note power-benchmark">应力按一套成型动力组在相同转速、稳定供料时可持续对外提供的 SU 比较。表中为设计目标。</p>
+        </div>
+      </details>
+    </main>
+  </div>
+</body>
+</html>

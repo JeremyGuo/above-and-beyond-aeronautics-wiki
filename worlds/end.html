@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>末地 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="world-atlas">
+  <a class="world-skip" href="#world-content">跳到正文</a>
+  <div class="world-shell">
+    <aside class="world-rail">
+      <div class="world-rail-inner">
+        <a class="world-brand" href="../index.html"><img src="../icons/ftbquests--book.png" alt="" width="24" height="24" data-game-item="ftbquests:book"><span>Above and Beyond Aeronautics</span></a>
+        <nav class="world-primary" aria-label="任务书导航">
+          <a href="../index.html">任务书</a>
+          <a href="index.html">世界图鉴</a>
+          <a href="../metallurgy.html">矿物处理与熔炼</a>
+        </nav>
+        <nav class="world-toc" aria-label="本页目录">
+          <a href="#access">到达方式</a>
+          <a href="#minerals">矿物分布</a>
+          <a href="#bosses">首领</a>
+          <a href="#story">故事与远征</a>
+          <a href="#sources">资料来源</a>
+        </nav>
+      </div>
+    </aside>
+    <main class="world-content" id="world-content" tabindex="-1">
+      <header class="world-hero">
+        <div class="world-hero-copy">
+          <div class="world-title">
+            <span class="world-icon" data-world="end" aria-hidden="true"><img src="../icons/minecraft--dragon_breath.png" data-game-item="minecraft:dragon_breath" alt="" width="48" height="48"></span>
+            <div><p class="world-kind">探索世界</p><h1>末地</h1></div>
+          </div>
+          <p class="world-intro">末影龙守着主岛，外岛则有 Nullscape 的裂隙、晶峰和末地城。第五章的钛产线从外岛矿床起步，末地城的紫珀供应末影构件。</p>
+        </div>
+        <aside class="world-facts" aria-label="维度速览">
+          <dl>
+            <div><dt>维度 ID</dt><dd><code>minecraft:the_end</code></dd></div>
+            <div><dt>矿床</dt><dd><a href="#minerals">2 条记录</a></dd></div>
+            <div><dt>首领</dt><dd><a href="#bosses">3 项</a></dd></div>
+          </dl>
+        </aside>
+      </header>
+      <section class="world-section" aria-labelledby="access">
+        <h2 id="access">到达方式</h2>
+        <ul class="world-text-list">
+          <li>用末影珍珠和烈焰粉合成末影之眼，定位主世界要塞并激活末地传送门。</li>
+          <li>击败末影龙后在主岛边缘找到折跃门，投掷末影珍珠穿过门方块抵达外岛。</li>
+          <li>记好返程折跃门。</li>
+        </ul>
+        <nav class="world-chapters" aria-label="相关工业章节">
+          <span>相关章节</span>
+          <a href="../stages/5.html">深层矿业</a>
+          <a href="../stages/6.html">高热动力</a>
+        </nav>
+      </section>
+      <section class="world-section" aria-labelledby="minerals">
+        <h2 id="minerals">矿物分布</h2>
+        <ul class="world-text-list">
+          <li>外岛钛铁矿脉的主产是钛铁矿，伴有金红石。两条选矿路线均可向钨合金热风高炉供应钛料。</li>
+          <li>外岛也有白钨矿脉和伴生黑钨矿，可补充下界先行取得的钨材。钛矿仍按 IV 级切削要求。</li>
+          <li>晶峰露天紫水晶可用于制作望远镜。末地城紫珀进入末影构件配方，潜影贝提供潜影壳，末地船上可找到鞘翅。</li>
+        </ul>
+        <details class="world-ore-fold" open>
+          <summary>矿床分布表 <span>2 条记录</span></summary>
+          <div class="world-ore-scroll" tabindex="0" role="region" aria-label="矿床分布表">
+            <table class="world-ore-table">
+              <caption class="sr-only">末地的矿床分布</caption>
+              <thead><tr><th scope="col">矿床</th><th scope="col">分布区域</th><th scope="col">矿层高度</th><th scope="col">矿物与产出</th></tr></thead>
+              <tbody>
+              <tr><th scope="row">末地钛铁矿脉</th><td>实矿结构，末地高地、Crystal Peaks、Shadowlands、Void Barrens。每 65 × 65 区块网格有一个候选，频率判定 78%。</td><td>矿芯约在生成时岛面下 14 格，为相对深度。</td><td>地形裁切前共 1,067 块矿石。钛铁矿 894 块（约 83.8%）、金红石 149 块（约 14%）、白钨矿 24 块（约 2.2%）。矿机登记产物为粗钛铁矿、粗金红石、粗白钨矿。</td></tr>
+              <tr><th scope="row">末地白钨矿脉</th><td>实矿结构，末地高地、Crystal Peaks、Shadowlands、Void Barrens。每 65 × 65 区块网格有一个候选，频率判定 42.12%。</td><td>矿芯约在生成时岛面下 17 格，为相对深度。</td><td>地形裁切前共 800 块矿石。白钨矿 609 块（约 76.1%）、黑钨矿 162 块（约 20.2%）、钛铁矿 29 块（约 3.6%）。矿机登记产物为粗白钨矿、粗黑钨矿、粗钛铁矿。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p class="world-resource-link"><a href="../metallurgy.html">矿物处理与熔炼</a></p>
+      </section>
+      <section class="world-section" aria-labelledby="bosses">
+        <h2 id="bosses">首领</h2>
+        <dl class="world-boss-list">
+          <div class="world-entry">
+            <dt>末影龙｜主岛</dt>
+            <dd>
+              <p>第五章主线。</p>
+              <p>末影水晶会治疗飞行中的龙，部分水晶有铁栏保护。</p>
+              <p class="world-reward">龙首次被击败后，获得通往外岛的折跃门、返回主世界的出口、龙蛋和大量经验。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>末影守卫｜废弃堡垒</dt>
+            <dd>
+              <p>灾变战役选做。</p>
+              <p class="world-reward">堡垒位于外岛的末地高地与中地，主战室内的末影守卫掉落守卫者护手。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>末影傀儡｜废弃堡垒</dt>
+            <dd>
+              <p class="world-reward">同一堡垒的灾变小首领，原生战利品是虚空核心。</p>
+              <p>它与末影守卫都属于外岛遗址挑战。</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="world-section" aria-labelledby="story">
+        <h2 id="story">故事与远征</h2>
+        <ol class="world-story">
+          <li><p>第五章以第四章完成的下界飞行核心向主岛推进。</p><p>破坏塔顶末影水晶，击败末影龙，打开外岛折跃门，再以 IV 级工具寻找钛矿。</p></li>
+          <li><p>用钨合金热风高炉炼首批钛锭，并压出钛板。</p><p>采集末地城紫珀制末影构件，另带回末地石与紫颂资源。</p><p>用珠光悬浮石、润滑油、极光样本和主世界海上平台收获的两种成熟作物装配悬浮导航核心。</p></li>
+          <li><p>末地远征选做。</p><p>以折跃门为基点，勘察暗影之地的裂隙，到晶峰取紫水晶，再记录末地城和撤离路线。</p><p>将外岛航图与望远镜交回港口，任务书奖励 8 级经验。</p></li>
+          <li><p>末影龙的真实击杀进度也用于第六章在主世界与永恒星光门卫交谈。</p><p>战役另外调查外岛废弃堡垒，把该次进场与撤离记录接回港口。</p></li>
+        </ol>
+      </section>
+      <section class="world-section" aria-labelledby="sources">
+        <h2 id="sources">资料来源</h2>
+        <ul class="world-text-list">
+          <li><a href="../stages/5.html">第五章 · 深层矿业</a></li>
+          <li><a href="https://www.minecraft.net/en-us/article/stronghold">Minecraft 官方 · 要塞与末地入口</a></li>
+          <li><a href="https://www.minecraft.net/en-us/article/ender-dragon">Minecraft 官方 · 末影龙</a></li>
+          <li><a href="https://www.minecraft.net/en-us/article/end-city">Minecraft 官方 · 外岛与末地城</a></li>
+          <li><a href="https://www.stardustlabs.net/nullscape">Stardust Labs · Nullscape</a></li>
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/lendercataclysm/files/8931182">灾变 3.33 · 作者发行页</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

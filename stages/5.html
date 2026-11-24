@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>深层矿业 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="guides.css">
+  <script src="../quests.js" defer></script>
+</head>
+<body class="stage-guide">
+  <header class="site-header">
+    <a href="../index.html"><span class="book-mark" aria-hidden="true"><img src="../icons/ftbquests--book.png" alt="" draggable="false" data-game-item="ftbquests:book"></span>Above and Beyond Aeronautics</a>
+  </header>
+  <div class="detail-page">
+    <nav class="contents" aria-label="工业章节">
+      <a class="back-link" href="../index.html">任务书</a>
+      <a href="../worlds/index.html">世界图鉴</a>
+      <ol>
+        <li><a href="1.html"><span class="quest-emblem crest-1 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--andesite_control_chip.png" alt="" draggable="false" data-game-item="kubejs:andesite_control_chip"></span><span>安山工坊</span></a></li>
+        <li><a href="2.html"><span class="quest-emblem crest-2 emblem-nav" aria-hidden="true"><img src="../icons/create--brass_ingot.png" alt="" draggable="false" data-game-item="create:brass_ingot"></span><span>黄铜轻航</span></a></li>
+        <li><a href="3.html"><span class="quest-emblem crest-3 emblem-nav" aria-hidden="true"><img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine"></span><span>蒸汽工坊</span></a></li>
+        <li><a href="4.html"><span class="quest-emblem crest-4 emblem-nav" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span><span>精炼冶金</span></a></li>
+        <li><a href="5.html" aria-current="page"><span class="quest-emblem crest-5 emblem-nav" aria-hidden="true"><img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip"></span><span>深层矿业</span></a></li>
+        <li><a href="6.html"><span class="quest-emblem crest-6 emblem-nav" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span><span>高热动力</span></a></li>
+        <li><a href="7.html"><span class="quest-emblem crest-7 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core"></span><span>高压工业</span></a></li>
+      </ol>
+    </nav>
+    <main>
+      <div class="chapter-title">
+        <span class="quest-emblem crest-5" aria-hidden="true"><img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip"></span>
+        <div><h1>深层矿业</h1><p>第三档多方块矿场</p></div>
+      </div>
+      <p class="stage-lead">走末地外岛航线开钛矿。暮色冰川和天境金殿共同提供极光样本。</p>
+      <nav class="stage-jump" aria-label="本章目录">
+        <a href="#offshore-farming">海上种植</a>
+        <a href="#karkinos">巨蟹座</a>
+        <a href="#graph-title">完整依赖图</a>
+        <a href="#stage-reference">任务与材料</a>
+      </nav>
+      <section class="stage-route" aria-labelledby="stage-route-title">
+        <h2 id="stage-route-title">本章主线</h2>
+        <ol class="stage-steps">
+          <li>
+            <img src="../icons/minecraft--dragon_breath.png" alt="" width="36" height="36" draggable="false" data-game-item="minecraft:dragon_breath">
+            <h3>打开末地外岛航线</h3>
+            <p>击败末影龙，穿过外岛折跃门，带 IV 级工具取钛矿。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--titanium_ingot.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:titanium_ingot">
+            <h3>炼钛并冲压钛板</h3>
+            <p>把钛铁矿或金红石制成钛炉料，送入钨合金高炉后压板。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--titanium_sheet.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:titanium_sheet">
+            <h3><a href="#offshore-farming">建深海种植平台</a></h3>
+            <p>以钛板制种植床，验证平台并亲手采收两种成熟作物。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--levitite_nav_core.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:levitite_nav_core">
+            <h3>制悬浮导航核心</h3>
+            <p>用极光样本校准，加入灯藻叶和盐根鳞茎完成密封。</p>
+          </li>
+        </ol>
+      </section>
+      <section class="stage-topic" aria-labelledby="offshore-farming">
+        <h2 id="offshore-farming">海上种植平台与潮汐种植</h2>
+        <dl class="stage-topic-facts">
+          <div><dt>固定甲板</dt><dd>3×3 实心方块</dd></div>
+          <div><dt>放置种植床</dt><dd>水面以下至少 50 格</dd></div>
+          <div><dt>植株空间</dt><dd>干燥且亮度 ≥9</dd></div>
+        </dl>
+        <details class="stage-foldout">
+          <summary>搭建平台与验收位置</summary>
+          <div class="stage-foldout-copy">
+            <p><strong>海上种植平台。</strong>带上<a href="4.html#deep-seas">上一章采回的种子</a>，用本章的钛板制作两个潮汐种植床。在主世界深海的水面搭建固定的 3×3 实心甲板。将种植床设在水面下至少 50 格，紧邻一列竖直的金属梁。梁柱从种植床那层连续搭到甲板底面。</p>
+            <p><strong>平台验证。</strong>在种植床上方留出干燥的植株空间，保持至少 9 级亮度。以梁柱为中心，甲板下那层沿东南西北距离 3 格的四个位置中，至少两处须有外海水源。植株所在层按 5 格检查同样的条件。用空的主手右击潮汐种植床，记录「深海 · 海上种植平台」。</p>
+          </div>
+        </details>
+        <details class="stage-foldout">
+          <summary>亲手采收与装配核心</summary>
+          <div class="stage-foldout-copy">
+            <p><strong>潮汐种植。</strong>在水下种植区播下灯藻种子和盐根种子。两种作物成熟后，用空的主手分别右击收获，取得本章的两种采收记录。每株产出两份收成，采收后留在原地重新生长。为悬浮导航核心留一份灯藻叶和一份盐根鳞茎，多余收成可各取一份，用加热的厨锅和碗制成潮园炖菜。</p>
+            <p><strong>核心装配。</strong>将末影构件和珠光悬浮石装到钛板上，注入 100 mB 润滑油，再用极光样本校准。最后消耗灯藻叶和盐根鳞茎各一份完成耐压密封，再压制成悬浮导航核心。</p>
+          </div>
+        </details>
+        <details class="stage-foldout">
+          <summary>巨蟹座远征（选做）</summary>
+          <div class="stage-foldout-copy">
+            <p id="karkinos"><strong>巨蟹座远征。</strong>完成实际采收后，可用钛板、灯藻叶和盐根鳞茎改装倒刺钩，制成不详钓钩。在开阔水域副手持钩、主手用钓竿抛线，待咬钩后收线召唤巨蟹座。这是本章的选做远征。获得巨蟹座巨钳后，用机械手先给水压矢装钛板，再用巨钳加工并压制成强化水压矢。机械手保留巨钳。<a href="../worlds/overworld.html#bosses">查看主世界首领</a>。</p>
+          </div>
+        </details>
+      </section>
+      <details class="stage-foldout stage-dependency-foldout">
+        <summary>查看完整依赖图</summary>
+        <section class="unlock-graph" aria-labelledby="graph-title">
+          <div class="graph-heading">
+            <h2 id="graph-title">生产与远征门槛</h2>
+            <a class="metallurgy-link" href="../metallurgy.html#chapter-5">本章熔炼产线与产率</a>
+            <a class="metallurgy-link" href="#offshore-farming">海上种植平台</a>
+            <p><span class="legend live"></span>现服已核对 <span class="legend plan"></span>阶段规划</p>
+          </div>
+          <div class="graph-scroll quest-board" tabindex="0" role="region" aria-label="工业生产和远征依赖图">
+            <div class="diagram" data-diagram style="--graph-height:466;">
+              <svg class="dependency-lines" viewBox="0 0 1230 466" width="1230" height="466" aria-hidden="true">
+                <defs>
+                  <marker id="arrow-live" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#99c9b7"/>
+                  </marker>
+                  <marker id="arrow-plan" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#d8a574"/>
+                  </marker>
+                </defs>
+            <path class="dependency-edge edge-plan" data-from="previous" data-to="workshop-upgrade" d="M 86.91 92.64 L 112.88 69.36" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="workshop-upgrade" data-to="smelt" d="M 147.95 68.38 L 174.39 89.57" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="smelt" data-to="cut" d="M 220.39 108.00 L 302.00 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="advanced" data-to="next" d="M 973.00 108.00 L 1113.15 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="boiler" d="M 760.00 131.00 L 760.00 190.00 L 503.41 190.00 L 503.41 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="burner" d="M 760.00 131.00 L 760.00 190.00 L 788.86 190.00 L 788.86 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="mine" d="M 760.00 131.00 L 760.00 190.00 L 945.19 190.00 L 945.19 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="dragon" data-to="ore1" d="M 93.71 225.00 L 93.71 192.00 L 25.92 192.00 L 25.92 27.00 L 455.00 27.00 L 455.00 42.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="dragon" data-to="ore2" d="M 93.71 225.00 L 93.71 198.00 L 455.00 198.00 L 455.00 174.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-live" data-from="sun" data-to="sample" d="M 351.38 388.00 L 351.38 352.00 L 636.55 352.00 L 636.55 388.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="yeti" data-to="queen" d="M 116.71 411.00 L 200.31 411.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="sample" data-to="advanced" d="M 659.55 411.00 L 1208.46 411.00 L 1208.46 162.00 L 950.00 162.00 L 950.00 131.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="ore1" data-to="ilmenite-charge" d="M 478.00 65.00 L 527.00 65.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="ore2" data-to="rutile-charge" d="M 478.00 151.00 L 527.00 151.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="rutile-charge" data-to="titanium-ingot" d="M 571.47 142.76 L 640.53 116.24" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="titanium-ingot" data-to="basic" d="M 685.00 108.00 L 737.00 108.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="titanium-lining" d="M 760.00 131.00 L 760.00 190.00 L 1113.00 190.00 L 1113.00 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="hp-nozzle" d="M 760.00 131.00 L 760.00 188.00 L 1160.00 188.00 L 1160.00 319.00 L 1135.00 319.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="dock" d="M 760.00 131.00 L 760.00 171.00 L 856.00 171.00 L 856.00 342.00 L 1004.00 342.00 L 1004.00 362.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-live" data-from="advanced" data-to="shipping-route" d="M 964.48 125.87 L 1044.00 224.00 L 1201.00 224.00 L 1201.00 385.00 L 1168.00 385.00" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="advanced" d="M 783.00 108.00 L 927.00 108.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="cut" data-to="ore1" d="M 346.84 100.78 L 433.16 72.22" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="cut" data-to="ore2" d="M 346.84 115.22 L 433.16 143.78" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-live" data-from="queen" data-to="sample" d="M 223.31 388.00 L 223.31 374.00 L 636.55 374.00 L 636.55 388.00" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-live" data-from="ilmenite-charge" data-to="titanium-ingot" d="M 571.47 73.24 L 640.53 99.76" marker-end="url(#arrow-live)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="combustion-engine" d="M 759.12 130.98 L 752.88 293.00" marker-end="url(#arrow-plan)"/>
+              </svg>
+            <button type="button" class="diagram-node node-chip" style="--x:5.673600%;--y:23.175966%"
+                    data-node="previous" aria-label="下界飞行核心" aria-describedby="node-previous-hint">
+              <img src="../icons/kubejs--nether_flight_core.png" alt="" draggable="false" data-game-item="kubejs:nether_flight_core">
+              
+            </button>
+            <div class="quest-preview" id="node-previous-hint" role="tooltip" hidden>
+              <p class="preview-title">下界飞行核心</p>
+              <dl>
+              <dt>规划解锁</dt><dd>钨合金炉圈</dd>
+              <dt>说明</dt><dd>完成「精炼冶金」带来本章的冶炼升级。</dd>
+              </dl>
+            </div>
+
+            <button type="button" class="diagram-node node-item" style="--x:10.569106%;--y:11.587983%"
+                    data-node="workshop-upgrade" aria-label="钨合金炉圈" aria-describedby="node-workshop-upgrade-hint">
+              <img src="../icons/kubejs--tungsten_carbide.png" alt="" draggable="false" data-game-item="kubejs:tungsten_carbide">
+              <span class="node-caption" aria-hidden="true">升级炉圈</span>
+            </button>
+            <div class="quest-preview" id="node-workshop-upgrade-hint" role="tooltip" hidden>
+              <p class="preview-title">钨合金炉圈</p>
+              <dl>
+                <dt>规划前置</dt><dd>下界飞行核心、上一章钨材与镍钢</dd>
+                <dt>规划解锁</dt><dd>深层矿业冶炼能力</dd>
+                <dt>产率路线</dt><dd>钨合金炉圈 · 开放钛料还原</dd>
+                <dt>装配</dt><dd>制作时投入芯片，部件装进工位或组成炉圈。节点使用游戏中已有材料的图标。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:16.048182%;--y:23.175966%"
+                    data-node="smelt" aria-label="深层矿业冶炼能力" aria-describedby="node-smelt-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              
+            </button>
+            <div class="quest-preview" id="node-smelt-hint" role="tooltip" hidden>
+              <p class="preview-title">深层矿业冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>钨合金炉圈</dd>
+              <dt>规划解锁</dt><dd>本章镐与动力钻头</dd>
+              <dt>冶炼限制</dt><dd>下界飞行核心和上一章钨材开启钨合金炉圈，先建好这档冶炼才能把钛铁矿和金红石处理为钛材。高炉钨合金外圈管矿物处理，钛合金集压器管蒸汽承压。</dd>
+              <dt>说明</dt><dd>用精炼冶金的钨和镍钢制先遣刀头。进末地开启外岛路线之后再搭钛矿工位。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:26.422764%;--y:23.175966%"
+                    data-node="cut" aria-label="本章镐与动力钻头" aria-describedby="node-cut-hint">
+              <img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip">
+              
+            </button>
+            <div class="quest-preview" id="node-cut-hint" role="tooltip" hidden>
+              <p class="preview-title">本章镐与动力钻头</p>
+              <dl>
+              <dt>规划前置</dt><dd>深层矿业冶炼能力</dd>
+              <dt>规划解锁</dt><dd>钛铁矿、金红石</dd>
+              <dt>说明</dt><dd>先用上一章已有材料制造合格钻头部件。Create 动力钻头在合成时消耗这个部件，成品继承它的挖掘等级。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:61.788617%;--y:23.175966%"
+                    data-node="basic" aria-label="钛板" aria-describedby="node-basic-hint">
+              <img src="../icons/kubejs--titanium_sheet.png" alt="" draggable="false" data-game-item="kubejs:titanium_sheet">
+              <span class="node-caption caption-above" aria-hidden="true">钛板</span>
+            </button>
+            <div class="quest-preview" id="node-basic-hint" role="tooltip" hidden>
+              <p class="preview-title">钛板</p>
+              <dl>
+              <dt>现服前置</dt><dd>钛锭</dd>
+              <dt>规划解锁</dt><dd>悬浮导航核心、第 3 档锅炉 · 钛合金集压器、第 3 档烈焰人燃烧室 · 陶瓷内衬、第 3 档矿场 · 钛钻体、钛合金耐压内衬、高压蒸汽喷嘴、成对码头、大型柴油内燃机</dd>
+              <dt>说明</dt><dd>合格钛板作为初级产物，供第三档动力和采矿设备。先在岸上接通加工，再组装随船移动。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:77.235773%;--y:23.175966%"
+                    data-node="advanced" aria-label="悬浮导航核心" aria-describedby="node-advanced-hint">
+              <img src="../icons/kubejs--levitite_nav_core.png" alt="" draggable="false" data-game-item="kubejs:levitite_nav_core">
+              <span class="node-caption caption-above" aria-hidden="true">悬浮导航核心</span>
+            </button>
+            <div class="quest-preview" id="node-advanced-hint" role="tooltip" hidden>
+              <p class="preview-title">悬浮导航核心</p>
+              <dl>
+              <dt>现服下游</dt><dd>五级货运燃料芯</dd>
+              <dt>现服前置</dt><dd>极光样本</dd>
+              <dt>规划前置</dt><dd>钛板</dd>
+              <dt>Next 任务前置</dt><dd>完成「潮汐种植 · 灯藻与盐根」</dd>
+              <dt>装配</dt><dd>极光样本校准后，消耗灯藻叶和盐根鳞茎各一份做耐压密封，再压制。</dd>
+              <dt>规划解锁</dt><dd>高热动力冶炼能力</dd>
+              <dt>说明</dt><dd>悬浮导航核心开启高热动力。钛板解锁第三档锅炉、烈焰人燃烧室和矿场。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:13.948498%"
+                    data-node="ore1" aria-label="钛铁矿" aria-describedby="node-ore1-hint">
+              <img src="../icons/kubejs--raw_ilmenite.png" alt="" draggable="false" data-game-item="kubejs:raw_ilmenite">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore1-hint" role="tooltip" hidden>
+              <p class="preview-title">钛铁矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头、末地 · 末影龙</dd>
+              <dt>现服下游</dt><dd>钛铁矿炉料</dd>
+              <dt>说明</dt><dd>末地钛铁矿脉，分离获得钛炉料及铁副产。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:32.403433%"
+                    data-node="ore2" aria-label="金红石" aria-describedby="node-ore2-hint">
+              <img src="../icons/kubejs--raw_rutile.png" alt="" draggable="false" data-game-item="kubejs:raw_rutile">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore2-hint" role="tooltip" hidden>
+              <p class="preview-title">金红石</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头、末地 · 末影龙</dd>
+              <dt>现服下游</dt><dd>金红石炉料</dd>
+              <dt>说明</dt><dd>末地钛铁矿脉的高钛伴生矿，供主力钛板产线。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:92.370231%;--y:23.175966%"
+                    data-node="next" aria-label="高热动力冶炼能力" aria-describedby="node-next-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              <span class="node-caption caption-above" aria-hidden="true">高热动力</span>
+            </button>
+            <div class="quest-preview" id="node-next-hint" role="tooltip" hidden>
+              <p class="preview-title">高热动力冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>悬浮导航核心</dd>
+              <dt>说明</dt><dd>开启下一章可制的镐与动力钻头。<a href="6.html">进入高热动力</a>。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:40.927862%;--y:53.218884%"
+                    data-node="boiler" aria-label="第 3 档锅炉 · 钛合金集压器" aria-describedby="node-boiler-hint">
+              <img src="../icons/createindustrialmaterials--titanium_pressure_header.png" alt="" draggable="false" data-game-item="createindustrialmaterials:titanium_pressure_header">
+              <span class="node-caption" aria-hidden="true">三档锅炉</span>
+            </button>
+            <div class="quest-preview" id="node-boiler-hint" role="tooltip" hidden>
+              <p class="preview-title">第 3 档锅炉</p>
+              <dl>
+              <dt>规划前置</dt><dd>钛板</dd>
+              <dt>说明</dt><dd>规划用钛板制造钛合金集压器与耐压内衬。集压器是图上的锅炉升级标志。实际供汽依赖燃烧室、供水和罐体。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:64.135021%;--y:53.218884%"
+                    data-node="burner" aria-label="第 3 档烈焰人燃烧室 · 陶瓷内衬" aria-describedby="node-burner-hint">
+              <img src="../icons/createindustrialmaterials--ceramic_burner_lining.png" alt="" draggable="false" data-game-item="createindustrialmaterials:ceramic_burner_lining">
+              <span class="node-caption" aria-hidden="true">三档烈焰人燃烧室</span>
+            </button>
+            <div class="quest-preview" id="node-burner-hint" role="tooltip" hidden>
+              <p class="preview-title">第 3 档烈焰人燃烧室</p>
+              <dl>
+              <dt>规划前置</dt><dd>钛板</dd>
+              <dt>说明</dt><dd>规划用钛板装配陶瓷内衬。把内衬安装到烈焰人燃烧室，炉衬与实际燃料共同决定供热。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:76.844705%;--y:53.218884%"
+                    data-node="mine" aria-label="第 3 档矿场 · 钛钻体" aria-describedby="node-mine-hint">
+              <img src="../icons/createmine--drill_body.png" alt="" draggable="false" data-game-item="createmine:drill_body">
+              <span class="node-caption" aria-hidden="true">三档矿场</span>
+            </button>
+            <div class="quest-preview" id="node-mine-hint" role="tooltip" hidden>
+              <p class="preview-title">第 3 档矿场 · 钛钻体</p>
+              <dl>
+              <dt>规划前置</dt><dd>钛板</dd>
+              <dt>说明</dt><dd>钛板制钛钻体，代表第三档矿场的硬件升级。钻体提高耐久，采掘等级仍由所装钻头决定。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:7.618834%;--y:53.218884%"
+                    data-node="dragon" aria-label="末地 · 末影龙" aria-describedby="node-dragon-hint">
+              <img src="../icons/minecraft--dragon_breath.png" alt="" draggable="false" data-game-item="minecraft:dragon_breath">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-dragon-hint" role="tooltip" hidden>
+              <p class="preview-title">末地 · 末影龙</p>
+              <dl>
+              <dt>规划解锁</dt><dd>钛铁矿、金红石</dd>
+              <dt>说明</dt><dd>规划在这一章开启外岛折跃门，前往钛铁矿和金红石矿区。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:7.618834%;--y:88.197425%"
+                    data-node="yeti" aria-label="暮色森林 · 雪怪首领" aria-describedby="node-yeti-hint">
+              <img src="../icons/twilightforest--alpha_yeti_fur.png" alt="" draggable="false" data-game-item="twilightforest:alpha_yeti_fur">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-yeti-hint" role="tooltip" hidden>
+              <p class="preview-title">暮色森林 · 雪怪首领</p>
+              <dl>
+              <dt>现服下游</dt><dd>极光样本、暮色森林 · 冰雪女王</dd>
+              <dt>说明</dt><dd>取得雪怪首领毛皮，开放前往冰雪女王的路线。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:18.155519%;--y:88.197425%"
+                    data-node="queen" aria-label="暮色森林 · 冰雪女王" aria-describedby="node-queen-hint">
+              <img src="../icons/twilightforest--snow_queen_trophy.png" alt="" draggable="false" data-game-item="twilightforest:snow_queen_trophy">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-queen-hint" role="tooltip" hidden>
+              <p class="preview-title">暮色森林 · 冰雪女王</p>
+              <dl>
+              <dt>现服前置</dt><dd>暮色森林 · 雪怪首领</dd>
+              <dt>现服下游</dt><dd>极光样本</dd>
+              <dt>说明</dt><dd>极光宫殿取得冰雪女王奖杯。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:28.567220%;--y:88.197425%"
+                    data-node="sun" aria-label="天境 · 太阳之灵" aria-describedby="node-sun-hint">
+              <img src="../icons/aether--gold_dungeon_key.png" alt="" draggable="false" data-game-item="aether:gold_dungeon_key">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-sun-hint" role="tooltip" hidden>
+              <p class="preview-title">天境 · 太阳之灵</p>
+              <dl>
+              <dt>现服下游</dt><dd>极光样本</dd>
+              <dt>说明</dt><dd>在金殿击败太阳之灵，带回黄金钥匙。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:51.751838%;--y:88.197425%"
+                    data-node="sample" aria-label="极光样本" aria-describedby="node-sample-hint">
+              <img src="../icons/kubejs--expedition_sample_5.png" alt="" draggable="false" data-game-item="kubejs:expedition_sample_5">
+              
+            </button>
+            <div class="quest-preview" id="node-sample-hint" role="tooltip" hidden>
+              <p class="preview-title">极光样本</p>
+              <dl>
+              <dt>辅矿</dt><dd>神炼重力晶矿供极光样本。</dd>
+              <dt>现服前置</dt><dd>暮色森林 · 雪怪首领、暮色森林 · 冰雪女王、天境 · 太阳之灵</dd>
+              <dt>现服下游</dt><dd>悬浮导航核心</dd>
+              <dt>说明</dt><dd>收齐标出的战利品，研究一次母样，以后可复制。另从天境采神炼重力晶矿作为现场样本。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:44.715447%;--y:13.948498%"
+                    data-node="ilmenite-charge" aria-label="钛铁矿炉料" aria-describedby="node-ilmenite-charge-hint">
+              <img src="../icons/kubejs--ilmenite_titanium_charge.png" alt="" draggable="false" data-game-item="kubejs:ilmenite_titanium_charge">
+              <span class="node-caption" aria-hidden="true">钛铁矿炉料</span>
+            </button>
+            <div class="quest-preview" id="node-ilmenite-charge-hint" role="tooltip" hidden>
+              <p class="preview-title">钛铁矿炉料</p>
+              <dl>
+              <dt>现服前置</dt><dd>钛铁矿</dd>
+              <dt>现服下游</dt><dd>钛锭</dd>
+              <dt>说明</dt><dd>钛铁矿磨洗并富集成合格炉料，铁可在加工中回收。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:44.715447%;--y:32.403433%"
+                    data-node="rutile-charge" aria-label="金红石炉料" aria-describedby="node-rutile-charge-hint">
+              <img src="../icons/kubejs--rutile_titanium_charge.png" alt="" draggable="false" data-game-item="kubejs:rutile_titanium_charge">
+              <span class="node-caption" aria-hidden="true">金红石炉料</span>
+            </button>
+            <div class="quest-preview" id="node-rutile-charge-hint" role="tooltip" hidden>
+              <p class="preview-title">金红石炉料</p>
+              <dl>
+              <dt>现服前置</dt><dd>金红石</dd>
+              <dt>现服下游</dt><dd>钛锭</dd>
+              <dt>说明</dt><dd>富钛的金红石粉洗选后转成更高收率的钛炉料。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:53.821138%;--y:23.175966%"
+                    data-node="titanium-ingot" aria-label="钛锭" aria-describedby="node-titanium-ingot-hint">
+              <img src="../icons/kubejs--titanium_ingot.png" alt="" draggable="false" data-game-item="kubejs:titanium_ingot">
+              <span class="node-caption" aria-hidden="true">钛锭</span>
+            </button>
+            <div class="quest-preview" id="node-titanium-ingot-hint" role="tooltip" hidden>
+              <p class="preview-title">钛锭</p>
+              <dl>
+              <dt>可选炉料</dt><dd>钛铁矿炉料或金红石炉料</dd>
+              <dt>现服下游</dt><dd>钛板</dd>
+              <dt>说明</dt><dd>先用本章升级后的炉子炼钛锭，再压成钛板。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:90.487805%;--y:53.218884%"
+                    data-node="titanium-lining" aria-label="钛合金耐压内衬" aria-describedby="node-titanium-lining-hint">
+              <img src="../icons/createindustrialmaterials--titanium_pressure_lining.png" alt="" draggable="false" data-game-item="createindustrialmaterials:titanium_pressure_lining">
+              <span class="node-caption" aria-hidden="true">钛合金耐压内衬</span>
+            </button>
+            <div class="quest-preview" id="node-titanium-lining-hint" role="tooltip" hidden>
+              <p class="preview-title">钛合金耐压内衬</p>
+              <dl>
+              <dt>规划前置</dt><dd>钛板</dd>
+              <dt>说明</dt><dd>钛板制作的配套耐压件，与钛合金集压器同时用于第三档锅炉。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:90.406504%;--y:68.454936%"
+                    data-node="hp-nozzle" aria-label="高压蒸汽喷嘴" aria-describedby="node-hp-nozzle-hint">
+              <img src="../icons/createindustrialmaterials--high_pressure_steam_nozzle.png" alt="" draggable="false" data-game-item="createindustrialmaterials:high_pressure_steam_nozzle">
+              <span class="node-caption" aria-hidden="true">高压蒸汽喷嘴</span>
+            </button>
+            <div class="quest-preview" id="node-hp-nozzle-hint" role="tooltip" hidden>
+              <p class="preview-title">高压蒸汽喷嘴</p>
+              <dl>
+              <dt>规划前置</dt><dd>钛板</dd>
+              <dt>说明</dt><dd>规划用钛板解锁。喷嘴装在停机的蒸汽喷口上。现服要求额定集压器和实际蒸汽都达 P8，具体舰船耗汽仍按实测。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:81.626016%;--y:82.618026%"
+                    data-node="dock" aria-label="成对码头" aria-describedby="node-dock-hint">
+              <img src="../icons/kubejs--freight_dock.png" alt="" draggable="false" data-game-item="kubejs:freight_dock">
+              <span class="node-caption" aria-hidden="true">成对码头</span>
+            </button>
+            <div class="quest-preview" id="node-dock-hint" role="tooltip" hidden>
+              <p class="preview-title">成对码头</p>
+              <dl>
+                <dt>关键前置</dt><dd>钛板（规划）</dd>
+                <dt>说明</dt><dd>先到两端各建一座码头，再登记货运路线。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:93.089431%;--y:82.618026%"
+                    data-node="shipping-route" aria-label="五级货运燃料芯与航线" aria-describedby="node-shipping-route-hint">
+              <img src="../icons/kubejs--freight_charge_5.png" alt="" draggable="false" data-game-item="kubejs:freight_charge_5">
+              <span class="node-caption" aria-hidden="true">货运航线</span>
+            </button>
+            <div class="quest-preview" id="node-shipping-route-hint" role="tooltip" hidden>
+              <p class="preview-title">五级货运燃料芯与航线</p>
+              <dl>
+                <dt>关键前置</dt><dd>悬浮导航核心</dd>
+                <dt>说明</dt><dd>现服的五级燃料芯需要悬浮导航核心。航线启用还需要两端已登记的码头和相同等级的燃料芯。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:61.138211%;--y:67.811159%"
+                    data-node="combustion-engine" aria-label="大型柴油内燃机" aria-describedby="node-combustion-engine-hint">
+              <img src="../icons/createdieselgenerators--large_diesel_engine.png" alt="" draggable="false" data-game-item="createdieselgenerators:large_diesel_engine">
+              <span class="node-caption" aria-hidden="true">大型柴油内燃机</span>
+            </button>
+            <div class="quest-preview" id="node-combustion-engine-hint" role="tooltip" hidden>
+              <p class="preview-title">大型柴油内燃机</p>
+              <dl>
+                <dt>规划前置</dt><dd>钛板和已有柴油线</dd>
+                <dt>同期应力目标</dt><dd>1×（第 3 档锅炉=1×）</dd>
+                <dt>说明</dt><dd>用钛板改装柴油机的动力件。稳定供油时，单套机组能提供与同档锅炉相同的应力。</dd>
+              </dl>
+            </div>
+            </div>
+          </div>
+          <p class="graph-note">连线包含独立的制作条件和可选加工路线。每个节点的完整说明可悬停查看。</p>
+          <p class="graph-note"><strong>Next 深海主线。</strong>上一章舱内采样与本章钛板 → <a href="#offshore-farming">深海 · 海上种植平台</a> → 潮汐种植 · 灯藻与盐根 → 悬浮导航核心。</p>
+          <div class="aux-strip" aria-label="本章辅助矿物">
+            <a class="aux-ore" href="../metallurgy.html#ore-gravitite"><img src="../icons/aether--gravitite_ore.png" data-game-item="aether:gravitite_ore" alt=""><span><strong>重力晶矿 → 神炼重力晶矿</strong><small>天境 · 重力晶矿体。神炼重力晶矿供极光样本。</small></span></a>
+          </div>
+        </section>
+      </details>
+      <details class="stage-foldout stage-reference-foldout">
+        <summary>查询任务、材料与数值</summary>
+        <div class="stage-reference-body" id="stage-reference">
+          <div class="stage-table-wrap quest-board" tabindex="0" role="region" aria-label="深层矿业生产与制约">
+            <table class="stage-table">
+              <caption class="sr-only">深层矿业生产与制约</caption>
+              <thead><tr><th scope="col">任务节点</th><th scope="col">要生产</th><th scope="col">制约条件</th></tr></thead>
+              <tbody>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-1-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span>
+                  <span>冶炼与切削</span>
+                </button>
+                <div class="quest-preview" id="milestone-1-preview" role="tooltip" hidden>
+                  <p class="preview-title">冶炼与切削</p>
+                  <dl><dt>要生产</dt><dd>本章新冶炼能力、切削工具</dd><dt>制约</dt><dd>下界飞行核心 → 钨合金炉圈</dd><dt>说明</dt><dd>用精炼冶金的钨和镍钢制先遣刀头。进末地开启外岛路线之后再搭钛矿工位。</dd></dl>
+                </div>
+              </th>
+              <td>本章新冶炼能力、切削工具</td>
+              <td>下界飞行核心 → 钨合金炉圈</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-2-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--raw_ilmenite.png" alt="" draggable="false" data-game-item="kubejs:raw_ilmenite"></span>
+                  <span>新矿物</span>
+                </button>
+                <div class="quest-preview" id="milestone-2-preview" role="tooltip" hidden>
+                  <p class="preview-title">新矿物</p>
+                  <dl><dt>要生产</dt><dd>钛铁矿、金红石</dd><dt>制约</dt><dd>达到本章挖掘等级的镐或钻头</dd><dt>说明</dt><dd>末地钛铁矿脉，分离获得钛炉料及铁副产。 末地钛铁矿脉的高钛伴生矿，供主力钛板产线。</dd></dl>
+                </div>
+              </th>
+              <td>钛铁矿、金红石</td>
+              <td>达到本章挖掘等级的镐或钻头</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-3-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--titanium_sheet.png" alt="" draggable="false" data-game-item="kubejs:titanium_sheet"></span>
+                  <span>初级产物</span>
+                </button>
+                <div class="quest-preview" id="milestone-3-preview" role="tooltip" hidden>
+                  <p class="preview-title">初级产物</p>
+                  <dl><dt>要生产</dt><dd>钛板</dd><dt>制约</dt><dd>本章冶炼、已有部件</dd><dt>说明</dt><dd>合格钛板作为初级产物，供第三档动力和采矿设备。先在岸上接通加工，再组装随船移动。</dd></dl>
+                </div>
+              </th>
+              <td>钛板</td>
+              <td>本章冶炼、已有部件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-4-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span>
+                  <span>动力升级</span>
+                </button>
+                <div class="quest-preview" id="milestone-4-preview" role="tooltip" hidden>
+                  <p class="preview-title">动力升级</p>
+                  <dl><dt>要生产</dt><dd>钛合金集压器、陶瓷炉衬、钛钻体</dd><dt>制约</dt><dd>钛板</dd><dt>说明</dt><dd>锅炉和烈焰人燃烧室各升一档。矿物回收保持精炼冶金解锁的最高收率。</dd></dl>
+                </div>
+              </th>
+              <td>钛合金集压器、陶瓷炉衬、钛钻体</td>
+              <td>钛板</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-5-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/twilightforest--alpha_yeti_fur.png" alt="" draggable="false" data-game-item="twilightforest:alpha_yeti_fur"></span>
+                  <span>远征门槛</span>
+                </button>
+                <div class="quest-preview" id="milestone-5-preview" role="tooltip" hidden>
+                  <p class="preview-title">远征门槛</p>
+                  <dl><dt>要生产</dt><dd>极光样本</dd><dt>制约</dt><dd>雪怪首领、冰雪女王、太阳之灵</dd><dt>说明</dt><dd>收齐战利品制母样，量产可复制。另到末地打开外岛折跃门并开钛矿，去天境采神炼重力晶矿。</dd></dl>
+                </div>
+              </th>
+              <td>极光样本</td>
+              <td>雪怪首领、冰雪女王、太阳之灵</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#offshore-farming">深海 · 海上种植平台</a></th>
+              <td>两座潮汐种植床与平台验证记录</td>
+              <td>钛板、上一章的舱内采样。建成深海水面甲板和水下种植区，用空的主手右击种植床验证。</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#offshore-farming">潮汐种植 · 灯藻与盐根</a></th>
+              <td>灯藻叶、盐根鳞茎与两种作物的采收记录</td>
+              <td>已验证的海上种植平台。用空的主手分别右击成熟作物，留出收成供悬浮导航核心装配。</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-6-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--levitite_nav_core.png" alt="" draggable="false" data-game-item="kubejs:levitite_nav_core"></span>
+                  <span>高级芯片</span>
+                </button>
+                <div class="quest-preview" id="milestone-6-preview" role="tooltip" hidden>
+                  <p class="preview-title">高级芯片</p>
+                  <dl><dt>要生产</dt><dd>悬浮导航核心</dd><dt>制约</dt><dd>钛板、极光样本、末影构件与本章的潮汐种植任务</dd><dt>说明</dt><dd>用灯藻叶和盐根鳞茎完成耐压密封。悬浮导航核心开启高热动力。</dd></dl>
+                </div>
+              </th>
+              <td>悬浮导航核心</td>
+              <td>钛板、极光样本、末影构件。完成潮汐种植后，装配时消耗灯藻叶和盐根鳞茎各一份。</td>
+            </tr>
+            <tr>
+              <th scope="row">码头与航线</th>
+              <td>成对码头、五级货运燃料芯与货运航线</td>
+              <td>规划用钛板开码头。悬浮导航核心用于燃料芯，两端码头都登记后启用航线。</td>
+            </tr>
+            <tr>
+              <th scope="row">内燃机</th>
+              <td>大型柴油内燃机 · 应力 1× 同档锅炉</td>
+              <td>钛板、柴油。用钛板改装柴油机的动力件。稳定供油时，单套机组能提供与同档锅炉相同的应力。</td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        <section class="chapter-note process-rules" aria-label="采掘与冶炼设计">
+          <p><strong>挖掘等级。</strong>规划中，Create 动力钻头的合成消耗对应等级的钻头部件，成品保留该部件的挖掘等级。镐、动力钻头与 CreateMine 共用矿物挖掘门槛。动力和转速影响效率。</p>
+          <p><strong>本章冶炼设计。</strong>下界飞行核心和上一章钨材开启钨合金炉圈，先建好这档冶炼才能把钛铁矿和金红石处理为钛材。高炉钨合金外圈管矿物处理，钛合金集压器管蒸汽承压。</p>
+        </section>
+        <p class="chapter-note power-benchmark">应力按一套成型动力组在相同转速、稳定供料时可持续对外提供的 SU 比较。表中为设计目标。</p>
+        </div>
+      </details>
+    </main>
+  </div>
+</body>
+</html>

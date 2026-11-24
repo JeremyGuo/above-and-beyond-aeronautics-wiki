@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>下界 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="world-atlas">
+  <a class="world-skip" href="#world-content">跳到正文</a>
+  <div class="world-shell">
+    <aside class="world-rail">
+      <div class="world-rail-inner">
+        <a class="world-brand" href="../index.html"><img src="../icons/ftbquests--book.png" alt="" width="24" height="24" data-game-item="ftbquests:book"><span>Above and Beyond Aeronautics</span></a>
+        <nav class="world-primary" aria-label="任务书导航">
+          <a href="../index.html">任务书</a>
+          <a href="index.html">世界图鉴</a>
+          <a href="../metallurgy.html">矿物处理与熔炼</a>
+        </nav>
+        <nav class="world-toc" aria-label="本页目录">
+          <a href="#access">到达方式</a>
+          <a href="#minerals">矿物分布</a>
+          <a href="#bosses">首领</a>
+          <a href="#story">故事与远征</a>
+          <a href="#sources">资料来源</a>
+        </nav>
+      </div>
+    </aside>
+    <main class="world-content" id="world-content" tabindex="-1">
+      <header class="world-hero">
+        <div class="world-hero-copy">
+          <div class="world-title">
+            <span class="world-icon" data-world="nether" aria-hidden="true"><img src="../icons/minecraft--netherite_scrap.png" data-game-item="minecraft:netherite_scrap" alt="" width="48" height="48"></span>
+            <div><p class="world-kind">探索世界</p><h1>下界</h1></div>
+          </div>
+          <p class="world-intro">由 Incendium 改造的熔岩世界。要塞供应烈焰人和烈焰粉，钨矿、钴矿与远古残骸则支撑第四章的首批高温合金和飞行部件。</p>
+        </div>
+        <aside class="world-facts" aria-label="维度速览">
+          <dl>
+            <div><dt>维度 ID</dt><dd><code>minecraft:the_nether</code></dd></div>
+            <div><dt>矿床</dt><dd><a href="#minerals">7 条记录</a></dd></div>
+            <div><dt>首领</dt><dd><a href="#bosses">4 项</a></dd></div>
+          </dl>
+        </aside>
+      </header>
+      <section class="world-section" aria-labelledby="access">
+        <h2 id="access">到达方式</h2>
+        <ul class="world-text-list">
+          <li>在主世界搭黑曜石门框并点火即可进入。</li>
+          <li>黄铜轻航可先到下界要塞找烈焰人，蒸汽工坊可取萤石供天境门。</li>
+          <li>精炼冶金再带 III 级镍钢切削工具进入矿区。</li>
+        </ul>
+        <nav class="world-chapters" aria-label="相关工业章节">
+          <span>相关章节</span>
+          <a href="../stages/2.html">黄铜轻航</a>
+          <a href="../stages/3.html">蒸汽工坊</a>
+          <a href="../stages/4.html">精炼冶金</a>
+        </nav>
+      </section>
+      <section class="world-section" aria-labelledby="minerals">
+        <h2 id="minerals">矿物分布</h2>
+        <ul class="world-text-list">
+          <li>白钨矿为第四章主要钨源，伴生黑钨矿走另一条选矿路线。两种钨矿的合格炉料与钴料都可进镍钢热风高炉，镍黄铁矿湿选副产的钴粒也可作为钴料。</li>
+          <li>下界石英供电子管和部分冶炼辅料，下界金矿可补金粒。远古残骸用合格工具采集后按 JEI 精炼成下界合金碎片。</li>
+        </ul>
+        <details class="world-ore-fold">
+          <summary>矿床分布表 <span>7 条记录</span></summary>
+          <div class="world-ore-scroll" tabindex="0" role="region" aria-label="矿床分布表">
+            <table class="world-ore-table">
+              <caption class="sr-only">下界的矿床分布</caption>
+              <thead><tr><th scope="col">矿床</th><th scope="col">分布区域</th><th scope="col">矿层高度</th><th scope="col">矿物与产出</th></tr></thead>
+              <tbody>
+              <tr><th scope="row">下界石英矿脉</th><td>实矿结构，下界群系标签。每 70 × 70 区块网格有一个候选，频率判定 92%。</td><td>固定矿芯基准 Y 49。</td><td>地形裁切前共 2,136 块矿石。下界石英 1,664 块（约 77.9%）、金 332 块（约 15.5%）、钴 140 块（约 6.6%）。矿机登记产物为下界石英、金粒、粗钴。</td></tr>
+              <tr><th scope="row">下界金矿脉</th><td>实矿结构，下界群系标签。每 70 × 70 区块网格有一个候选，频率判定 69%。</td><td>固定矿芯基准 Y 55。</td><td>地形裁切前共 1,358 块矿石。金 1,070 块（约 78.8%）、下界石英 148 块（约 10.9%）、钴 140 块（约 10.3%）。矿机登记产物为金粒、下界石英、粗钴。</td></tr>
+              <tr><th scope="row">钴矿断裂带</th><td>实矿结构，下界群系标签。每 70 × 70 区块网格有一个候选，频率判定 52.44%。</td><td>固定矿芯基准 Y 30。</td><td>地形裁切前共 948 块矿石。钴 140 块（约 14.8%）、下界石英 542 块（约 57.2%）、金 226 块（约 23.8%）、白钨矿 40 块（约 4.2%）。矿机登记产物为粗钴、下界石英、金粒、粗白钨矿。</td></tr>
+              <tr><th scope="row">埋藏残骸矿脉</th><td>实矿结构，下界群系标签。每 70 × 70 区块网格有一个候选，频率判定 16.56%。</td><td>固定矿芯基准 Y 17。</td><td>地形裁切前共 345 块矿石。远古残骸 22 块（约 6.4%）、下界石英 249 块（约 72.2%）、钴 68 块（约 19.7%）、金 6 块（约 1.7%）。矿机登记产物为远古残骸、下界石英、粗钴、金粒。</td></tr>
+              <tr><th scope="row">白钨矿裂隙</th><td>实矿结构，下界群系标签。每 70 × 70 区块网格有一个候选，频率判定 39.56%。</td><td>固定矿芯基准 Y 25。</td><td>地形裁切前共 881 块矿石。白钨矿 554 块（约 62.9%）、钴 34 块（约 3.9%）、黑钨矿 45 块（约 5.1%）、下界石英 213 块（约 24.2%）、金 35 块（约 4%）。矿机登记产物为粗白钨矿、粗钴、粗黑钨矿、下界石英、金粒。</td></tr>
+              <tr><th scope="row">起步零星矿包</th><td>小型实矿块，适用下界群系标签。括号内是每区块的放置尝试率。</td><td>钴 Y 15 至 75（1/6）、金 Y 12 至 114（1/4）、下界石英 Y 12 至 104（1/3）。所列数值为尝试的绝对 Y。</td><td>可采出粗钴、金粒、下界石英。</td></tr>
+              <tr><th scope="row">零星远古残骸</th><td>在可替换的下界岩石中生成。Incendium 的小型放置每区块尝试 2 次。</td><td>大型放置 Y 8 至 24，中心较密。小型放置从地形生成底以上 8 格至生成顶以下 8 格。</td><td>远古残骸。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p class="world-resource-link"><a href="../metallurgy.html">矿物处理与熔炼</a></p>
+      </section>
+      <section class="world-section" aria-labelledby="bosses">
+        <h2 id="bosses">首领</h2>
+        <dl class="world-boss-list">
+          <div class="world-entry">
+            <dt>下界合金巨兽｜灵魂锻冶厂</dt>
+            <dd>
+              <p>战役选做。</p>
+              <p>锻冶厂可见于下界荒地、灵魂沙峡谷、绯红森林和诡异森林。</p>
+              <p class="world-reward">巨兽吸入岩浆时会回血，原生战利品包括炼狱锻锤、恶兽犄角与熔岩动力电池。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>焰魔｜燃烧竞技场</dt>
+            <dd>
+              <p>战役选做，战斗卡称为炎魔。</p>
+              <p>竞技场位于下界荒地。</p>
+              <p>击败炽燃遗魂取得炽燃余烬，用祭坛召唤焰魔。</p>
+              <p class="world-reward">主要战利品是腾炎锭。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>悬空炼狱｜炼狱祭坛</dt>
+            <dd>
+              <p>Incendium 下界远征选做。</p>
+              <p>在炼狱沙丘找到祭坛，以凋灵的下界之星启动。</p>
+              <p>完成真实战斗进度后，任务书奖励 8 级经验。</p>
+            </dd>
+          </div>
+          <div class="world-entry">
+            <dt>管道哨兵｜废弃管道</dt>
+            <dd>
+              <p>Incendium 下界远征的小首领。</p>
+              <p>战斗记录匹配管道中的专属烈焰人。</p>
+              <p>完成熄灭管道哨兵任务可领取 8 根金胡萝卜。</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="world-section" aria-labelledby="story">
+        <h2 id="story">故事与远征</h2>
+        <ol class="world-story">
+          <li><p>黄铜工坊用空烈焰人燃烧室到要塞捕获烈焰人，可对烈焰人或刷怪笼使用。</p><p>留一批烈焰粉用来合成寻找末地要塞的末影之眼。</p></li>
+          <li><p>精炼冶金用 III 级工具取白钨矿及伴生黑钨矿，再从炼制的钨锭与钴锭制冥火构件。</p><p>远古残骸加工出的下界合金碎片与跨维度幽泪样本、陀螺飞行芯片和深海种子共同进入飞行核心的装配流程。</p></li>
+          <li><p>下界远征记录沿断掉的货运线走过废弃管道和炼狱祭坛。</p><p>先调查入口、返程门和补给点，完成管道哨兵与祭坛挑战后，把勘察成书和一份下界合金碎片交回港口。</p></li>
+          <li><p>战役另外沿灵魂锻冶厂和燃烧竞技场追查失联路线。</p><p>两座灾变遗址的战斗用于战役记录，两处掉落均可作为装备升级材料。</p></li>
+        </ol>
+      </section>
+      <section class="world-section" aria-labelledby="sources">
+        <h2 id="sources">资料来源</h2>
+        <ul class="world-text-list">
+          <li><a href="../stages/4.html">第四章 · 精炼冶金</a></li>
+          <li><a href="https://www.stardustlabs.net/incendium">Stardust Labs · Incendium</a></li>
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/lendercataclysm/files/8931182">灾变 3.33 · 作者发行页</a></li>
+          <li><a href="https://www.minecraft.net/en-us/article/around-block--nether-wastes">Minecraft 官方 · 下界荒地与要塞</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

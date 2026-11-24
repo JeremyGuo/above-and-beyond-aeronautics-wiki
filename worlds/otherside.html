@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>深暗彼端 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="world-atlas">
+  <a class="world-skip" href="#world-content">跳到正文</a>
+  <div class="world-shell">
+    <aside class="world-rail">
+      <div class="world-rail-inner">
+        <a class="world-brand" href="../index.html"><img src="../icons/ftbquests--book.png" alt="" width="24" height="24" data-game-item="ftbquests:book"><span>Above and Beyond Aeronautics</span></a>
+        <nav class="world-primary" aria-label="任务书导航">
+          <a href="../index.html">任务书</a>
+          <a href="index.html">世界图鉴</a>
+          <a href="../metallurgy.html">矿物处理与熔炼</a>
+        </nav>
+        <nav class="world-toc" aria-label="本页目录">
+          <a href="#access">到达方式</a>
+          <a href="#minerals">矿物分布</a>
+          <a href="#bosses">首领</a>
+          <a href="#story">故事与远征</a>
+          <a href="#sources">资料来源</a>
+        </nav>
+      </div>
+    </aside>
+    <main class="world-content" id="world-content" tabindex="-1">
+      <header class="world-hero">
+        <div class="world-hero-copy">
+          <div class="world-title">
+            <span class="world-icon" data-world="otherside" aria-hidden="true"><img src="../icons/deeperdarker--heart_of_the_deep.png" data-game-item="deeperdarker:heart_of_the_deep" alt="" width="48" height="48"></span>
+            <div><p class="world-kind">探索世界</p><h1>深暗彼端</h1></div>
+          </div>
+          <p class="world-intro">深暗彼端是 Deeper and Darker 加入的幽匿洞窟维度。Next 的远征从主世界远古城市的勘察记录出发，入境后可沿回响森林的红石矿脉和深域的古老神殿两条支线调查。</p>
+        </div>
+        <aside class="world-facts" aria-label="维度速览">
+          <dl>
+            <div><dt>维度 ID</dt><dd><code>deeperdarker:otherside</code></dd></div>
+            <div><dt>矿床</dt><dd><a href="#minerals">9 条记录</a></dd></div>
+          </dl>
+        </aside>
+      </header>
+      <section class="world-section" aria-labelledby="access">
+        <h2 id="access">到达方式</h2>
+        <ul class="world-text-list">
+          <li>先在主世界勘察远古城市，取得击败监守者的进度和它掉落的深渊之心。</li>
+          <li>清除城市中央强化深板岩门框内的幽匿脉络等阻挡物，手持深渊之心右击框架激活，再步行穿过传送门登记入境。</li>
+        </ul>
+      </section>
+      <section class="world-section" aria-labelledby="minerals">
+        <h2 id="minerals">矿物分布</h2>
+        <ul class="world-text-list">
+          <li>本维度的区域矿路收录煤、铁、铜、金、红石、青金石、绿宝石和钻石，可在幽匿石与幽暗板岩围岩中找到对应矿石。</li>
+          <li>红石矿脉直接关联本地远征任务。参照区域矿脉表和矿脉勘测工具定位，再用对应矿物的工艺处理矿石。</li>
+        </ul>
+        <details class="world-ore-fold">
+          <summary>矿床分布表 <span>9 条记录</span></summary>
+          <div class="world-ore-scroll" tabindex="0" role="region" aria-label="矿床分布表">
+            <table class="world-ore-table">
+              <caption class="sr-only">深暗彼端的矿床分布</caption>
+              <thead><tr><th scope="col">矿床</th><th scope="col">分布区域</th><th scope="col">矿层高度</th><th scope="col">矿物与产出</th></tr></thead>
+              <tbody>
+              <tr><th scope="row">彼端煤矿脉</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 75%。</td><td>固定矿芯基准 Y 47。</td><td>地形裁切前共 1,502 块矿石。煤 985 块（约 65.6%）、铁 182 块（约 12.1%）、辉铜矿 335 块（约 22.3%）。矿机登记产物为煤炭、粗铁、粗辉铜矿。</td></tr>
+              <tr><th scope="row">彼端铁矿脉</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 69.75%。</td><td>固定矿芯基准 Y 41。</td><td>地形裁切前共 1,410 块矿石。铁 857 块（约 60.8%）、煤 201 块（约 14.3%）、黄铜矿 291 块（约 20.6%）、含朱砂红石 61 块（约 4.3%）。矿机登记产物为粗铁、煤炭、粗黄铜矿、粗朱砂。</td></tr>
+              <tr><th scope="row">彼端铜矿脉</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 60.75%。</td><td>固定矿芯基准 Y 49。</td><td>地形裁切前共 1,346 块矿石。辉铜矿 860 块（约 63.9%）、黄铜矿 64 块（约 4.8%）、铁 65 块（约 4.8%）、煤 296 块（约 22%）、金 61 块（约 4.5%）。矿机登记产物为粗辉铜矿、粗黄铜矿、粗铁、煤炭、粗金。</td></tr>
+              <tr><th scope="row">彼端金矿脉</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 46.5%。</td><td>固定矿芯基准 Y 29。</td><td>地形裁切前共 1,000 块矿石。金 594 块（约 59.4%）、辉铜矿 159 块（约 15.9%）、含朱砂红石 205 块（约 20.5%）、青金石 42 块（约 4.2%）。矿机登记产物为粗金、粗辉铜矿、粗朱砂、青金石。</td></tr>
+              <tr><th scope="row">彼端红石矿脉</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 53.25%。</td><td>固定矿芯基准 Y 24。</td><td>地形裁切前共 1,159 块矿石。含朱砂红石 671 块（约 57.9%）、青金石 168 块（约 14.5%）、铁 269 块（约 23.2%）、钻石 51 块（约 4.4%）。矿机登记产物为粗朱砂、青金石、粗铁、钻石。</td></tr>
+              <tr><th scope="row">彼端青金石矿脉</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 47.25%。</td><td>固定矿芯基准 Y 31。</td><td>地形裁切前共 1,002 块矿石。青金石 681 块（约 68%）、含朱砂红石 101 块（约 10.1%）、铁 220 块（约 22%）。矿机登记产物为青金石、粗朱砂、粗铁。</td></tr>
+              <tr><th scope="row">彼端绿宝石矿体</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 26.25%。</td><td>固定矿芯基准 Y 52。</td><td>地形裁切前共 520 块矿石。绿宝石 85 块（约 16.3%）、黄铜矿 304 块（约 58.5%）、青金石 113 块（约 21.7%）、钻石 18 块（约 3.5%）。矿机登记产物为绿宝石、粗黄铜矿、青金石、钻石。</td></tr>
+              <tr><th scope="row">彼端钻石岩管</th><td>实矿结构，繁盛洞窟、深域、回响森林、阴郁石柱群。每 66 × 66 区块网格有一个候选，频率判定 29.25%。</td><td>固定矿芯基准 Y 15。</td><td>地形裁切前共 515 块矿石。钻石 100 块（约 19.4%）、煤 283 块（约 55%）、含朱砂红石 110 块（约 21.4%）、青金石 22 块（约 4.3%）。矿机登记产物为钻石、煤炭、粗朱砂、青金石。</td></tr>
+              <tr><th scope="row">起步零星矿包</th><td>小型实矿块，适用繁盛洞窟、深域、回响森林、阴郁石柱群。括号内是每区块的放置尝试率。</td><td>煤 Y 26 至 86（1/3）、铜 Y 21 至 85（1/4）、钻石 Y 6 至 32（1/10）、绿宝石 Y 26 至 79（1/10）、金 Y 13 至 53（1/6）、铁 Y 18 至 81（1/3）、青金石 Y 7 至 51（1/6）、含朱砂红石 Y 6 至 42（1/5）。所列数值为尝试的绝对 Y。</td><td>可采出煤炭、粗铜、钻石、绿宝石、粗金、粗铁、青金石、粗朱砂。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p class="world-resource-link"><a href="../metallurgy.html">矿物处理与熔炼</a></p>
+      </section>
+      <section class="world-section" aria-labelledby="bosses">
+        <h2 id="bosses">首领</h2>
+        <p>本维度没有首领战。</p>
+      </section>
+      <section class="world-section" aria-labelledby="story">
+        <h2 id="story">故事与远征</h2>
+        <ol class="world-story">
+          <li><p>踏入回响森林并采集 8 块幽匿石圆石，完成矿路的首笔记录。</p></li>
+          <li><p>登记深暗彼端的区域红石矿脉，带回 16 份红石与 2 枚红石触点，任务奖励 4 张铁板。</p></li>
+          <li><p>用指南针和 4 块监守者甲壳制作古代罗盘，在彼端定位未探索的古老神殿。</p><p>登记神殿后，击败 2 个碎裂者并收集幽匿骨头，任务奖励 8 根金胡萝卜。</p></li>
+          <li><p>打破设有伏击的古代陶罐时可能惊动潜行者。</p><p>它的原生战利品包含灵魂水晶。</p></li>
+          <li><p>从远古城市或神殿宝箱寻找回响碎片。</p><p>用 1 枚回响碎片、4 块监守者甲壳和 4 张幻翼膜合成强化回响碎片，取得原生进度后可领取 8 级经验。</p></li>
+          <li><p>完成红石和神殿两条记录，随身携带一本成书即可完成归档任务。</p><p>奖励为一个 Create 货物蛙港。</p></li>
+        </ol>
+      </section>
+      <section class="world-section" aria-labelledby="sources">
+        <h2 id="sources">资料来源</h2>
+        <ul class="world-text-list">
+          <li><a href="https://modrinth.com/mod/deeperdarker/version/TuD0Zvi3">Deeper and Darker 1.4.1 · NeoForge</a></li>
+          <li><a href="https://github.com/KyaniteMods/DeeperAndDarker/wiki/The-Otherside">作者 Wiki · The Otherside</a></li>
+          <li><a href="https://github.com/KyaniteMods/DeeperAndDarker/releases/tag/v1.4">作者发布记录 · 古代罗盘与古老神殿</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

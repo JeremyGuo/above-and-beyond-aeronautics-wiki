@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高压工业 · Above and Beyond Aeronautics</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="guides.css">
+  <script src="../quests.js" defer></script>
+</head>
+<body class="stage-guide">
+  <header class="site-header">
+    <a href="../index.html"><span class="book-mark" aria-hidden="true"><img src="../icons/ftbquests--book.png" alt="" draggable="false" data-game-item="ftbquests:book"></span>Above and Beyond Aeronautics</a>
+  </header>
+  <div class="detail-page">
+    <nav class="contents" aria-label="工业章节">
+      <a class="back-link" href="../index.html">任务书</a>
+      <a href="../worlds/index.html">世界图鉴</a>
+      <ol>
+        <li><a href="1.html"><span class="quest-emblem crest-1 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--andesite_control_chip.png" alt="" draggable="false" data-game-item="kubejs:andesite_control_chip"></span><span>安山工坊</span></a></li>
+        <li><a href="2.html"><span class="quest-emblem crest-2 emblem-nav" aria-hidden="true"><img src="../icons/create--brass_ingot.png" alt="" draggable="false" data-game-item="create:brass_ingot"></span><span>黄铜轻航</span></a></li>
+        <li><a href="3.html"><span class="quest-emblem crest-3 emblem-nav" aria-hidden="true"><img src="../icons/create--steam_engine.png" alt="" draggable="false" data-game-item="create:steam_engine"></span><span>蒸汽工坊</span></a></li>
+        <li><a href="4.html"><span class="quest-emblem crest-4 emblem-nav" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span><span>精炼冶金</span></a></li>
+        <li><a href="5.html"><span class="quest-emblem crest-5 emblem-nav" aria-hidden="true"><img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip"></span><span>深层矿业</span></a></li>
+        <li><a href="6.html"><span class="quest-emblem crest-6 emblem-nav" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span><span>高热动力</span></a></li>
+        <li><a href="7.html" aria-current="page"><span class="quest-emblem crest-7 emblem-nav" aria-hidden="true"><img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core"></span><span>高压工业</span></a></li>
+      </ol>
+    </nav>
+    <main>
+      <div class="chapter-title">
+        <span class="quest-emblem crest-7" aria-hidden="true"><img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core"></span>
+        <div><h1>高压工业</h1><p>第五档锅炉与燃烧室</p></div>
+      </div>
+      <p class="stage-lead">跨界采铂和星钻，按沉没之城战役取得利维坦的潮汐之爪。终局再扩展跨维物流。</p>
+      <nav class="stage-jump" aria-label="本章目录">
+        <a href="#graph-title">完整依赖图</a>
+        <a href="#stage-reference">任务与材料</a>
+      </nav>
+      <section class="stage-route" aria-labelledby="stage-route-title">
+        <h2 id="stage-route-title">本章主线</h2>
+        <ol class="stage-steps">
+          <li>
+            <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" width="36" height="36" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+            <h3>升级深银热风高炉</h3>
+            <p>用星光调度芯片和深银开启终章炉圈与高阶选别件。</p>
+          </li>
+          <li>
+            <img src="../icons/createpropulsion--platinum_ingot.png" alt="" width="36" height="36" draggable="false" data-game-item="createpropulsion:platinum_ingot">
+            <h3>备铂、星钻和热泉石锭</h3>
+            <p>在主世界开采铂矿，去永恒星光获取星钻与热泉石。</p>
+          </li>
+          <li>
+            <img src="../icons/cataclysm--tidal_claws.png" alt="" width="36" height="36" draggable="false" data-game-item="cataclysm:tidal_claws">
+            <h3>挑战利维坦</h3>
+            <p>在沉没之城水下作战，带回潮汐利爪校准热泉石样件。</p>
+          </li>
+          <li>
+            <img src="../icons/kubejs--flagship_control_core.png" alt="" width="36" height="36" draggable="false" data-game-item="kubejs:flagship_control_core">
+            <h3>制旗舰控制核心</h3>
+            <p>组装耐压座、星钻和认证样件，再扩展跨维物流。</p>
+          </li>
+        </ol>
+      </section>
+      <details class="stage-foldout stage-dependency-foldout">
+        <summary>查看完整依赖图</summary>
+        <section class="unlock-graph" aria-labelledby="graph-title">
+          <div class="graph-heading">
+            <h2 id="graph-title">生产与远征门槛</h2>
+            <a class="metallurgy-link" href="../metallurgy.html#chapter-7">本章熔炼产线与产率</a>
+            <p><span class="legend live"></span>现服已核对 <span class="legend plan"></span>阶段规划</p>
+          </div>
+          <div class="graph-scroll quest-board" tabindex="0" role="region" aria-label="工业生产和远征依赖图">
+            <div class="diagram" data-diagram style="--graph-height:399;">
+              <svg class="dependency-lines" viewBox="0 0 1230 399" width="1230" height="399" aria-hidden="true">
+                <defs>
+                  <marker id="arrow-live" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#99c9b7"/>
+                  </marker>
+                  <marker id="arrow-plan" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+                    <path d="M 0 0 L 6 3 L 0 6 Z" fill="#d8a574"/>
+                  </marker>
+                </defs>
+            <path class="dependency-edge edge-plan" data-from="previous" data-to="workshop-upgrade" d="M 86.91 92.64 L 112.88 69.36" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="workshop-upgrade" data-to="smelt" d="M 147.95 68.38 L 174.39 89.57" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="smelt" data-to="cut" d="M 220.39 108.00 L 302.00 108.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="cut" data-to="ore1" d="M 346.84 100.78 L 433.16 72.22" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="cut" data-to="ore2" d="M 346.84 115.22 L 433.16 143.78" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="boiler" d="M 760.00 131.00 L 760.00 190.00 L 503.41 190.00 L 503.41 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="basic" data-to="burner" d="M 760.00 131.00 L 760.00 190.00 L 788.86 190.00 L 788.86 225.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-plan" data-from="leviathan" data-to="advanced" d="M 138.64 355.00 L 1182.31 355.00 L 1182.31 156.00 L 950.00 156.00 L 950.00 131.00" marker-end="url(#arrow-plan)"/>
+            <path class="dependency-edge edge-live" data-from="advanced" data-to="wireless" d="M 949.60 131.00 L 947.99 225.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="wireless" data-to="quantum" d="M 970.59 248.00 L 1094.69 248.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="ore1" data-to="platinum-concentrate" d="M 478.00 65.00 L 523.00 65.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-live" data-from="platinum-concentrate" data-to="platinum-sponge" d="M 569.00 65.00 L 627.00 65.00" marker-end="url(#arrow-live)"/>
+            <path class="dependency-edge edge-plan" data-from="platinum-sponge" data-to="basic" d="M 671.42 73.37 L 738.58 99.63" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="advanced" d="M 783.00 108.00 L 927.00 108.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="ore2" data-to="advanced" d="M 478.00 151.00 L 792.00 151.00 L 792.00 108.00 L 927.00 108.00" marker-end="url(#arrow-plan)"/>
+              <path class="dependency-edge edge-plan" data-from="basic" data-to="combustion-engine" d="M 760.00 131.00 L 760.00 134.00 L 836.00 134.00 L 836.00 288.00" marker-end="url(#arrow-plan)"/>
+              </svg>
+            <button type="button" class="diagram-node node-chip" style="--x:5.673600%;--y:27.067669%"
+                    data-node="previous" aria-label="星光调度芯片" aria-describedby="node-previous-hint">
+              <img src="../icons/kubejs--me_network_board.png" alt="" draggable="false" data-game-item="kubejs:me_network_board">
+              
+            </button>
+            <div class="quest-preview" id="node-previous-hint" role="tooltip" hidden>
+              <p class="preview-title">星光调度芯片</p>
+              <dl>
+              <dt>规划解锁</dt><dd>深银导热炉圈与高阶选别件</dd>
+              <dt>说明</dt><dd>完成「高热动力」带来本章的冶炼升级。</dd>
+              </dl>
+            </div>
+
+            <button type="button" class="diagram-node node-item" style="--x:10.569106%;--y:13.533835%"
+                    data-node="workshop-upgrade" aria-label="深银导热炉圈与高阶选别件" aria-describedby="node-workshop-upgrade-hint">
+              <img src="../icons/eternal_starlight--deepsilver_ingot.png" alt="" draggable="false" data-game-item="eternal_starlight:deepsilver_ingot">
+              <span class="node-caption" aria-hidden="true">升级炉圈</span>
+            </button>
+            <div class="quest-preview" id="node-workshop-upgrade-hint" role="tooltip" hidden>
+              <p class="preview-title">深银导热炉圈与高阶选别件</p>
+              <dl>
+                <dt>规划前置</dt><dd>星光调度芯片、上一章深银锭、钛板与已有工位</dd>
+                <dt>规划解锁</dt><dd>高压工业冶炼能力</dd>
+                <dt>产率路线</dt><dd>终章精炼 · 铂与星钻</dd>
+                <dt>装配</dt><dd>制作时投入芯片，部件装进工位或组成炉圈。节点使用游戏中已有材料的图标。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:16.048182%;--y:27.067669%"
+                    data-node="smelt" aria-label="高压工业冶炼能力" aria-describedby="node-smelt-hint">
+              <img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller">
+              
+            </button>
+            <div class="quest-preview" id="node-smelt-hint" role="tooltip" hidden>
+              <p class="preview-title">高压工业冶炼能力</p>
+              <dl>
+              <dt>规划前置</dt><dd>深银导热炉圈与高阶选别件</dd>
+              <dt>规划解锁</dt><dd>本章镐与动力钻头</dd>
+              <dt>冶炼限制</dt><dd>星光调度芯片和深银导热件开启终章炉圈。含铂炉料用终章热风高炉精炼，星钻走高等级分选线。炉档、热风和炉腔共同决定配方能否运行。</dd>
+              <dt>说明</dt><dd>用上一章的深银与钛做最终切削工具，铂和星钻先走独立矿站，库存经港口汇总。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:26.422764%;--y:27.067669%"
+                    data-node="cut" aria-label="本章镐与动力钻头" aria-describedby="node-cut-hint">
+              <img src="../icons/createmine--drill_tip.png" alt="" draggable="false" data-game-item="createmine:drill_tip">
+              
+            </button>
+            <div class="quest-preview" id="node-cut-hint" role="tooltip" hidden>
+              <p class="preview-title">本章镐与动力钻头</p>
+              <dl>
+              <dt>规划前置</dt><dd>高压工业冶炼能力</dd>
+              <dt>规划解锁</dt><dd>铂矿、星钻矿</dd>
+              <dt>说明</dt><dd>先用上一章已有材料制造合格钻头部件。Create 动力钻头在合成时消耗这个部件，成品继承它的挖掘等级。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:61.788617%;--y:27.067669%"
+                    data-node="basic" aria-label="铂锭" aria-describedby="node-basic-hint">
+              <img src="../icons/createpropulsion--platinum_ingot.png" alt="" draggable="false" data-game-item="createpropulsion:platinum_ingot">
+              
+            </button>
+            <div class="quest-preview" id="node-basic-hint" role="tooltip" hidden>
+              <p class="preview-title">铂锭</p>
+              <dl>
+              <dt>规划前置</dt><dd>海绵铂</dd>
+              <dt>规划解锁</dt><dd>旗舰控制核心、第 5 档锅炉、第 5 档烈焰人燃烧室、超大型柴油内燃机</dd>
+              <dt>说明</dt><dd>首批铂锭用来装第五档锅炉、烈焰人燃烧室和旗舰耐压件。该批设备可在最终核心之前建造。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-chip" style="--x:77.235773%;--y:27.067669%"
+                    data-node="advanced" aria-label="旗舰控制核心" aria-describedby="node-advanced-hint">
+              <img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core">
+              
+            </button>
+            <div class="quest-preview" id="node-advanced-hint" role="tooltip" hidden>
+              <p class="preview-title">旗舰控制核心</p>
+              <dl>
+              <dt>辅矿</dt><dd>热泉石锭计划用于旗舰控制核心的热端零件。</dd>
+              <dt>规划前置</dt><dd>铂锭、沉没之城 · 利维坦、星钻矿</dd>
+              <dt>现服下游</dt><dd>无线接收器</dd>
+              <dt>说明</dt><dd>旗舰控制核心接通终章无线、量子桥、P2P 和空间运输。长距离有线 ME 保持可用。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:16.290727%"
+                    data-node="ore1" aria-label="铂矿" aria-describedby="node-ore1-hint">
+              <img src="../icons/createpropulsion--raw_platinum.png" alt="" draggable="false" data-game-item="createpropulsion:raw_platinum">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore1-hint" role="tooltip" hidden>
+              <p class="preview-title">铂矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头</dd>
+              <dt>现服下游</dt><dd>铂精矿</dd>
+              <dt>说明</dt><dd>主世界含铂矿脉，以本章设备富集、精炼为铂锭。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-field" style="--x:36.991870%;--y:37.844612%"
+                    data-node="ore2" aria-label="星钻矿" aria-describedby="node-ore2-hint">
+              <img src="../icons/eternal_starlight--starlit_diamond.png" alt="" draggable="false" data-game-item="eternal_starlight:starlit_diamond">
+              <span class="gate-tag" aria-hidden="true">采集</span>
+            </button>
+            <div class="quest-preview" id="node-ore2-hint" role="tooltip" hidden>
+              <p class="preview-title">星钻矿</p>
+              <dl>
+              <dt>规划前置</dt><dd>本章镐与动力钻头</dd>
+              <dt>规划解锁</dt><dd>旗舰控制核心</dd>
+              <dt>说明</dt><dd>永恒星光新区块的星钻岩管，供旗舰控制核心的高压元件。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:40.927862%;--y:62.155388%"
+                    data-node="boiler" aria-label="第 5 档锅炉" aria-describedby="node-boiler-hint">
+              <img src="../icons/create--fluid_tank.png" alt="" draggable="false" data-game-item="create:fluid_tank">
+              
+            </button>
+            <div class="quest-preview" id="node-boiler-hint" role="tooltip" hidden>
+              <p class="preview-title">第 5 档锅炉</p>
+              <dl>
+              <dt>规划前置</dt><dd>铂锭</dd>
+              <dt>说明</dt><dd>基础罐体图标表示本档锅炉。实际工作压力受炉衬供热、承压与给水限制。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:64.135021%;--y:62.155388%"
+                    data-node="burner" aria-label="第 5 档烈焰人燃烧室" aria-describedby="node-burner-hint">
+              <img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner">
+              
+            </button>
+            <div class="quest-preview" id="node-burner-hint" role="tooltip" hidden>
+              <p class="preview-title">第 5 档烈焰人燃烧室</p>
+              <dl>
+              <dt>规划前置</dt><dd>铂锭</dd>
+              <dt>说明</dt><dd>炉体图标表示本档燃烧室。炉衬材料与供汽匹配。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-boss" style="--x:9.401965%;--y:88.972431%"
+                    data-node="leviathan" aria-label="沉没之城 · 利维坦" aria-describedby="node-leviathan-hint">
+              <img src="../icons/cataclysm--tidal_claws.png" alt="" draggable="false" data-game-item="cataclysm:tidal_claws">
+              <span class="gate-tag" aria-hidden="true">首领</span>
+            </button>
+            <div class="quest-preview" id="node-leviathan-hint" role="tooltip" hidden>
+              <p class="preview-title">沉没之城 · 利维坦</p>
+              <dl>
+              <dt>规划解锁</dt><dd>旗舰控制核心</dd>
+              <dt>说明</dt><dd>原生战利品为潮汐之爪。作为旗舰首件的校准件，验收后退还，后续量产沿用已认证样件。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:77.040239%;--y:62.155388%"
+                    data-node="wireless" aria-label="无线接收器" aria-describedby="node-wireless-hint">
+              <img src="../icons/ae2--wireless_receiver.png" alt="" draggable="false" data-game-item="ae2:wireless_receiver">
+              
+            </button>
+            <div class="quest-preview" id="node-wireless-hint" role="tooltip" hidden>
+              <p class="preview-title">无线接收器</p>
+              <dl>
+              <dt>现服前置</dt><dd>旗舰控制核心</dd>
+              <dt>现服下游</dt><dd>量子桥、P2P 与空间运输</dd>
+              <dt>说明</dt><dd>现服配方消耗旗舰控制核心。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:90.869294%;--y:62.155388%"
+                    data-node="quantum" aria-label="量子桥、P2P 与空间运输" aria-describedby="node-quantum-hint">
+              <img src="../icons/ae2--quantum_entangled_singularity.png" alt="" draggable="false" data-game-item="ae2:quantum_entangled_singularity">
+              
+            </button>
+            <div class="quest-preview" id="node-quantum-hint" role="tooltip" hidden>
+              <p class="preview-title">量子桥、P2P 与空间运输</p>
+              <dl>
+              <dt>现服前置</dt><dd>无线接收器</dd>
+              <dt>说明</dt><dd>无线接收器进入终章远程物流部件。图标为量子纠缠奇点。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:44.390244%;--y:16.290727%"
+                    data-node="platinum-concentrate" aria-label="铂精矿" aria-describedby="node-platinum-concentrate-hint">
+              <img src="../icons/kubejs--platinum_concentrate.png" alt="" draggable="false" data-game-item="kubejs:platinum_concentrate">
+              <span class="node-caption" aria-hidden="true">铂精矿</span>
+            </button>
+            <div class="quest-preview" id="node-platinum-concentrate-hint" role="tooltip" hidden>
+              <p class="preview-title">铂精矿</p>
+              <dl>
+              <dt>现服前置</dt><dd>铂矿</dd>
+              <dt>现服下游</dt><dd>海绵铂</dd>
+              <dt>说明</dt><dd>粗铂先研磨并洗选，再送富集工位。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-item" style="--x:52.845528%;--y:16.290727%"
+                    data-node="platinum-sponge" aria-label="海绵铂" aria-describedby="node-platinum-sponge-hint">
+              <img src="../icons/kubejs--platinum_sponge.png" alt="" draggable="false" data-game-item="kubejs:platinum_sponge">
+              <span class="node-caption" aria-hidden="true">海绵铂</span>
+            </button>
+            <div class="quest-preview" id="node-platinum-sponge-hint" role="tooltip" hidden>
+              <p class="preview-title">海绵铂</p>
+              <dl>
+              <dt>现服前置</dt><dd>铂精矿</dd>
+              <dt>规划解锁</dt><dd>铂锭</dd>
+              <dt>说明</dt><dd>精矿富集得到海绵铂，再送终章冶炼设备提纯。</dd>
+              </dl>
+            </div>
+            <button type="button" class="diagram-node node-machine" style="--x:67.967480%;--y:77.944862%"
+                    data-node="combustion-engine" aria-label="超大型柴油内燃机" aria-describedby="node-combustion-engine-hint">
+              <img src="../icons/createdieselgenerators--huge_diesel_engine.png" alt="" draggable="false" data-game-item="createdieselgenerators:huge_diesel_engine">
+              <span class="node-caption" aria-hidden="true">超大型柴油内燃机</span>
+            </button>
+            <div class="quest-preview" id="node-combustion-engine-hint" role="tooltip" hidden>
+              <p class="preview-title">超大型柴油内燃机</p>
+              <dl>
+                <dt>规划前置</dt><dd>铂锭和已有柴油线</dd>
+                <dt>同期应力目标</dt><dd>≥10×（第 5 档锅炉=1×）</dd>
+                <dt>说明</dt><dd>铂锭开启终局机组的耐热动力件。同一套机组的应力目标至少为同档锅炉的十倍。供汽设备继续给气囊等蒸汽负载送汽。</dd>
+              </dl>
+            </div>
+            </div>
+          </div>
+          <p class="graph-note">连线包含独立的制作条件和可选加工路线。每个节点的完整说明可悬停查看。</p>
+          <div class="aux-strip" aria-label="本章辅助矿物">
+            <a class="aux-ore" href="../metallurgy.html#ore-thermal_springstone"><img src="../icons/eternal_starlight--thermal_springstone.png" data-game-item="eternal_starlight:thermal_springstone" alt=""><span><strong>热泉石矿 → 热泉石锭</strong><small>永恒星光 · 热泉石矿脉。热泉石锭计划用于旗舰控制核心的热端零件。</small></span></a>
+          </div>
+        </section>
+      </details>
+      <details class="stage-foldout stage-reference-foldout">
+        <summary>查询任务、材料与数值</summary>
+        <div class="stage-reference-body" id="stage-reference">
+          <div class="stage-table-wrap quest-board" tabindex="0" role="region" aria-label="高压工业生产与制约">
+            <table class="stage-table">
+              <caption class="sr-only">高压工业生产与制约</caption>
+              <thead><tr><th scope="col">任务节点</th><th scope="col">要生产</th><th scope="col">制约条件</th></tr></thead>
+              <tbody>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-1-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/createindustrialworks--blast_furnace_controller.png" alt="" draggable="false" data-game-item="createindustrialworks:blast_furnace_controller"></span>
+                  <span>冶炼与切削</span>
+                </button>
+                <div class="quest-preview" id="milestone-1-preview" role="tooltip" hidden>
+                  <p class="preview-title">冶炼与切削</p>
+                  <dl><dt>要生产</dt><dd>本章新冶炼能力、切削工具</dd><dt>制约</dt><dd>星光调度芯片 → 深银导热炉圈与高阶选别件</dd><dt>说明</dt><dd>用上一章的深银与钛做最终切削工具，铂和星钻先走独立矿站，库存经港口汇总。</dd></dl>
+                </div>
+              </th>
+              <td>本章新冶炼能力、切削工具</td>
+              <td>星光调度芯片 → 深银导热炉圈与高阶选别件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-2-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/createpropulsion--raw_platinum.png" alt="" draggable="false" data-game-item="createpropulsion:raw_platinum"></span>
+                  <span>新矿物</span>
+                </button>
+                <div class="quest-preview" id="milestone-2-preview" role="tooltip" hidden>
+                  <p class="preview-title">新矿物</p>
+                  <dl><dt>要生产</dt><dd>铂矿、星钻矿</dd><dt>制约</dt><dd>达到本章挖掘等级的镐或钻头</dd><dt>说明</dt><dd>主世界含铂矿脉，以本章设备富集、精炼为铂锭。 永恒星光新区块的星钻岩管，供旗舰控制核心的高压元件。</dd></dl>
+                </div>
+              </th>
+              <td>铂矿、星钻矿</td>
+              <td>达到本章挖掘等级的镐或钻头</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-3-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/createpropulsion--platinum_ingot.png" alt="" draggable="false" data-game-item="createpropulsion:platinum_ingot"></span>
+                  <span>初级产物</span>
+                </button>
+                <div class="quest-preview" id="milestone-3-preview" role="tooltip" hidden>
+                  <p class="preview-title">初级产物</p>
+                  <dl><dt>要生产</dt><dd>铂锭</dd><dt>制约</dt><dd>本章冶炼、已有部件</dd><dt>说明</dt><dd>首批铂锭用来装第五档锅炉、烈焰人燃烧室和旗舰耐压件。该批设备可在最终核心之前建造。</dd></dl>
+                </div>
+              </th>
+              <td>铂锭</td>
+              <td>本章冶炼、已有部件</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-4-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/create--blaze_burner.png" alt="" draggable="false" data-game-item="create:blaze_burner"></span>
+                  <span>动力升级</span>
+                </button>
+                <div class="quest-preview" id="milestone-4-preview" role="tooltip" hidden>
+                  <p class="preview-title">动力升级</p>
+                  <dl><dt>要生产</dt><dd>第 5 档锅炉与烈焰人燃烧室、旗舰耐压件</dd><dt>制约</dt><dd>铂锭</dd><dt>说明</dt><dd>锅炉和烈焰人燃烧室各升一档。矿物回收保持精炼冶金解锁的最高收率。</dd></dl>
+                </div>
+              </th>
+              <td>第 5 档锅炉与烈焰人燃烧室、旗舰耐压件</td>
+              <td>铂锭</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-5-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/cataclysm--tidal_claws.png" alt="" draggable="false" data-game-item="cataclysm:tidal_claws"></span>
+                  <span>远征门槛</span>
+                </button>
+                <div class="quest-preview" id="milestone-5-preview" role="tooltip" hidden>
+                  <p class="preview-title">远征门槛</p>
+                  <dl><dt>要生产</dt><dd>潮汐之爪</dd><dt>制约</dt><dd>水下击败利维坦</dd><dt>说明</dt><dd>带回潮汐之爪校准旗舰首件。量产沿用已认证样件。</dd></dl>
+                </div>
+              </th>
+              <td>潮汐之爪</td>
+              <td>水下击败利维坦</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <button type="button" class="milestone" aria-describedby="milestone-6-preview">
+                  <span class="quest-emblem emblem-small" aria-hidden="true"><img src="../icons/kubejs--flagship_control_core.png" alt="" draggable="false" data-game-item="kubejs:flagship_control_core"></span>
+                  <span>高级芯片</span>
+                </button>
+                <div class="quest-preview" id="milestone-6-preview" role="tooltip" hidden>
+                  <p class="preview-title">高级芯片</p>
+                  <dl><dt>要生产</dt><dd>旗舰控制核心</dd><dt>制约</dt><dd>铂锭、星钻、已认证的潮汐之爪和上章调度芯片</dd><dt>说明</dt><dd>旗舰控制核心接通终章无线、量子桥、P2P 和空间运输。长距离有线 ME 保持可用。</dd></dl>
+                </div>
+              </th>
+              <td>旗舰控制核心</td>
+              <td>铂锭、星钻、已认证的潮汐之爪和上章调度芯片</td>
+            </tr>
+            <tr>
+              <th scope="row">内燃机</th>
+              <td>超大型柴油内燃机 · 应力 ≥10× 同档锅炉</td>
+              <td>铂锭、柴油。铂锭开启终局机组的耐热动力件。同一套机组的应力目标至少为同档锅炉的十倍。供汽设备继续给气囊等蒸汽负载送汽。</td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        <section class="chapter-note process-rules" aria-label="采掘与冶炼设计">
+          <p><strong>挖掘等级。</strong>规划中，Create 动力钻头的合成消耗对应等级的钻头部件，成品保留该部件的挖掘等级。镐、动力钻头与 CreateMine 共用矿物挖掘门槛。动力和转速影响效率。</p>
+          <p><strong>本章冶炼设计。</strong>星光调度芯片和深银导热件开启终章炉圈。含铂炉料用终章热风高炉精炼，星钻走高等级分选线。炉档、热风和炉腔共同决定配方能否运行。</p>
+        </section>
+        <p class="chapter-note power-benchmark">应力按一套成型动力组在相同转速、稳定供料时可持续对外提供的 SU 比较。表中为设计目标。</p>
+        </div>
+      </details>
+    </main>
+  </div>
+</body>
+</html>
